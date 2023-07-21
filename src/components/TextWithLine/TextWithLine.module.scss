@@ -1,0 +1,33 @@
+@import "src/styles/base/vars";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 82px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -80px;
+    background: $accent;
+    width: 72px;
+    height: 7px;
+  }
+  .top {
+    color: $dark;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .bottom {
+    color: $accent;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}

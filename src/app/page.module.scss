@@ -1,0 +1,170 @@
+@import "src/styles/base/vars";
+.intro {
+  background: url("/assets/images/bothHorizontal1.jpg") lightgray 0px -73.391px / cover no-repeat;
+  //background: url("/src/assets/images/bothHorizontal1.jpg") lightgray 0px -73.391px / 100% 138.573% no-repeat;
+  //background: #286E8D;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 645px;
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 320px;
+      .text {
+        color: $light;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 108.688%; /* 43.475px */
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.mission {
+  padding: 100px 0 60px 0;
+  .wrapper {
+    display: flex;
+    //justify-content: space-between;
+    //margin-top: 100px;
+    //margin-bottom: 60px;
+    column-gap: 25px;
+    .imageBox {
+      margin-left: 15px;
+      position: relative;
+      min-width: 433px;
+      max-width: 433px;
+      min-height: 528px;
+      max-height: 528px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 128px;
+        top: 0;
+        left: -15px;
+        background: $accent;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 143px;
+        height: 15px;
+        top: -15px;
+        left: -15px;
+        background: $accent;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .text {
+      .title {
+        margin-left: 45px;
+        margin-bottom: 20px;
+      }
+      .description {
+        color: $dark;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+      .buttonBox {
+        display: flex;
+        justify-content: center;
+      }
+
+    }
+  }
+}
+.whyWe {
+  background: $dark;
+  //height: 300px;
+  padding: 100px 0 60px 0;
+  .wrapper {
+    .list {
+      margin-top: 50px;
+      .text {
+        margin-top: -5px;
+        padding-top: 30px;
+        border-top: 3px solid $accent;
+        display: flex;
+        column-gap: 45px;
+        .title {
+          min-width: 450px;
+          max-width: 450px;
+          color: $light;
+          font-size: 40px;
+          font-weight: 500;
+        }
+        .description {
+          color: rgba(236, 236, 236, 0.80);
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.practices {
+  padding: 60px 0 10px;
+  .wrapper {
+    .title {
+      margin-bottom: 50px;
+    }
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 50px;
+      margin-bottom: 60px;
+      .row {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 15px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+.blog {
+  padding: 75px 0;
+  background: $dark;
+  .wrapper {
+    .title {
+      margin-bottom: 30px;
+    }
+    .list {
+      display: flex;
+      //column-gap: 15px;
+      row-gap: 30px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      //display: grid;
+      //grid-template-columns: repeat(2, 1fr);
+      //grid-column-gap: 15px;
+      //
+    }
+    .buttonBox {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.application {
+  height: 800px;
+  background-image: url("/assets/images/bothHorizontal2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .wrapper {
+
+  }
+}

@@ -1,0 +1,7 @@
+@import "src/styles/base/vars";
+
+.container {
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+  padding: 0 30px
+}

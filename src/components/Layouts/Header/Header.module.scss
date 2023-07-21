@@ -1,0 +1,68 @@
+@import "src/styles/base/vars";
+
+.header {
+  padding: 13px 0;
+}
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.headerButtons {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+.blogLink {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+
+}
+.burger {
+  position: relative;
+  width: 47px;
+  height: 20px;
+  z-index: 4;
+  span {
+    position: absolute;
+    background-color: $accent;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 9px;
+    transition: all .3s ease 0s;
+  }
+  &:before, &:after {
+    content: '';
+    background-color: $accent;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    transition: all .3s ease 0s;
+  }
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
+  &.active span {
+    transform: scale(0);
+  }
+  &.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  &.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+}
