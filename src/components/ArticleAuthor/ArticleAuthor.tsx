@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {FC} from 'react';
 import classes from "@/components/Article/Article.module.scss";
 import Image from "next/image";
 
-const ArticleAuthor = ({author}) => {
+interface IProps {
+    author: string
+}
+const ArticleAuthor:FC<IProps> = ({author}) => {
     const authorName = author === "Taras" ? "Тарас Горбатюк" : author === "Yurii" ? "Юрій Бєлоконь" : "";
     return (
         <div className={classes.author}>

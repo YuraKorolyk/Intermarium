@@ -1,11 +1,17 @@
-import React from 'react';
+import React, {FC} from 'react';
 import classes from "./Article.module.scss"
 import Logo from "../../../public/assets/icons/Logo";
 import Calendar from "../../../public/assets/icons/Calendar";
 import ArticleAuthor from "@/components/ArticleAuthor/ArticleAuthor";
 import Arrow from "../../../public/assets/icons/Arrow";
 
-const Article = ({title, date, author}) => {
+interface IProps {
+    title: string,
+    date: string,
+    author: string,
+}
+
+const Article:FC<IProps> = ({title, date, author}) => {
 
     return (
         <div className={classes.wrapper}>

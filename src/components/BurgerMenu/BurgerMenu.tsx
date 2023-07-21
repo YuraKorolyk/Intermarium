@@ -10,10 +10,11 @@ interface IProps {
 }
 const BurgerMenu:FC<IProps> = ({isOpen}) => {
     const pathname = usePathname();
-    const body = document.querySelector('body')
     useEffect(()=> {
+    if (document) {
+        const body = document.querySelector('body')
         isOpen ? body?.classList.add('lock') : body?.classList.remove('lock')
-        console.log(pathname)
+        }
     }, [isOpen])
     return (
         <div className={classes.burgerMenu} style={{ top: isOpen ? '0' : '-100vh' }}>
