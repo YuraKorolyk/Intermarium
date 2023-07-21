@@ -119,7 +119,7 @@ export default function Home() {
                           bg="5"
                           title="абонентське обслуговування"
                           description="Юридична компанія Intermarium надає повний супровід у відкритті бізнесу в Україні та подальшому його введення з питань що стосуються юридичної складової"
-                          isAlone={window.innerWidth > 768 ? true : false}
+                          isAlone={false}
                       />
                   </div>
               </Container>
