@@ -7,8 +7,9 @@ import { usePathname } from 'next/navigation';
 
 interface IProps {
     isOpen: boolean,
+    onCloseBurger: ()=>void
 }
-const BurgerMenu:FC<IProps> = ({isOpen}) => {
+const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger}) => {
     const pathname = usePathname();
     useEffect(()=> {
     if (document) {
@@ -17,13 +18,44 @@ const BurgerMenu:FC<IProps> = ({isOpen}) => {
         }
     }, [isOpen])
     return (
-        <div className={classes.burgerMenu} style={{ top: isOpen ? '0' : '-100vh' }}>
+        // <div className={`${classes.burgerMenu} ${isOpen ? classes.open : ''}`}>
+        <div className={classes.burgerMenu} style={{opacity: isOpen ? "1" : "0" , visibility: isOpen ? "visible" : "hidden"}}>
             <Container className={classes.wrapper}>
-                <Link className={pathname === "/" ? classes.active : ''} href={'/'}>Головна сторінка</Link>
-                <Link className={pathname === "/about" ? classes.active : ''} href={'/about'}>Про нас</Link>
-                <Link className={pathname === "/practices" ? classes.active : ''} href={'/practices'}>Практики</Link>
-                <Link className={pathname === "/blog" ? classes.active : ''} href={'/blog'}>Блог</Link>
-                <Link className={pathname === "/contacts" ? classes.active : ''} href={'/contacts'}>Контакти</Link>
+                <Link
+                    className={pathname === "/" ? classes.active : ''}
+                    onClick={onCloseBurger}
+                    href={'/'}
+                >
+                    Головна сторінка
+                </Link>
+                <Link
+                    className={pathname === "/about" ? classes.active : ''}
+                    onClick={onCloseBurger}
+                    href={'/about'}
+                >
+                     Про нас
+                </Link>
+                <Link
+                    className={pathname === "/practices" ? classes.active : ''}
+                    onClick={onCloseBurger}
+                    href={'/practices'}
+                >
+                    Практики
+                </Link>
+                <Link
+                    className={pathname === "/blog" ? classes.active : ''}
+                    onClick={onCloseBurger}
+                    href={'/blog'}
+                >
+                    Блог
+                </Link>
+                <Link
+                    className={pathname === "/contacts" ? classes.active : ''}
+                    onClick={onCloseBurger}
+                    href={'/contacts'}
+                >
+                    Контакти
+                </Link>
 
             </Container>
         </div>

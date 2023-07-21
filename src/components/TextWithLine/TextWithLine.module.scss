@@ -16,7 +16,7 @@
   }
   .top {
     color: $dark;
-    font-size: 25px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -24,10 +24,40 @@
   }
   .bottom {
     color: $accent;
-    font-size: 80px;
+    font-size: 100px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+  }
+}
+@media (max-width: $tabletBig) {
+  .wrapper {
+    .top {
+      font-size: 25px;
+    }
+    .bottom {
+      font-size: 80px;
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .wrapper {
+    .top {
+      font-size: 23px;
+    }
+    .bottom {
+      font-size: 75px;
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .wrapper {
+    .top {
+      font-size: 20px;
+    }
+    .bottom {
+      font-size: 65px;
+    }
   }
 }

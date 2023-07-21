@@ -1,8 +1,9 @@
 @import "src/styles/base/vars";
 .intro {
-  background: url("/assets/images/bothHorizontal1.jpg") lightgray 0px -73.391px / cover no-repeat;
-  //background: url("/src/assets/images/bothHorizontal1.jpg") lightgray 0px -73.391px / 100% 138.573% no-repeat;
-  //background: #286E8D;
+  background: url("/assets/images/bothHorizontal1.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
   .wrapper {
     display: flex;
     align-items: center;
@@ -80,6 +81,57 @@
         justify-content: center;
       }
 
+    }
+  }
+}
+@media (max-width: $tabletBig) {
+  .mission {
+    padding: 50px 0 30px;
+    .wrapper {
+      .imageBox{
+        min-width: 272px;
+        max-width: 272px;
+        min-height: 389px;
+        max-height: 389px;
+        img {
+          object-fit: cover;
+        }
+      }
+      .text {
+        .title {
+        }
+        .description {
+          font-size: 20px;
+        }
+        .buttonBox {
+        }
+      }
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .mission {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      .imageBox{
+        min-width: 272px;
+        max-width: 272px;
+        min-height: 389px;
+        max-height: 389px;
+        img {
+          object-fit: cover;
+        }
+      }
+      .text {
+        .title {
+        }
+        .description {
+          font-size: 20px;
+        }
+        .buttonBox {
+        }
+      }
     }
   }
 }

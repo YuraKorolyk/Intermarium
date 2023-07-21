@@ -10,9 +10,12 @@ const Header = () => {
     const handleBurgerClick = () => {
         setBurgerOpen((prevState) => !prevState);
     }
+    const closeBurgerHandler = () => {
+        setBurgerOpen(false)
+    }
     return (
         <header className={classes.header}>
-            <BurgerMenu isOpen={burgerOpen}/>
+            <BurgerMenu isOpen={burgerOpen} onCloseBurger={closeBurgerHandler}/>
             <Container className={classes.headerWrapper}>
                 <MainLogo isDark={true}/>
                 <div className={classes.headerButtons}>
