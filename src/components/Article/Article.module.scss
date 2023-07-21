@@ -65,3 +65,13 @@
     }
   }
 }
+@media (max-width: $tabletBig) {
+  .wrapper {
+    flex: 0 1 48.5%;
+  }
+}
+@media (max-width: $tablet) {
+  .wrapper {
+    flex: 0 1 100%;
+  }
+}

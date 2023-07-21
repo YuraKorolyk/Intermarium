@@ -27,10 +27,10 @@ export default function Home() {
                     <img src="/assets/images/bothVertical.jpg" alt=""/>
                     {/*<Image src="/assets/images/bothVertical.jpg" alt="bg"/>*/}
                 </div>
+                <div className={classes.title}>
+                    <TextWithLine topText="Наша" bottomText="Місія" topColor="dark"/>
+                </div>
                 <div className={classes.text}>
-                    <div className={classes.title}>
-                        <TextWithLine topText="Наша" bottomText="Місія" topColor="dark"/>
-                    </div>
                     <div className={classes.description}>
                         Ми стоїмо на захисті інтересів іноземців та їхнього бізнесу, щоб зробити Україну та увесь Центрально-Європейський регіон найбільш інвестиційно привабливою частиною світу, щоб мільйони людей зі всього світу інвестували, мігрували в пошуках кар&apos;єрних та бізнес можливостей та будували краще життя в країнах Інтермаріуму
                     </div>
@@ -119,7 +119,7 @@ export default function Home() {
                           bg="5"
                           title="абонентське обслуговування"
                           description="Юридична компанія Intermarium надає повний супровід у відкритті бізнесу в Україні та подальшому його введення з питань що стосуються юридичної складової"
-                          isAlone={true}
+                          isAlone={window.innerWidth > 768 ? true : false}
                       />
                   </div>
               </Container>
