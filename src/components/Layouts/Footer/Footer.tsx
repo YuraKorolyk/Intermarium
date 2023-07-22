@@ -11,7 +11,9 @@ const Footer = () => {
         <footer className={classes.footer}>
             <Container className={classes.wrapper}>
                 <div className={classes.logoBlock}>
-                    <MainLogo isDark={false}/>
+                    <div className={classes.logoBox}>
+                        <MainLogo isDark={false}/>
+                    </div>
                     <span>©2023 Intermarium law firm</span>
                 </div>
                 <div className={classes.networks}>

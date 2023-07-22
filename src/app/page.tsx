@@ -46,9 +46,16 @@ export default function Home() {
                       <TextWithLine topText="Чому" bottomText="саме ми" topColor="light"/>
                   </div>
                   <div className={classes.list}>
-                      <One />
+                      <div className={classes.numbers}>
+                          <div className={classes.iconBox}>
+                              <One />
+                          </div>
+                          <div className={classes.mobTitle}>
+                              Досконале вивчення проблематики запиту
+                          </div>
+                      </div>
                       <div className={classes.text}>
-                          <div className={classes.title}>
+                          <div className={classes.textTitle}>
                               Досконале вивчення проблематики запиту
                           </div>
                           <div className={classes.description}>
@@ -59,9 +66,16 @@ export default function Home() {
                       </div>
                   </div>
                   <div className={classes.list}>
-                      <Two />
+                      <div className={classes.numbers}>
+                          <div className={classes.iconBox}>
+                            <Two />
+                          </div>
+                          <div className={classes.mobTitle}>
+                              Вибір найкращої стратегії вирішення
+                          </div>
+                      </div>
                       <div className={classes.text}>
-                          <div className={classes.title}>
+                          <div className={classes.textTitle}>
                               Вибір найкращої стратегії вирішення
                           </div>
                           <div className={classes.description}>
@@ -72,9 +86,16 @@ export default function Home() {
                       </div>
                   </div>
                   <div className={classes.list}>
-                      <Three />
+                      <div className={classes.numbers}>
+                          <div className={classes.iconBox}>
+                            <Three />
+                          </div>
+                          <div className={classes.mobTitle}>
+                              Доведення до результату
+                          </div>
+                      </div>
                       <div className={classes.text}>
-                          <div className={classes.title}>
+                          <div className={classes.textTitle}>
                               Доведення до результату
                           </div>
                           <div className={classes.description}>
@@ -106,7 +127,7 @@ export default function Home() {
                       <Practice
                           bg="3"
                           title="візова підтримка"
-                          description="Intermarium Law Firm підберає для вас найоптимальніший вид візи, країну, консульство та час подачі документів"
+                          description="Intermarium Law Firm підбирає для вас найоптимальніший вид візи, країну, консульство та час подачі документів"
                           isAlone={false}
                       />
                       <Practice
@@ -119,7 +140,7 @@ export default function Home() {
                           bg="5"
                           title="абонентське обслуговування"
                           description="Юридична компанія Intermarium надає повний супровід у відкритті бізнесу в Україні та подальшому його введення з питань що стосуються юридичної складової"
-                          isAlone={false}
+                          isAlone={true}
                       />
                   </div>
               </Container>

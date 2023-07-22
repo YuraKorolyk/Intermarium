@@ -3,12 +3,15 @@
 .header {
   padding: 13px 0;
 }
-.headerWrapper {
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 10;
+  .logoBox {
+
+  }
 }
 .headerButtons {
   display: flex;
@@ -67,7 +70,25 @@
   }
 }
 @media (max-width: $tablet) {
+  .header {
+    .wrapper {
+      .logoBox {
+        transform-origin: 0 50%;
+        transform: scale(0.8);
+      }
+    }
+  }
   .blogLink {
     display: none;
+  }
+}
+@media (max-width: $mobile) {
+  .header {
+    .wrapper {
+      .logoBox {
+        transform-origin: 0 50%;
+        transform: scale(0.6);
+      }
+    }
   }
 }

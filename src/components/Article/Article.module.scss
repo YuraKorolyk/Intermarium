@@ -73,5 +73,33 @@
 @media (max-width: $tablet) {
   .wrapper {
     flex: 0 1 100%;
+    .description {
+      .arrow {
+        transform-origin: 100% 100%;
+        transform: scale(0.8);
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .wrapper {
+    flex: 0 1 100%;
+    .description {
+      .details {
+        .author {
+          font-size: 12px;
+        }
+        .date {
+          font-size: 10px;
+        }
+      }
+      .title {
+        font-size: 16px;
+      }
+      .arrow {
+        transform-origin: 100% 100%;
+        transform: scale(0.7);
+      }
+    }
   }
 }

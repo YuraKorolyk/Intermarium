@@ -16,8 +16,10 @@ const Header = () => {
     return (
         <header className={classes.header}>
             <BurgerMenu isOpen={burgerOpen} onCloseBurger={closeBurgerHandler}/>
-            <Container className={classes.headerWrapper}>
-                <MainLogo isDark={true}/>
+            <Container className={classes.wrapper}>
+                <div className={classes.logoBox}>
+                    <MainLogo isDark={true}/>
+                </div>
                 <div className={classes.headerButtons}>
                     <span className={classes.blogLink}>Юридичний блог</span>
                     <LanguageSwitcher/>

@@ -11,3 +11,8 @@
   line-height: 108.688%; /* 19.564px */
   text-transform: uppercase;
 }
+@media (max-width: $mobile) {
+  .button {
+    font-size: 16px;
+  }
+}

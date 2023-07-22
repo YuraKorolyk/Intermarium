@@ -8,14 +8,9 @@
   height: calc(100vh - 76px);
   background: $light;
   transition: .2s;
-  //background: red;
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  //.open {
-  //  visibility: visible;
-  //  opacity: 1;
-  //}
   .wrapper {
     margin-top: 70px;
     display: flex;
@@ -27,6 +22,29 @@
     text-transform: uppercase;
     .active {
       color: $accent;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .burgerMenu {
+    .wrapper {
+      align-items: center;
+      font-size: 35px;
+      row-gap: 40px;
+      .active {
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .burgerMenu {
+    .wrapper {
+      align-items: center;
+      font-size: 25px;
+      row-gap: 35px;
+      .active {
+      }
     }
   }
 }

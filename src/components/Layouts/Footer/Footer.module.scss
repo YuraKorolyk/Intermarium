@@ -12,8 +12,8 @@
       flex-direction: column;
       row-gap: 22px;
       width: 240px;
+      font-size: 15px;
       span {
-        font-size: 15px;
         font-weight: 300;
         line-height: 100%;
       }
@@ -23,6 +23,7 @@
       flex-direction: column;
       justify-content: space-between;
       //column-gap: 10px;
+      font-size: 15px;
       width: 185px;
       .icons {
         display: flex;
@@ -30,7 +31,7 @@
       }
       span {
         text-align: center;
-        font-size: 15px;
+        //font-size: 15px;
         font-weight: 300;
         line-height: 100%;
       }
@@ -57,6 +58,18 @@
   }
 }
 
+@media (max-width: $tabletBig) {
+  .footer {
+    .wrapper {
+      .logoBlock {
+        .logoBox {
+          transform-origin: 0 50%;
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
 @media (max-width: $tablet) {
   .footer {
     padding: 30px 0;
@@ -67,14 +80,40 @@
       align-items: center;
       row-gap: 23px;
       .logoBlock {
+        font-size: 12px;
         text-align: center;
         row-gap: 5px;
+        .logoBox {
+          transform-origin: 50% 0;
+          transform: scale(0.85);
+        }
       }
       .networks {
         row-gap: 5px;
+        font-size: 12px;
       }
       .info {
         text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .footer {
+    .wrapper {
+      .logoBlock {
+        font-size: 10px;
+        .logoBox {
+          transform-origin: 50% 0;
+          transform: scale(0.8);
+        }
+      }
+      .networks {
+        font-size: 10px;
+      }
+      .info {
+        font-size: 10px;
       }
     }
   }
