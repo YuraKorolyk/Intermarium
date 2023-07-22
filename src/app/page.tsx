@@ -16,8 +16,10 @@ export default function Home() {
           <div className={classes.intro}>
               <Container className={classes.wrapper}>
                   <div className={classes.block}>
-                      <CircleLogo />
-                      <span className={classes.text}>Aut cum scuto, aut in scuto</span>
+                      <div className={classes.logoBox}>
+                          <CircleLogo />
+                      </div>
+                      <span className={classes.text}>Aut cum scuto,<br/>aut in scuto</span>
                   </div>
               </Container>
           </div>
@@ -162,7 +164,6 @@ export default function Home() {
           </div>
           <div className={classes.application}>
               <Container className={classes.wrapper}>
-
               </Container>
           </div>
       </>

@@ -13,6 +13,9 @@
       flex-direction: column;
       align-items: center;
       max-width: 320px;
+      .logoBox {
+
+      }
       .text {
         color: $light;
         font-size: 40px;
@@ -26,12 +29,60 @@
     }
   }
 }
-@media (max-width: $tablet) {
+@media (max-width: $tabletBig) {
   .intro {
     .wrapper {
+      .block {
+        .logoBox {
+          transform-origin: 50% 50%;
+          transform: scale(0.9);
+        }
+        .text {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .intro {
+    background-position: 83% 20%;
+    .wrapper {
       justify-content: center;
-      min-height: 770px;
-      max-height: calc(100vh - 67px);
+      min-height: 510px;
+      align-items: end;
+      padding-bottom: 40px;
+      //max-height: calc(100vh - 67px);
+      .block {
+        .logoBox {
+          transform-origin: 50% 100%;
+          transform: scale(0.8);
+        }
+        .text {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .intro {
+    background-position: 80% 20%;
+    .wrapper {
+      align-items: end;
+      padding-bottom: 40px;
+      //min-height: 770px;
+      //max-height: calc(100vh - 67px);
+      .block {
+        .logoBox {
+
+          transform: scale(0.65);
+        }
+        .text {
+          font-size: 21px;
+          margin-top: 10px;
+        }
+      }
     }
   }
 }
@@ -338,6 +389,21 @@
 @media (max-width: $tablet) {
   .blog {
     padding: 50px 0;
+    .wrapper {
+      .buttonBox {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .blog {
+    padding: 40px 0;
+    .wrapper {
+      .buttonBox {
+        //margin-top: 30px;
+      }
+    }
   }
 }
 

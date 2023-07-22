@@ -25,6 +25,7 @@
     background: rgba(40, 110, 141, 0.60);
     color: $light;
     position: relative;
+    //padding: 25px 4px ;
     .title {
       text-align: center;
       font-size: 40px;
@@ -85,28 +86,45 @@
       }
       .description {
         font-size: 16px;
+        padding: 0 20px 40px;
         &.alone {
           padding: 0 30px 50px;
         }
+      }
+      .arrow {
+        transform-origin: 100% 150%;
+        transform: scale(0.8);
       }
     }
   }
 }
 @media (max-width: $mobile) {
   .wrapper {
-    padding: 20px 25px;
+    padding: 15px;
     &.alone {
-      padding: 20px 30px;
+      padding: 15px;
       flex: 0 1 100%;
     }
     .block {
+      padding: 10px 12px 36px;
       .title {
-        padding: 25px 9px 0;
+        //padding: 25px 9px 0;
+        padding: 0 8px;
         &.alone {
-          padding: 25px 9px 0;
+          //padding: 25px 9px 0;
+          padding: 0 8px;
         }
       }
       .description {
+        //padding: 0 15px 30px;
+        padding: 0;
+        &.alone {
+          padding: 0;
+        }
+      }
+      .arrow {
+        transform-origin: 100% 150%;
+        transform: scale(0.6);
       }
     }
   }

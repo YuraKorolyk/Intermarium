@@ -78,19 +78,24 @@
     .wrapper {
       flex-direction: column;
       align-items: center;
-      row-gap: 23px;
+      //row-gap: 23px;
       .logoBlock {
         font-size: 12px;
         text-align: center;
         row-gap: 5px;
         .logoBox {
-          transform-origin: 50% 0;
+          transform-origin: 50% 100%;
           transform: scale(0.85);
         }
       }
       .networks {
         row-gap: 5px;
         font-size: 12px;
+        margin-bottom: 20px;
+        .icons {
+          transform-origin: 50% 100%;
+          transform: scale(0.5);
+        }
       }
       .info {
         text-align: center;
@@ -105,7 +110,6 @@
       .logoBlock {
         font-size: 10px;
         .logoBox {
-          transform-origin: 50% 0;
           transform: scale(0.8);
         }
       }

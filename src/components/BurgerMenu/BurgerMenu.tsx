@@ -1,5 +1,5 @@
 "use client"
-import React, {FC, useEffect} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import classes from "./BurgerMenu.module.scss"
 import Link from "next/link";
 import Container from "@/components/Layouts/Container/Container";
@@ -17,6 +17,11 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger}) => {
         isOpen ? body?.classList.add('lock') : body?.classList.remove('lock')
         }
     }, [isOpen])
+
+    const [isPracticeOpen, setIsPracticeOpen] = useState<boolean>(false);
+    const practiceClickHandler = () => {
+        setIsPracticeOpen((prevState) => !prevState);
+    }
     return (
         // <div className={`${classes.burgerMenu} ${isOpen ? classes.open : ''}`}>
         <div className={classes.burgerMenu} style={{opacity: isOpen ? "1" : "0" , visibility: isOpen ? "visible" : "hidden"}}>
@@ -35,13 +40,12 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger}) => {
                 >
                      Про нас
                 </Link>
-                <Link
-                    className={pathname === "/practices" ? classes.active : ''}
-                    onClick={onCloseBurger}
-                    href={'/practices'}
+                <div
+                    onClick={practiceClickHandler}
+                    // className={isPracticeOpen ? `${classes.practice} ${classes.active}` : classes.practice}
                 >
                     Практики
-                </Link>
+                </div>
                 <Link
                     className={pathname === "/blog" ? classes.active : ''}
                     onClick={onCloseBurger}

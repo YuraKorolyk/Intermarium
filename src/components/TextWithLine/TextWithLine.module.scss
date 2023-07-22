@@ -59,8 +59,15 @@
       left: -50px;
     }
     .top {
-      font-size: 23px;
+      font-size: 25px;
     }
+    .bottom {
+      font-size: 70px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .wrapper {
     .bottom {
       font-size: 50px;
     }
