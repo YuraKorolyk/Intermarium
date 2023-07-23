@@ -10,6 +10,7 @@ import Practice from "@/components/Practice/Practice";
 import Article from "@/components/Article/Article";
 import Button from "@/components/Button/Button";
 import Image from "next/image";
+import React from "react";
 export default function Home() {
   return (
       <>
@@ -30,11 +31,13 @@ export default function Home() {
                     {/*<Image src="/assets/images/bothVertical.jpg" alt="bg"/>*/}
                 </div>
                 <div className={classes.title}>
-                    <TextWithLine topText="Наша" bottomText="Місія" topColor="dark"/>
+                    <TextWithLine topText="Наша" topColor="dark">
+                        <span className={`${classes.bottomText} bottomTextWithLine`}>Місія</span>
+                    </TextWithLine>
                 </div>
                 <div className={classes.text}>
                     <div className={classes.description}>
-                        Ми стоїмо на захисті інтересів іноземців та їхнього бізнесу, щоб зробити Україну та увесь Центрально-Європейський регіон найбільш інвестиційно привабливою частиною світу, щоб мільйони людей зі всього світу інвестували, мігрували в пошуках кар&apos;єрних та бізнес можливостей та будували краще життя в країнах Інтермаріуму
+                        Ми стоїмо на захисті інтересів іноземців та їхнього бізнесу, щоб зробити <span className="highlightDark">Україну</span> та увесь <span className="highlightDark">Центрально-Європейський</span> регіон найбільш інвестиційно привабливою частиною світу, щоб мільйони людей зі всього світу інвестували, мігрували в пошуках кар&apos;єрних та бізнес можливостей та будували краще життя в країнах <span className="highlightDark">Інтермаріуму</span>
                     </div>
                     <div className={classes.buttonBox}>
                         <Button text="Дізнатися більше"/>
@@ -45,7 +48,9 @@ export default function Home() {
           <div className={classes.whyWe}>
               <Container className={classes.wrapper}>
                   <div className={classes.title}>
-                      <TextWithLine topText="Чому" bottomText="саме ми" topColor="light"/>
+                      <TextWithLine topText="Чому" topColor="light">
+                          <span className={`${classes.bottomText} bottomTextWithLine`}>саме ми</span>
+                      </TextWithLine>
                   </div>
                   <div className={classes.list}>
                       <div className={classes.numbers}>
@@ -111,7 +116,9 @@ export default function Home() {
           <div className={classes.practices}>
               <Container className={classes.wrapper}>
                   <div className={classes.title}>
-                      <TextWithLine topText="Наші" bottomText="практики" topColor="dark"/>
+                      <TextWithLine topText="Наші" topColor="dark">
+                          <span className={`${classes.bottomText} bottomTextWithLine`}>практики</span>
+                      </TextWithLine>
                   </div>
                   <div className={classes.list}>
                       <Practice
@@ -150,7 +157,9 @@ export default function Home() {
           <div className={classes.blog}>
               <Container className={classes.wrapper}>
                   <div className={classes.title}>
-                      <TextWithLine topText="Наш" bottomText="юридичний блог" topColor="light"/>
+                      <TextWithLine topText="Наш" topColor="light">
+                          <span className={`${classes.bottomText} bottomTextWithLine`}>юридичний блог</span>
+                      </TextWithLine>
                   </div>
                   <div className={classes.list}>
                       <Article author="Taras" date="16/06/2023" title="Закон України для громадян Республіки Польща, які перебувають на території України"/>

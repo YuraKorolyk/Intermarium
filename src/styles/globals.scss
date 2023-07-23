@@ -1,9 +1,30 @@
 @import "base/null";
 @import "base/vars";
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap'); //підлкючення шриифтів
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap'); //підлкючення шрифтів
 
 body.lock {
   overflow: hidden;
+}
+.highlightDark {
+  font-weight: 700;
+  color: $accent;
+}
+.bottomTextWithLine {
+  color: $accent;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 93%;
+  text-transform: uppercase;
+}
+@media (max-width: $tabletBig) {
+  .bottomTextWithLine {
+    font-size: 90px;
+  }
+}
+@media (max-width: $tablet) {
+  .bottomTextWithLine {
+    font-size: 80px;
+  }
 }
 //.container {
 //  //max-width: $maxWidthContainer;
