@@ -23,9 +23,9 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger}) => {
         setIsPracticeOpen((prevState) => !prevState);
     }
     return (
-        // <div className={`${classes.burgerMenu} ${isOpen ? classes.open : ''}`}>
         <div className={classes.burgerMenu} style={{opacity: isOpen ? "1" : "0" , visibility: isOpen ? "visible" : "hidden"}}>
-            <Container className={classes.wrapper}>
+            <Container className={isPracticeOpen ? `${classes.wrapper} ${classes.practiceOpened}` : classes.wrapper}>
+            {/*<Container className={classes.wrapper}>*/}
                 <Link
                     className={pathname === "/" ? classes.active : ''}
                     onClick={onCloseBurger}
@@ -42,9 +42,48 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger}) => {
                 </Link>
                 <div
                     onClick={practiceClickHandler}
-                    // className={isPracticeOpen ? `${classes.practice} ${classes.active}` : classes.practice}
+                    className={classes.practice}
                 >
-                    Практики
+                    <span>Практики</span>
+                    <div
+                        className={isPracticeOpen ? `${classes.practiceList} ${classes.active}` : classes.practiceList}
+                    >
+                        <Link
+                            href={"/test"}
+                            className={pathname === "/test" ? classes.active : ''}
+                            onClick={onCloseBurger}
+                        >
+                            — міграційне право
+                        </Link>
+                        <Link
+                            href={"/test"}
+                            className={pathname === "/test" ? classes.active : ''}
+                            onClick={onCloseBurger}
+                        >
+                            — корпоративне право
+                        </Link>
+                        <Link
+                            href={"/test"}
+                            className={pathname === "/test" ? classes.active : ''}
+                            onClick={onCloseBurger}
+                        >
+                            — Візова підтримка
+                        </Link>
+                        <Link
+                            href={"/test"}
+                            className={pathname === "/test" ? classes.active : ''}
+                            onClick={onCloseBurger}
+                        >
+                            — Юридичний дью-ділідженс
+                        </Link>
+                        <Link
+                            href={"/test"}
+                            className={pathname === "/test" ? classes.active : ''}
+                            onClick={onCloseBurger}
+                        >
+                            — Абонентське обслуговування
+                        </Link>
+                    </div>
                 </div>
                 <Link
                     className={pathname === "/blog" ? classes.active : ''}

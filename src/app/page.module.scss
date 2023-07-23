@@ -188,11 +188,11 @@
     'text';
       //place-items: center;
       grid-column-gap: 0;
-      grid-row-gap: 15px;
+      grid-row-gap: 20px;
       grid-template-rows: auto auto auto;
       .imageBox{
-        min-width: calc(100% - 15px);
-        //width: 100%;
+        min-width: 100%;
+        margin-left: 0;
         min-height: auto;
         max-height: none;
         img {
@@ -219,9 +219,15 @@
 @media (max-width: $mobile) {
   .mission {
     .wrapper {
+      grid-row-gap: 15px;
       .title {
         .bottomText {
           font-size: 65px;
+        }
+      }
+      .text {
+        .description {
+          font-size: 16px;
         }
       }
     }
@@ -319,9 +325,6 @@
           .textTitle {
             display: none;
           }
-          .description {
-            font-size: 17px;
-          }
         }
       }
     }
@@ -346,6 +349,9 @@
         }
         .text {
           margin-top: -3px;
+          .description {
+            font-size: 14px;
+          }
         }
       }
     }

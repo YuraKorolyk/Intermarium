@@ -20,11 +20,35 @@
     font-weight: 700;
     line-height: 108.688%;
     text-transform: uppercase;
+    transition: .2s;
     .active {
       color: $accent;
     }
+    &.practiceOpened {
+      row-gap: 30px;
+    }
     .practice {
-
+      .practiceList {
+        color: $dark;
+        margin-top: 15px;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        transition: .2s;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 108.688%; /* 32.606px */
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        &.active {
+          height: 100%;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
     }
   }
 }
@@ -35,7 +59,11 @@
       align-items: center;
       font-size: 35px;
       row-gap: 40px;
-      .active {
+      .practice {
+        text-align: center;
+        .practiceList {
+          font-size: 25px;
+        }
       }
     }
   }
@@ -46,7 +74,11 @@
       align-items: center;
       font-size: 25px;
       row-gap: 35px;
-      .active {
+      .practice {
+        .practiceList {
+          font-size: 18px;
+          text-align: center;
+        }
       }
     }
   }

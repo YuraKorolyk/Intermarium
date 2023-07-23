@@ -108,15 +108,15 @@
     .block {
       padding: 10px 12px 36px;
       .title {
-        //padding: 25px 9px 0;
         padding: 0 8px;
+        font-size: 25px;
         &.alone {
           //padding: 25px 9px 0;
           padding: 0 8px;
         }
       }
       .description {
-        //padding: 0 15px 30px;
+        font-size: 14px;
         padding: 0;
         &.alone {
           padding: 0;
