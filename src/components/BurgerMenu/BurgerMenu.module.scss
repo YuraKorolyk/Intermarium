@@ -28,6 +28,9 @@
       row-gap: 30px;
     }
     .practice {
+      span {
+        cursor: pointer;
+      }
       .practiceList {
         color: $dark;
         margin-top: 15px;

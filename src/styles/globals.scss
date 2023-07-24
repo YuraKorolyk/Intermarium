@@ -6,8 +6,11 @@ body.lock {
   overflow: hidden;
 }
 .highlightDark {
-  font-weight: 700;
+  font-weight: 500;
   color: $accent;
+}
+.highlightLight {
+  font-weight: 700;
 }
 .bottomTextWithLine {
   color: $accent;

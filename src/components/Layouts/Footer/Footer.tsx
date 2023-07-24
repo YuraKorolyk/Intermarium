@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
                 <div className={classes.info}>
                     <a className={classes.number} href="tel:+380993339933">+38 (099) 333 99 33</a>
-                    <div className={classes.mail} onClick={(e) => {window.location.href ='mailto:intermarium@gmail.com';}}>intermarium@gmail.com</div>
+                    <div className={classes.mail} onClick={(e) => {window.location.href ='mailto:office@intermarium.legal';}}>office@intermarium.legal</div>
                     <div className={classes.adress}>Україна, м. Київ,<br/>
                         вул. Хрещатик, 19-А, офіс 444
                     </div>
