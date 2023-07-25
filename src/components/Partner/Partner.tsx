@@ -1,13 +1,12 @@
 'use client';
-import React, {FC, useState} from 'react';
+import React, {FC, ReactNode, useState} from 'react';
 import classes from './Partner.module.scss'
 import Arrow from "../../../public/assets/icons/Arrow";
-import {boolean} from "zod";
 
 interface IProps {
     name: string,
     title: string,
-    description: any,
+    description: ReactNode,
 }
 const Partner:FC<IProps> = ({name, title, description}) => {
     const partnerName = name === "Taras" ? "Тарас Горбатюк" : name === "Yurii" ? "Юрій Бєлоконь" : "невідомо";
