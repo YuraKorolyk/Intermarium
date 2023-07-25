@@ -149,6 +149,16 @@
     }
   }
 }
+@media (max-width: $mobile) {
+  .wrapper {
+    width: 320px;
+    .main {
+      .photo {
+        min-height: 456px;
+      }
+    }
+  }
+}
 
 //@media (max-width: $mobile) {
 //  .wrapper {
