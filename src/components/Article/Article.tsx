@@ -28,7 +28,7 @@ const Article:FC<IProps> = ({title, date, author}) => {
                     </div>
                 </div>
                 <div className={classes.title}>{title}</div>
-                <div className={classes.arrow}><Arrow/></div>
+                <div className={classes.arrow}><Arrow color="#ECECEC"/></div>
             </div>
         </div>
     );

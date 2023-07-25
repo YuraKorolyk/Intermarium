@@ -16,7 +16,7 @@ const Practice: FC<IProps> = ({bg, title, description, isAlone}) => {
                 <h3 className={`${classes.title} ${isAlone ? classes.alone : ''}`}>{title}</h3>
                 <span className={`${classes.description} ${isAlone ? classes.alone : ''}`}>{description}</span>
                 <div className={classes.arrow}>
-                    <Arrow />
+                    <Arrow color="#ECECEC"/>
                 </div>
             </div>
         </div>

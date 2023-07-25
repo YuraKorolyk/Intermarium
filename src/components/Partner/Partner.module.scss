@@ -4,97 +4,148 @@
   display: flex;
   flex-direction: column;
   width: 435px;
-  .photo {
+  .main {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 631px;
-    span {
-      padding: 8px 0;
-      color: $light;
-      font-size: 45px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      text-transform: uppercase;
-      background: rgba(40, 110, 141, 0.70);
-      display: flex;
-      justify-content: center;
-    }
-  }
-  .text {
-    margin: 10px 0 20px;
-    color: $accent;
-    text-align: center;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-  .title {
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-}
-@media (max-width: $tabletBig) {
-  .wrapper {
-    width: 380px;
+    //height: 100%;
+    position: relative;
+    padding-bottom: 40px;
     .photo {
-      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 631px;
       span {
-        font-size: 38px;
-        padding: 6px 0;
+        padding: 8px 0;
+        color: $light;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        background: rgba(40, 110, 141, 0.70);
+        display: flex;
+        justify-content: center;
       }
     }
     .text {
-      font-size: 20px;
+      margin: 10px 0 20px;
+      color: $accent;
+      text-align: center;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
     }
     .title {
-      font-size: 17px;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      min-height: 100px;
+    }
+    .arrow {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: scale(0.8) rotate(90deg);
+      cursor: pointer;
+      //transform-origin: 100% 100%;
+      transition: .2s;
+      &.active {
+        transform: scale(0.8) rotate(-90deg);
+      }
+    }
+  }
+    .description {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+      visibility: hidden;
+      opacity: 0;
+      transition: .2s;
+      height: 0;
+      &.active {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        height: auto;
+      }
+    }
+}
+@media (max-width: $tabletBig) {
+  .wrapper {
+      width: 380px;
+    .main {
+      .photo {
+        min-height: 500px;
+        span {
+          font-size: 38px;
+          padding: 6px 0;
+        }
+      }
+      .text {
+        font-size: 20px;
+      }
+      .title {
+        font-size: 17px;
+      }
+    }
+    .description {
+      font-size: 15px;
     }
   }
 }
 @media (max-width: $tablet) {
-  .wrapper {
-    width: 264px;
-    .photo {
-      min-height: 382px;
-      span {
-        font-size: 25px;
-        padding: 4px 0;
-      }
-    }
-    .text {
-      font-size: 16px;
-    }
-    .title {
-      font-size: 14px;
-    }
-  }
+ .wrapper {
+     width: 264px;
+   .main {
+     .photo {
+       min-height: 382px;
+       span {
+         font-size: 25px;
+         padding: 4px 0;
+       }
+     }
+     .text {
+       font-size: 16px;
+     }
+     .title {
+       font-size: 14px;
+       min-height: 90px;
+     }
+   }
+ }
 }
 
 @media (max-width: $tablet) {
   .wrapper {
-    width: 264px;
-    .photo {
-      min-height: 382px;
-      span {
-        font-size: 25px;
-        padding: 4px 0;
+      width: 264px;
+    .main {
+      .photo {
+        min-height: 382px;
+        span {
+          font-size: 25px;
+          padding: 4px 0;
+        }
+      }
+      .text {
+        font-size: 16px;
+      }
+      .title {
+        font-size: 14px;
+        min-height: 80px;
+        padding: 0 15px;
       }
     }
-    .text {
-      font-size: 16px;
-    }
-    .title {
-      font-size: 14px;
+    .description {
+      font-size: 12px;
     }
   }
 }
