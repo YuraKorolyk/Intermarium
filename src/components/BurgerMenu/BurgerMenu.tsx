@@ -49,15 +49,15 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger}) => {
                         className={isPracticeOpen ? `${classes.practiceList} ${classes.active}` : classes.practiceList}
                     >
                         <Link
-                            href={"/test"}
-                            className={pathname === "/test" ? classes.active : ''}
+                            href={"/practices/migrationLaw"}
+                            className={pathname === "/practices/migrationLaw" ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
                             — міграційне право
                         </Link>
                         <Link
-                            href={"/test"}
-                            className={pathname === "/test" ? classes.active : ''}
+                            href={"/practices/corporateLaw"}
+                            className={pathname === "/practices/corporateLaw" ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
                             — корпоративне право

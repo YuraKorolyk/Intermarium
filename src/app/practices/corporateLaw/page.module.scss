@@ -1,0 +1,138 @@
+@import "src/styles/base/vars";
+
+.intro {
+  padding: 30px 0 70px;
+  .wrapper {
+    display: flex;
+    column-gap: 70px;
+    .text {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+      p {
+        &:first-child {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .intro {
+    .wrapper {
+      display: block;
+      .title {
+        margin-bottom: 20px;
+      }
+      .text {
+        font-size: 25px;
+        p {
+          &:first-child {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .intro {
+    .wrapper {
+      .text {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .intro {
+    .wrapper {
+      .title {
+        .bottomText {
+          font-size: 65px;
+        }
+      }
+      .text {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// order
+.order {
+  background: $dark;
+  padding: 60px;
+  .wrapper {
+    .title {
+      margin-bottom: 30px;
+    }
+    .list {
+      color: $light;
+      .numbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        column-gap: 60px;
+        .textTitle {
+          font-size: 25px;
+          font-weight: 500;
+          line-height: normal;
+          padding-bottom: 20px;
+        }
+        .arrow {
+          padding: 20px;
+          transform: rotate(90deg) scale(0.6);
+          transition: .2s;
+          &.active {
+            transform: rotate(-90deg) scale(0.6);
+          }
+        }
+      }
+      .description {
+        border-top: 3px solid $accent;
+        margin-top: -5px;
+        .text {
+          color: rgba(236, 236, 236, 0.80);
+          font-size: 20px;
+          font-weight: 500;
+          line-height: normal;
+          display: none;
+          margin: 19px 0 0 120px;
+          &.active {
+            display: block;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+// different
+.different {
+  padding: 60px 0 80px;
+  .wrapper {
+    .title {
+      color: $accent;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    .list {
+      li {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .text {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}

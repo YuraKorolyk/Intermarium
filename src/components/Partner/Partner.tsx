@@ -11,7 +11,7 @@ interface IProps {
 const Partner:FC<IProps> = ({name, title, description}) => {
     const partnerName = name === "Taras" ? "Тарас Горбатюк" : name === "Yurii" ? "Юрій Бєлоконь" : "невідомо";
 
-    const [descriptionOpened, isDescriptionOpened] = useState<boolean>(false)
+    const [descriptionOpened, setDescriptionOpened] = useState<boolean>(false)
 
     return (
         <div className={classes.wrapper}>
@@ -27,7 +27,7 @@ const Partner:FC<IProps> = ({name, title, description}) => {
                 </div>
                 <div
                     className={descriptionOpened ? `${classes.arrow} ${classes.active}` : classes.arrow}
-                    onClick={()=> isDescriptionOpened(!descriptionOpened)}
+                    onClick={()=> setDescriptionOpened((prevState) => !prevState)}
                 >
                     <Arrow color="#286E8D"/>
                 </div>
