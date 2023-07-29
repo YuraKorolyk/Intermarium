@@ -1,18 +1,21 @@
 'use client';
-import React, {useState} from 'react';
+import React from 'react';
 import Container from "@/components/Layouts/Container/Container";
 import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 import classes from "./page.module.scss";
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
-import One from "../../../../public/assets/icons/One";
-import Arrow from "../../../../public/assets/icons/Arrow";
+import One from "../../../../public/assets/icons/Numbers/One";
 import Button from "@/components/Button/Button";
+import LinkWithDropdown from "@/components/LinkWithDropdown/LinkWithDropdown";
+import Two from "../../../../public/assets/icons/Numbers/Two";
+import Three from "../../../../public/assets/icons/Numbers/Three";
+import Four from "../../../../public/assets/icons/Numbers/Four";
+import Five from "../../../../public/assets/icons/Numbers/Five";
 
 const Page = () => {
-  const [descriptionOpened, setDescriptionOpened] = useState<boolean>(false)
   return (
     <>
-      <HeaderBackground/>
+      <HeaderBackground background="2"/>
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>
@@ -43,23 +46,51 @@ const Page = () => {
             </TextWithLine>
           </div>
           <div className={classes.list}>
-            <div className={classes.numbers}>
-              <div className={classes.iconBox}>
-                <One/>
-              </div>
-              <div className={classes.textTitle}>
-                Підготовка корпоративної документації (статути, акціонерні угоди, локальні нормативні акти)
-              </div>
-              <div className={descriptionOpened ? `${classes.arrow} ${classes.active}` : classes.arrow} onClick={()=> setDescriptionOpened((prevState) => !prevState)}>
-                <Arrow color="#ECECEC"/>
-              </div>
-            </div>
-            <div className={classes.description}>
-              <div className={descriptionOpened ? `${classes.text} ${classes.active}` : classes.text}>
-                Корпоративні спори за своїм характером відносяться до категорії найбільш складних справ, і пов’язані зі значними матеріальними витратами. Найчастіше результат такого спору безпосередньо залежить від того, як складені установчі документи. Установчі документи регулюють та визначають найбільш важливі, основоположні поняття та засади діяльності
-                суб’єкта господарювання.
-              </div>
-            </div>
+            <LinkWithDropdown
+              dropdown={true}
+              title="Підготовка корпоративної документації (статути, акціонерні угоди, локальні нормативні акти)"
+              description="Корпоративні спори за своїм характером відносяться до категорії найбільш складних справ, і пов’язані зі
+          значними матеріальними витратами. Найчастіше результат такого спору безпосередньо залежить від того, як
+          складені установчі документи. Установчі документи регулюють та визначають найбільш важливі, основоположні
+          поняття та засади діяльності
+          суб’єкта господарювання."
+            >
+              <One/>
+            </LinkWithDropdown>
+            <LinkWithDropdown
+              dropdown={true}
+              title="Забезпечуємо комплексне представництво в процесі купівлі бізнесу, що включає в себе проведення due diligence"
+              description="Під час купівлі будь-якого дорогого активу природним бажанням покупця є дізнатися всі нюанси щодо об'єкта майбутньої угоди. Процедура DD є дієвим та ефективним механізмом, який дозволяє не лише отримати справжнє уявлення про потенційні активи, але й запобігти появі «неприємних сюрпризів» після закриття угоди. "
+            >
+              <Two/>
+            </LinkWithDropdown>
+            <LinkWithDropdown
+              dropdown={true}
+              title="Створення та реєстрацію суб'єктів господарювання різних організаційно-правових форм, а також відокремлених підрозділів юридичних осіб"
+              description="Intermarium law firm має значний досвід в реєстрації усіх форм суб'єктів господарювання. Ми допомагаємо у створення та реєстрації товариства з обмеженою відповідальністю, акціонерних товариств, різних типів кооперативів, політичних партій, громадських організацій, волонтерських організацій, благодійний фондів, іноземних представництв, дочірніх підприємств в Україні та надаємо супровід на всій стадії процесу."
+            >
+              <Three/>
+            </LinkWithDropdown>
+            <LinkWithDropdown
+              dropdown={true}
+              title="Оформлення ліцензій та дозволів, реєстрацію у державних органах та дотримання інших регуляторних вимог, що виникають як при створенні бізнесу, так і у процесі ведення господарської діяльності"
+              description="В Україні для ведення легального бізнесу достатньо бути зареєстрованим у встановленому законом порядку та вести свою діяльність не порушуючи чинного законодавства. Проте, в деяких випадках недостатньо бути зареєстрованим як суб’єкт господарювання (юридичною або фізичною особою-підприємцем) для легальної підприємницької діяльності.
+В законодавстві України встановлено 33 види діяльності, для провадження яких необхідно отримати дозвіл – ліцензію.
+Порушення ліцензійних умов може бути виявлено органом ліцензування під час перевірки суб'єктів господарювання. У такому випадку орган ліцензування видає розпорядження про усунення порушень ліцензійних умов. У зазначений в такому розпорядженні термін ліцензіат повинен надати органу ліцензування інформацію про усунення порушень.
+
+Intermarium law firm пропонує повний комплекс послуг з отримання бізнесом відповідних ліцензій та їх реєстрацію.
+"
+            >
+              <Four/>
+            </LinkWithDropdown>
+            <LinkWithDropdown
+              dropdown={true}
+              title="Консультуємо іноземних клієнтів щодо механізмів інвестування в Україні"
+              description="Україна завжди була цікавою для іноземних інвесторів та залишається такою попри війну.  Неймовірний результат за підсумками 2022 року продемонструвала українська IT-індустрія, яка зросла на 5,8%. Привабливими для інвесторів залишаються також аграрна галузь, фармацевтика, енергетика, транспорт та інфраструктура, будівництво, FMCG а також зростає інтерес до military tech, військової/оборонної сфери. Intermarium law firm займається дослідженням іноземних інвестицій та надає іноземцям консультації щодо механізмів інвестування а також консультуємо з питань захисту іноземних інвестицій в Україні."
+            >
+              <Five/>
+            </LinkWithDropdown>
+
           </div>
         </Container>
       </div>
@@ -68,18 +99,21 @@ const Page = () => {
           <div className={classes.title}>
             Наша команда супроводжує у різних галузях та секторах бізнесу:
           </div>
-          <ul className={classes.list}>
-            <li>галузь нерухомості</li>
-            <li>галузь транспорту та логістики</li>
-            <li>галузь рітейлу</li>
-            <li>туристичних послугах</li>
-            <li>освітніх послугах</li>
-            <li>і багато інших</li>
-          </ul>
-          <div className={classes.text}>
-            Однією із основних цілей Intermarium Law Firm є максимальне сприяння іноземним клієнтам у веденні бізнесу на території України.
+          <div className={classes.list}>
+            <ul>
+              <li>галузь нерухомості</li>
+              <li>галузь транспорту та логістики</li>
+              <li>галузь рітейлу</li>
+              <li>туристичних послугах</li>
+              <li>освітніх послугах</li>
+              <li>і багато інших</li>
+            </ul>
+            <div className={classes.text}>
+              Однією із основних цілей Intermarium Law Firm є максимальне сприяння іноземним клієнтам у веденні бізнесу
+              на території України.
+            </div>
+            <Button text="Залишити заявку"/>
           </div>
-          <Button text="Залишити заявку"/>
         </Container>
       </div>
     </>

@@ -7,7 +7,7 @@ import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 const Page = () => {
     return (
         <>
-            <HeaderBackground/>
+            <HeaderBackground background="1"/>
             <div className={classes.intro}>
                 <Container className={classes.wrapper}>
                    <div className={classes.title}>

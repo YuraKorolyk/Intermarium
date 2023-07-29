@@ -3,9 +3,9 @@ import Container from "@/components/Layouts/Container/Container";
 import CircleLogo from "../../public/assets/icons/CircleLogo";
 import classes from "./page.module.scss"
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
-import One from "../../public/assets/icons/One";
-import Three from "../../public/assets/icons/Three";
-import Two from "../../public/assets/icons/Two";
+import One from "../../public/assets/icons/Numbers/One";
+import Three from "../../public/assets/icons/Numbers/Three";
+import Two from "../../public/assets/icons/Numbers/Two";
 import Practice from "@/components/Practice/Practice";
 import Article from "@/components/Article/Article";
 import Button from "@/components/Button/Button";

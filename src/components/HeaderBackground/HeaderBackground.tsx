@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {FC} from 'react';
 import classes from './HeaderBackground.module.scss';
 
-const HeaderBackground = () => {
+interface IProps {
+    background: string,
+}
+
+const HeaderBackground:FC<IProps> = ({background}) => {
     return (
-        <div className={classes.wrapper}>
+        <div
+          className={classes.wrapper}
+          style={{backgroundImage: `url("/assets/images/headerBackground/${background}.jpg")`}}
+        >
 
         </div>
     );

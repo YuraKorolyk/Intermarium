@@ -1,0 +1,120 @@
+@import "src/styles/base/vars";
+
+.list {
+  color: $light;
+  .numbers {
+    display: flex;
+    .titleArrowBox {
+      align-items: end;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .textTitle {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: normal;
+        padding-bottom: 20px;
+        margin-left: 50px;
+      }
+      .arrow {
+        padding: 20px 0;
+        transform: rotate(90deg) scale(0.6);
+        transition: .2s;
+        cursor: pointer;
+        &.active {
+          transform: rotate(-90deg) scale(0.6);
+        }
+      }
+      .arrowLink {
+        transform: scale(0.6);
+        cursor: pointer;
+        transform-origin: 70% 0;
+      }
+    }
+    .iconBox {
+      min-width: 100px;
+    }
+
+  }
+  .description {
+    border-top: 3px solid $accent;
+    margin-top: -5px;
+    .text {
+      color: rgba(236, 236, 236, 0.80);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: normal;
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      margin: 19px 0 0 120px;
+      transition: .2s;
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .list {
+    .numbers {
+      .titleArrowBox {
+        .textTitle {
+          font-size: 20px;
+          padding-bottom: 20px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .list {
+    .numbers {
+      .iconBox {
+        min-width: 85px;
+        transform-origin: 0 100%;
+        transform: scale(0.85);
+      }
+      .titleArrowBox {
+        .textTitle {
+          font-size: 16px;
+          padding-bottom: 20px;
+          margin-left: 20px;
+        }
+      }
+    }
+    .description {
+      .text {
+        font-size: 17px;
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .list {
+    .numbers {
+      .iconBox {
+        min-width: 60px;
+        transform-origin: 0 100%;
+        transform: scale(0.6);
+      }
+      .titleArrowBox {
+        .textTitle {
+          font-size: 12px;
+          padding-bottom: 15px;
+          margin-left: 0;
+        }
+      }
+    }
+    .description {
+      .text {
+        font-size: 10px;
+        margin: 19px 0 0 0;
+      }
+    }
+  }
+}

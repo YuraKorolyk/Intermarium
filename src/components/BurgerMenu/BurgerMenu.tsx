@@ -63,8 +63,8 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger}) => {
                             — корпоративне право
                         </Link>
                         <Link
-                            href={"/test"}
-                            className={pathname === "/test" ? classes.active : ''}
+                            href={"/practices/visaSupport"}
+                            className={pathname === "/practices/visaSupport" ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
                             — Візова підтримка
