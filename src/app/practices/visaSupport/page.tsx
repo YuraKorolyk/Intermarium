@@ -39,19 +39,19 @@ const Page = () => {
           </div>
           <div className={classes.link}>
             <LinkWithDropdown
-              dropdown={false}
+              dropdown="link"
               title="Допомога в отриманні транзитної та бізнес візи в Молдову"
             >
               <One/>
             </LinkWithDropdown>
             <LinkWithDropdown
-              dropdown={false}
+              dropdown="link"
               title="допомога в отриманні транзитної чи туристичної візи в Польщу, Румунію, Угорщину"
             >
               <Two/>
             </LinkWithDropdown>
             <LinkWithDropdown
-              dropdown={false}
+              dropdown="link"
               title="допомога в отриманні робочих запрошень від польських компаній
 для сезонної роботи (на 9 місяців) або для працівників будівельної
 сфери (на 3 роки), а також допомога в отриманні робочих віз"
@@ -59,7 +59,7 @@ const Page = () => {
               <Three/>
             </LinkWithDropdown>
             <LinkWithDropdown
-              dropdown={false}
+              dropdown="link"
               title="допомога з отриманням статусу електронного резидента Естонії та відкриттям компанії в Естонії для тих, хто планує масштабувати свій бізнес
 та вивести його на загальноєвропейський рівень та укладати контракти
 з європейськими партнерами/постачальниками та підрядниками"

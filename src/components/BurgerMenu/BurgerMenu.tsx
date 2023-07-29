@@ -70,15 +70,15 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger}) => {
                             — Візова підтримка
                         </Link>
                         <Link
-                            href={"/test"}
-                            className={pathname === "/test" ? classes.active : ''}
+                            href={"/practices/dueDiligence"}
+                            className={pathname === "/practices/dueDiligence" ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
                             — Юридичний дью-ділідженс
                         </Link>
                         <Link
-                            href={"/test"}
-                            className={pathname === "/test" ? classes.active : ''}
+                            href={"/practices/customerService"}
+                            className={pathname === "/practices/customerService" ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
                             — Абонентське обслуговування

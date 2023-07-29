@@ -7,8 +7,7 @@ interface IProps {
   title: string,
   description?: string,
   children: ReactNode,
-  dropdown: boolean,
-  // arrowClickHandler:()=>void,
+  dropdown: string,
 }
 
 const LinkWithDropdown: FC<IProps> = ({title, description, children, dropdown}) => {
@@ -30,18 +29,19 @@ const LinkWithDropdown: FC<IProps> = ({title, description, children, dropdown}) 
           <div className={classes.textTitle}>
             {title}
           </div>
-          {dropdown ? (
+          {dropdown === "dropdown" ? (
             <div className={descriptionOpened ? `${classes.arrow} ${classes.active}` : classes.arrow}
                  onClick={arrowDropdownHandler}>
               <Arrow color="#ECECEC"/>
             </div>
-          ) : (
+          ) : dropdown === "link" ? (
             <div
               className={classes.arrowLink}
               onClick={arrowLinkHandler}>
               <Arrow color="#ECECEC"/>
             </div>
-          )}
+          ) : null
+          }
         </div>
       </div>
       <div className={classes.description}>
