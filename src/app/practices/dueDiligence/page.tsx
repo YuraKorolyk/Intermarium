@@ -69,7 +69,7 @@ const Page = () => {
               </div>
               <ul>
                 <li>перевірка законності права власності власника (договір купівлі-продажу, дарча, спадок, ін.)</li>
-                <li>перевірка на наявність обтяжень, судових або виконавчих проваджень щодо об'єкта нерухомості,
+                <li>перевірка на наявність обтяжень, судових або виконавчих проваджень щодо об&apos;єкта нерухомості,
                   перевірка
                   арештів, іпотек
                 </li>
@@ -82,7 +82,7 @@ const Page = () => {
 
             <div className={classes.checkList}>
               <div className={classes.title}>
-                <TextWithLine topText="Перевірка Об'єкту" topColor="light">
+                <TextWithLine topText="Перевірка Об&apos;єкту" topColor="light">
                   <span className={`${classes.bottomText} bottomTextWithLine`}>інвестування</span>
                 </TextWithLine>
               </div>
