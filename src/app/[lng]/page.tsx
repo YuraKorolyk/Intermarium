@@ -11,7 +11,8 @@ import Article from "@/components/Article/Article";
 import Button from "@/components/Button/Button";
 import React from "react";
 import {useRouter} from "next/navigation";
-import {useTranslation} from "@/app/i18n/client";
+import {useTranslation} from "react-i18next";
+// import {useTranslation} from "@/app/i18n/client";
 interface HomeProps {
   params: {
     lng: string;
@@ -19,7 +20,8 @@ interface HomeProps {
 }
 export default function Home({ params: { lng } }:HomeProps) {
   const router = useRouter();
-  const { t } = useTranslation(lng, "client-page")
+  // const { t } = useTranslation(lng, "client-page")
+  const { t } = useTranslation('homePage');
   const practiceClickHandler = (linkTo: string): void => {
     router.push(`/practices/${linkTo}`)
   }
@@ -32,8 +34,7 @@ export default function Home({ params: { lng } }:HomeProps) {
             <div className={classes.logoBox}>
               <CircleLogo/>
             </div>
-            <span className={classes.text}>{t('test')}<br/>aut in scuto</span>
-            {/*<span className={classes.text}>AUT CUM SCUTO,<br/>aut in scuto</span>*/}
+            <span className={classes.text}>AUT CUM SCUTO,<br/>aut in scuto</span>
           </div>
         </Container>
       </div>
@@ -44,8 +45,8 @@ export default function Home({ params: { lng } }:HomeProps) {
             {/*<Image src="/assets/images/bothVertical.jpg" alt="bg"/>*/}
           </div>
           <div className={classes.title}>
-            <TextWithLine topText="Наша" topColor="dark">
-              <span className={`${classes.bottomText} bottomTextWithLine`}>Місія</span>
+            <TextWithLine topText={t('mission.title.topText')} topColor="dark">
+              <span className={`${classes.bottomText} bottomTextWithLine`}>{t('mission.title.bottomText')}</span>
             </TextWithLine>
           </div>
           <div className={classes.text}>

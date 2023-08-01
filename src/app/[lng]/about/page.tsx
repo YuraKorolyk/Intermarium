@@ -1,5 +1,5 @@
 "use client"
-import React, {FC} from 'react';
+import React from 'react';
 import classes from "./page.module.scss"
 import Container from "@/components/Layouts/Container/Container";
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
@@ -10,7 +10,6 @@ import {useTranslation} from "react-i18next";
 
 const Page = () => {
 
-  const {t} = useTranslation()
 
   return (
     <>
@@ -22,7 +21,7 @@ const Page = () => {
             </div>
             <div className={classes.title}>
               <TextWithLine topText="Про" topColor="dark">
-                <span className={`${classes.bottomText} bottomTextWithLine`}>{t('test')}</span>
+                <span className={`${classes.bottomText} bottomTextWithLine`}>Нас</span>
               </TextWithLine>
             </div>
             <div className={classes.description}>

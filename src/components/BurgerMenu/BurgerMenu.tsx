@@ -13,7 +13,7 @@ interface IProps {
 }
 const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger, lng}) => {
 
-    const { i18n } = useTranslation()
+    const { t, i18n } = useTranslation('layout')
 
     const pathname = usePathname();
     useEffect(()=> {
@@ -40,20 +40,20 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger, lng}) => {
                     //     query: lng, // the data
                     // }}
                 >
-                    Головна сторінка
+                    {t('burgerMenu.main')}
                 </Link>
                 <Link
                     className={pathname === `/${lng}/about` ? classes.active : ''}
                     onClick={onCloseBurger}
                     href={`/${lng}/about`}
                 >
-                     Про нас
+                    {t('burgerMenu.about')}
                 </Link>
                 <div
                     onClick={practiceClickHandler}
                     className={classes.practice}
                 >
-                    <span>Практики</span>
+                    <span>{t('burgerMenu.practice.title')}</span>
                     <div
                         className={isPracticeOpen ? `${classes.practiceList} ${classes.active}` : classes.practiceList}
                     >
@@ -62,35 +62,35 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger, lng}) => {
                             className={pathname === "/practices/migrationLaw" ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
-                            — міграційне право
+                            {t('burgerMenu.practice.migrationLaw')}
                         </Link>
                         <Link
                             href={"/practices/corporateLaw"}
                             className={pathname === "/practices/corporateLaw" ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
-                            — корпоративне право
+                            {t('burgerMenu.practice.corporateLaw')}
                         </Link>
                         <Link
                             href={"/practices/visaSupport"}
                             className={pathname === "/practices/visaSupport" ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
-                            — Візова підтримка
+                            {t('burgerMenu.practice.visaSupport')}
                         </Link>
                         <Link
                             href={"/practices/dueDiligence"}
                             className={pathname === "/practices/dueDiligence" ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
-                            — Юридичний дью-ділідженс
+                            {t('burgerMenu.practice.dueDiligence')}
                         </Link>
                         <Link
                             href={"/practices/customerService"}
                             className={pathname === "/practices/customerService" ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
-                            — Абонентське обслуговування
+                            {t('burgerMenu.practice.customerService')}
                         </Link>
                     </div>
                 </div>
@@ -99,14 +99,14 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger, lng}) => {
                     onClick={onCloseBurger}
                     href={'/blog'}
                 >
-                    Блог
+                    {t('burgerMenu.blog')}
                 </Link>
                 <Link
                     className={pathname === "/contacts" ? classes.active : ''}
                     onClick={onCloseBurger}
                     href={'/contacts'}
                 >
-                    Контакти
+                    {t('burgerMenu.contacts')}
                 </Link>
 
             </Container>

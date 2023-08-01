@@ -6,6 +6,7 @@ import Container from "@/components/Layouts/Container/Container";
 import LanguageSwitcher from "@/components/LanguageSwitcher/LanguageSwitcher";
 import BurgerMenu from "@/components/BurgerMenu/BurgerMenu";
 import {useRouter} from "next/navigation";
+import {useTranslation} from "react-i18next";
 
 interface IProps {
     lng:string
@@ -20,6 +21,7 @@ const Header:FC<IProps> = ({lng}) => {
         setBurgerOpen(false)
     }
     const router = useRouter();
+    const { t } = useTranslation('layout')
     return (
         <header className={classes.header}>
             <BurgerMenu isOpen={burgerOpen} onCloseBurger={closeBurgerHandler} lng={lng}/>
@@ -28,7 +30,7 @@ const Header:FC<IProps> = ({lng}) => {
                     <MainLogo isDark={true}/>
                 </div>
                 <div className={classes.headerButtons}>
-                    <span className={classes.blogLink}>Юридичний блог</span>
+                    <span className={classes.blogLink}>{t('header.lawBlog')}</span>
                     <LanguageSwitcher lng={lng}/>
                     <div
                       className={burgerOpen ? `${classes.burger} ${classes.active}` : classes.burger}

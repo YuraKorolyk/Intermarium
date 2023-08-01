@@ -1,0 +1,19 @@
+{
+  "header": {
+    "lawBlog": "lawyer blog"
+  },
+  "burgerMenu" : {
+    "main": "Main page",
+    "about": "About us",
+    "practice": {
+      "title": "Practices",
+      "migrationLaw": "— migration law",
+      "corporateLaw": "— corporate law",
+      "visaSupport": "— visa support",
+      "dueDiligence": "— lawyer due-diligence",
+      "customerService": "— customer service"
+    },
+    "blog": "blog",
+    "contacts": "contacts"
+  }
+}

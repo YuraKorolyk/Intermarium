@@ -1,0 +1,19 @@
+{
+  "header": {
+    "lawBlog": "Юридичний блог"
+  },
+  "burgerMenu" : {
+    "main": "Головна сторінка",
+    "about": "Про нас",
+    "practice": {
+      "title": "Практики",
+      "migrationLaw": "— міграційне право",
+      "corporateLaw": "— корпоративне право",
+      "visaSupport": "— Візова підтримка",
+      "dueDiligence": "— Юридичний дью-ділідженс",
+      "customerService": "— Абонентське обслуговування"
+    },
+    "blog": "Блог",
+    "contacts": "Контакти"
+  }
+}
