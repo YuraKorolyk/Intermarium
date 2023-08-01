@@ -4,13 +4,13 @@ import Container from "@/components/Layouts/Container/Container";
 import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 import classes from "./page.module.scss";
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
-import One from "../../../../public/assets/icons/Numbers/One";
+import One from "../../../../../public/assets/icons/Numbers/One";
 import Button from "@/components/Button/Button";
 import LinkWithDropdown from "@/components/LinkWithDropdown/LinkWithDropdown";
-import Two from "../../../../public/assets/icons/Numbers/Two";
-import Three from "../../../../public/assets/icons/Numbers/Three";
-import Four from "../../../../public/assets/icons/Numbers/Four";
-import Five from "../../../../public/assets/icons/Numbers/Five";
+import Two from "../../../../../public/assets/icons/Numbers/Two";
+import Three from "../../../../../public/assets/icons/Numbers/Three";
+import Four from "../../../../../public/assets/icons/Numbers/Four";
+import Five from "../../../../../public/assets/icons/Numbers/Five";
 
 const Page = () => {
   return (

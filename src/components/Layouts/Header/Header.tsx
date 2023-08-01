@@ -1,11 +1,17 @@
 "use client"
-import React, {useState} from 'react';
+import React, {FC, useState} from 'react';
 import classes from "./Header.module.scss"
 import MainLogo from "../../../../public/assets/icons/MainLogo";
 import Container from "@/components/Layouts/Container/Container";
 import LanguageSwitcher from "@/components/LanguageSwitcher/LanguageSwitcher";
 import BurgerMenu from "@/components/BurgerMenu/BurgerMenu";
-const Header = () => {
+import {useRouter} from "next/navigation";
+
+interface IProps {
+    lng:string
+}
+
+const Header:FC<IProps> = ({lng}) => {
     const [burgerOpen, setBurgerOpen] = useState<boolean>(false)
     const handleBurgerClick = () => {
         setBurgerOpen((prevState) => !prevState);
@@ -13,16 +19,17 @@ const Header = () => {
     const closeBurgerHandler = () => {
         setBurgerOpen(false)
     }
+    const router = useRouter();
     return (
         <header className={classes.header}>
-            <BurgerMenu isOpen={burgerOpen} onCloseBurger={closeBurgerHandler}/>
+            <BurgerMenu isOpen={burgerOpen} onCloseBurger={closeBurgerHandler} lng={lng}/>
             <Container className={classes.wrapper}>
-                <div className={classes.logoBox}>
+                <div className={classes.logoBox} onClick={()=> router.push(`/${lng}`)}>
                     <MainLogo isDark={true}/>
                 </div>
                 <div className={classes.headerButtons}>
                     <span className={classes.blogLink}>Юридичний блог</span>
-                    <LanguageSwitcher/>
+                    <LanguageSwitcher lng={lng}/>
                     <div
                       className={burgerOpen ? `${classes.burger} ${classes.active}` : classes.burger}
                       onClick={handleBurgerClick}

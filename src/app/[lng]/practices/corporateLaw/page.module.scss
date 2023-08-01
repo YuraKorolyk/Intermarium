@@ -1,46 +1,44 @@
 @import "src/styles/base/vars";
-
 .intro {
-  padding: 30px 0 60px;
+  padding: 30px 0 70px;
   .wrapper {
-    .title {
-      margin-bottom: 15px;
-    }
+    display: flex;
+    column-gap: 70px;
     .text {
-      padding-right: 25%;
       font-size: 30px;
       font-weight: 400;
       line-height: normal;
       p {
         &:first-child {
-          margin-bottom: 20px;
+          margin-bottom: 50px;
         }
-      }
-    }
-  }
-}
-@media (max-width: $tabletBig) {
-  .intro {
-    .wrapper {
-      .text {
-        font-size: 25px;
       }
     }
   }
 }
 
-@media (max-width: $tablet) {
+@media (max-width: $tabletBig) {
   .intro {
-    padding: 30px 0 50px;
     .wrapper {
+      display: block;
       .title {
-        .bottomText {
-          font-size: 61px;
-        }
+        margin-bottom: 20px;
       }
       .text {
-        padding-right: 0;
-        text-align: justify;
+        font-size: 25px;
+        p {
+          &:first-child {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .intro {
+    .wrapper {
+      .text {
         font-size: 20px;
       }
     }
@@ -51,59 +49,49 @@
     .wrapper {
       .title {
         .bottomText {
-          font-size: 45px;
+          font-size: 65px;
         }
       }
       .text {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }
 }
 
-
-
-.questions {
+// order
+.order {
   background: $dark;
-  padding: 60px 0 70px;
+  padding: 60px 0;
   .wrapper {
     .title {
       margin-bottom: 30px;
-      .bottomText {
-        font-size: 90px;
-      }
     }
-  }
-}
-
-@media (max-width: $tablet) {
-  .questions {
-    .wrapper {
-      .title {
-        .bottomText {
-          font-size: 61px;
-        }
-      }
+    .list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
     }
   }
 }
 @media (max-width: $mobile) {
-  .questions {
-    padding: 40px 0 50px;
+  .order {
     .wrapper {
       .title {
         margin-bottom: 0;
         .bottomText {
-          font-size: 45px;
+          font-size: 55px;
         }
+      }
+      .list {
+        row-gap: 10px;
       }
     }
   }
-
 }
 
-
-.help {
+// different
+.different {
   padding: 60px 0 80px;
   .wrapper {
     .title {
@@ -137,11 +125,19 @@
           }
         }
       }
+      .text {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: normal;
+        padding: 0px 100px;
+      }
     }
   }
 }
 @media (max-width: $tabletBig) {
-  .help {
+  .different {
     .wrapper {
       .title {
         font-size: 25px;
@@ -158,12 +154,16 @@
             }
           }
         }
+        .text {
+          font-size: 25px;
+          padding: 0;
+        }
       }
     }
   }
 }
 @media (max-width: $tablet) {
-  .help {
+  .different {
     padding: 40px 0 60px;
     .wrapper {
       .title {
@@ -181,12 +181,16 @@
             }
           }
         }
+        .text {
+          font-size: 20px;
+          padding: 0;
+        }
       }
     }
   }
 }
 @media (max-width: $mobile) {
-  .help {
+  .different {
     .wrapper {
       .title {
         font-size: 16px;
@@ -199,6 +203,10 @@
             font-size: 14px;
 
           }
+        }
+        .text {
+          font-size: 16px;
+          padding: 0;
         }
       }
     }

@@ -3,11 +3,12 @@ import classes from "./Button.module.scss";
 
 interface IProps {
     text: string,
+    onClick?: ()=>void,
 }
 
-const Button:FC<IProps> = ({text}) => {
+const Button:FC<IProps> = ({text, onClick}) => {
     return (
-        <div className={classes.button}>
+        <div className={classes.button}  onClick={onClick && onClick}>
             {text}
         </div>
     );

@@ -4,15 +4,16 @@ import classes from './page.module.scss';
 import Container from "@/components/Layouts/Container/Container";
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import LinkWithDropdown from "@/components/LinkWithDropdown/LinkWithDropdown";
-import One from "../../../../public/assets/icons/Numbers/One";
-import Two from "../../../../public/assets/icons/Numbers/Two";
-import Three from "../../../../public/assets/icons/Numbers/Three";
-import Four from "../../../../public/assets/icons/Numbers/Four";
-import Five from "../../../../public/assets/icons/Numbers/Five";
-import Six from "../../../../public/assets/icons/Numbers/Six";
-import Seven from "../../../../public/assets/icons/Numbers/Seven";
-import Eight from "../../../../public/assets/icons/Numbers/Eight";
-import Nine from "../../../../public/assets/icons/Numbers/Nine";
+import One from "../../../../../public/assets/icons/Numbers/One";
+import Two from "../../../../../public/assets/icons/Numbers/Two";
+import Three from "../../../../../public/assets/icons/Numbers/Three";
+import Four from "../../../../../public/assets/icons/Numbers/Four";
+import Five from "../../../../../public/assets/icons/Numbers/Five";
+import Six from "../../../../../public/assets/icons/Numbers/Six";
+import Seven from "../../../../../public/assets/icons/Numbers/Seven";
+import Eight from "../../../../../public/assets/icons/Numbers/Eight";
+import Nine from "../../../../../public/assets/icons/Numbers/Nine";
+import Button from "@/components/Button/Button";
 
 const Page = () => {
   return (
@@ -107,6 +108,18 @@ const Page = () => {
         <Container className={classes.wrapper}>
           <div className={classes.title}>
             Переваги абонентського обслуговування:
+          </div>
+          <ul>
+            <li></li>
+          </ul>
+          <div className={classes.text}>
+            <p>Якщо вам необхідна <span className="highlightDark">постійна юридична підтримка</span> але вам фінансово не вигідно утримувати юридичний відділ, хочете <span className="highlightDark">бути в курсі змін у бізнесі та щоб вас попереджали про ризики</span>, обирайте <span className="highlightDark">абонентське обслуговування</span>.</p>
+            <p>
+              <span className="highlightDark">Перелік послуг</span> в межах абонентського обслуговування визначається <span className="highlightDark">індивідуально з урахуванням специфіки вашої діяльності</span> та за погодженням з Клієнтом.
+            </p>
+          </div>
+          <div className={classes.button}>
+            <Button text="залишити заявку"/>
           </div>
         </Container>
       </div>

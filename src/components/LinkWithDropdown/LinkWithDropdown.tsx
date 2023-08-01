@@ -2,22 +2,24 @@
 import React, {FC, ReactNode, useState} from 'react';
 import classes from "./LinkWithDropdown.module.scss";
 import Arrow from "../../../public/assets/icons/Arrow";
+import {useRouter} from "next/navigation";
 
 interface IProps {
   title: string,
   description?: string,
   children: ReactNode,
   dropdown: string,
+  linkTo?: string,
 }
 
-const LinkWithDropdown: FC<IProps> = ({title, description, children, dropdown}) => {
+const LinkWithDropdown: FC<IProps> = ({title, description, children, dropdown, linkTo}) => {
   const [descriptionOpened, setDescriptionOpened] = useState<boolean>(false)
+  const router = useRouter();
   const arrowDropdownHandler = () => {
     setDescriptionOpened((prevState) => !prevState)
   }
   const arrowLinkHandler = () => {
-    // setDescriptionOpened((prevState) => !prevState)
-    console.log('link')
+    router.push(`/practices/visaSupport/${linkTo}`)
   }
   return (
     <div className={classes.list}>

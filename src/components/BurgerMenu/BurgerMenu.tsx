@@ -3,13 +3,18 @@ import React, {FC, useEffect, useState} from 'react';
 import classes from "./BurgerMenu.module.scss"
 import Link from "next/link";
 import Container from "@/components/Layouts/Container/Container";
-import { usePathname } from 'next/navigation';
+import {usePathname, useRouter} from 'next/navigation';
+import {useTranslation} from "react-i18next";
 
 interface IProps {
     isOpen: boolean,
-    onCloseBurger: ()=>void
+    onCloseBurger: ()=>void,
+    lng: string
 }
-const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger}) => {
+const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger, lng}) => {
+
+    const { i18n } = useTranslation()
+
     const pathname = usePathname();
     useEffect(()=> {
     if (document) {
@@ -27,16 +32,20 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger}) => {
             <Container className={isPracticeOpen ? `${classes.wrapper} ${classes.practiceOpened}` : classes.wrapper}>
             {/*<Container className={classes.wrapper}>*/}
                 <Link
-                    className={pathname === "/" ? classes.active : ''}
+                    className={pathname === `/${lng}` ? classes.active : ''}
                     onClick={onCloseBurger}
-                    href={'/'}
+                    href={`/${lng}`}
+                    // href={{
+                    //     pathname: "/some-page",
+                    //     query: lng, // the data
+                    // }}
                 >
                     Головна сторінка
                 </Link>
                 <Link
-                    className={pathname === "/about" ? classes.active : ''}
+                    className={pathname === `/${lng}/about` ? classes.active : ''}
                     onClick={onCloseBurger}
-                    href={'/about'}
+                    href={`/${lng}/about`}
                 >
                      Про нас
                 </Link>
