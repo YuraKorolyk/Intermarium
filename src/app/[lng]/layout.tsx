@@ -25,7 +25,7 @@ export default async function RootLayout({children, params: {lng}
       <main>
               <Header lng={lng}/>
       {children}
-        <Footer/>
+        <Footer lng={lng}/>
       </main>
       </body>
     </html>

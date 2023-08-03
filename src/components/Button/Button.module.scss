@@ -11,6 +11,11 @@
   line-height: 108.688%; /* 19.564px */
   text-transform: uppercase;
   cursor: pointer;
+  transition: .2s;
+
+}
+@media (hover: hover) {
+  .button:hover { background: $dark; }
 }
 @media (max-width: $mobile) {
   .button {

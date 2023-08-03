@@ -1,6 +1,6 @@
 {
   "header": {
-    "lawBlog": "lawyer blog"
+    "lawBlog": "Legal Blog"
   },
   "burgerMenu" : {
     "main": "Main page",
@@ -15,5 +15,8 @@
     },
     "blog": "blog",
     "contacts": "contacts"
+  },
+  "footer" : {
+    "rulesAndPrivacy":"Rules and privacy notices"
   }
 }

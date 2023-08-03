@@ -1,12 +1,21 @@
 "use client"
-import React from 'react';
+import React, {FC} from 'react';
 import Container from "@/components/Layouts/Container/Container";
 import classes from "./Footer.module.scss"
 import MainLogo from "../../../../public/assets/icons/MainLogo";
 import Instagram from "../../../../public/assets/icons/Instagram";
 import Facebook from "../../../../public/assets/icons/Facebook";
 import Mail from "../../../../public/assets/icons/Mail";
-const Footer = () => {
+import {useRouter} from "next/navigation";
+import {useTranslation} from "react-i18next";
+
+interface IProps {
+    lng: string,
+}
+
+const Footer:FC<IProps> = ({lng}) => {
+    const router = useRouter();
+    const { t } = useTranslation('layout')
     return (
         <footer className={classes.footer}>
             <Container className={classes.wrapper}>
@@ -22,7 +31,9 @@ const Footer = () => {
                         <Facebook/>
                         <Mail/>
                     </div>
-                    <span>Правила та повідомлення про приватність</span>
+                    <span onClick={()=> router.push(`${lng}/privacy`)}>
+                        {t('footer.rulesAndPrivacy')}
+                    </span>
                 </div>
                 <div className={classes.info}>
                     <a className={classes.number} href="tel:+380993339933">+38 (099) 333 99 33</a>

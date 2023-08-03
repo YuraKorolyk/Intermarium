@@ -9,6 +9,7 @@ import Two from "../../../../../public/assets/icons/Numbers/Two";
 import Three from "../../../../../public/assets/icons/Numbers/Three";
 import Four from "../../../../../public/assets/icons/Numbers/Four";
 import Button from "@/components/Button/Button";
+import CustomLi from "@/components/CustomLi/CustomLi";
 
 const Page = () => {
   return (
@@ -82,12 +83,12 @@ const Page = () => {
           </div>
           <div className={classes.list}>
             <ul>
-              <li>отримання дат бронювань в консульстві</li>
-              <li>отримання запрошень</li>
-              <li>підготовку усієї документації для подачі на візу</li>
-              <li>особистий супровід при подачі документів</li>
-              <li>освітніх послугах</li>
-              <li>подальша відправка вашого паспорту з проставленою візою за вашою адресою</li>
+              <CustomLi>отримання дат бронювань в консульстві</CustomLi>
+              <CustomLi>отримання запрошень</CustomLi>
+              <CustomLi>підготовку усієї документації для подачі на візу</CustomLi>
+              <CustomLi>особистий супровід при подачі документів</CustomLi>
+              <CustomLi>освітніх послугах</CustomLi>
+              <CustomLi>подальша відправка вашого паспорту з проставленою візою за вашою адресою</CustomLi>
             </ul>
 
             <Button text="Залишити заявку"/>

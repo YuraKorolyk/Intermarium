@@ -2,16 +2,16 @@
 .intro {
   padding: 30px 0 70px;
   .wrapper {
-    display: flex;
-    column-gap: 70px;
+    //display: flex;
+    //column-gap: 70px;
     .text {
       font-size: 30px;
       font-weight: 400;
       line-height: normal;
-      p {
-        &:first-child {
+      p:not(&:last-child) {
+
           margin-bottom: 50px;
-        }
+
       }
     }
   }
@@ -61,8 +61,9 @@
   }
 }
 
-// order
-.order {
+// detail
+.detail {
+  background: $dark;
   padding: 10px 0 80px;
 
   .wrapper {
@@ -93,7 +94,7 @@
   }
 }
 @media (max-width: $tablet) {
-  .order {
+  .detail {
     .wrapper {
       .favourList {
         li {
@@ -104,7 +105,7 @@
   }
 }
 @media (max-width: $mobile) {
-  .order {
+  .detail {
     padding-bottom: 50px;
     .wrapper {
       .title {
@@ -120,6 +121,24 @@
           flex: 0 1 90%;
         }
       }
+    }
+  }
+}
+
+
+.application {
+  padding: 50px 0 70px;
+  .wrapper {
+    max-width: 900px;
+    .text {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 30px;
+    }
+    .button {
+      display: flex;
+      justify-content: center;
     }
   }
 }

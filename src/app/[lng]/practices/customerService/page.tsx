@@ -14,6 +14,7 @@ import Seven from "../../../../../public/assets/icons/Numbers/Seven";
 import Eight from "../../../../../public/assets/icons/Numbers/Eight";
 import Nine from "../../../../../public/assets/icons/Numbers/Nine";
 import Button from "@/components/Button/Button";
+import CustomLi from "@/components/CustomLi/CustomLi";
 
 const Page = () => {
   return (
@@ -110,7 +111,14 @@ const Page = () => {
             Переваги абонентського обслуговування:
           </div>
           <ul>
-            <li></li>
+            <CustomLi>юридичний супровід при реєстрації, розвитку і просуванні Вашого бізнесу на ринку</CustomLi>
+            <CustomLi>постійна допомога з боку команди юристів-професіоналів, яка потрібна для успішного ведення бізнесу</CustomLi>
+            <CustomLi>постійна підтримка онлайн без вихідних</CustomLi>
+            <CustomLi>економія грошей на утримання штатного юридичного відділу в компанії</CustomLi>
+            <CustomLi>гарантована конфіденційність інформації</CustomLi>
+            <CustomLi>постійний контроль за дотриманням законодавства України</CustomLi>
+            <CustomLi>надійний правовий захист на всіх етапах розвитку бізнесу</CustomLi>
+            <CustomLi>надійний правовий захист на всіх етапах розвитку бізнесу</CustomLi>
           </ul>
           <div className={classes.text}>
             <p>Якщо вам необхідна <span className="highlightDark">постійна юридична підтримка</span> але вам фінансово не вигідно утримувати юридичний відділ, хочете <span className="highlightDark">бути в курсі змін у бізнесі та щоб вас попереджали про ризики</span>, обирайте <span className="highlightDark">абонентське обслуговування</span>.</p>

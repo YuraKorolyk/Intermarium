@@ -3,6 +3,63 @@
     "title": {
       "topText": "Our",
       "bottomText": "Mission"
+    },
+    "text": "We stand for the protection of the interests of foreigners and their businesses in order to make <span>Ukraine</span> and the entire <span>Central European</span> region the most investment-attractive part of the world, so that millions of people from all over the world invest, migrate in search of career and business opportunities, and build a better life in the <span>Intermarium</span> countries.",
+    "button": "More detail"
+  },
+  "whyWe": {
+    "title": {
+      "topText": "WHAT MAKES CLIENTS ",
+      "bottomText": "CHOOSE US?"
+    },
+    "first": {
+      "title": "A thorough study of the problem of the request",
+      "text": "Familiarization with the situation for which the client requested help, familiarization with the documentation, wishes, and vision of the client, analysis of precedents, and familiarization with the entire background of the client's request"
+    },
+    "second": {
+      "title": "Choosing the best solution strategy",
+      "text": "Selection of the most effective, legally correct, and justified model of actions, which would combine compliance with legal norms, the wishes of the client, and a detailed analysis of the possible development of events and assessment of risks and prospects. When choosing a decision strategy, the client's wishes regarding terms, budget, and final result are taken into account"
+    },
+    "third": {
+      "title": "Bringing a result",
+      "text": "Every client who trusts us receives a guarantee of the result because our team starts working with the client only after a detailed study of each situation individually, and assesses the risks and the chances of their solution"
     }
+  },
+  "practices": {
+    "title": {
+      "topText": "Our",
+      "bottomText": "practices"
+    },
+    "migrationLaw": {
+      "title": "Migration law",
+      "description": "Intermarium Law Firm provides a full cycle of support for foreigners wishing to migrate to Ukraine or obtain Ukrainian citizenship"
+    },
+    "corporateLaw": {
+      "title": "Corporate law",
+      "description": "Intermarium Law Firm provides a full cycle of support for foreigners wishing to migrate to Ukraine or obtain Ukrainian citizenship"
+    },
+    "visaSupport": {
+      "title": "Visa support",
+      "description": "Intermarium Law Firm will select for you the most optimal type of visa, country, consulate, and time of submission of documents"
+    },
+    "dueDiligence": {
+      "title": "Legal due diligence",
+      "description": "Proper preparation for Due Diligence together with the experts of Intermarium Law Firm significantly increases the chances of successful completion of the transaction"
+    },
+    "customerService": {
+      "title": "Legal business support",
+      "description": "Intermarium law company provides full support in opening a business in Ukraine and its subsequent introduction in matters related to the legal component"
+    }
+  },
+  "blog" : {
+    "title": {
+      "topText": "Our",
+      "bottomText": "legal blog"
+    },
+    "firstArticle": "Law of Ukraine for citizens of the Republic of Poland who are in the territory of Ukraine",
+    "secondArticle": "Draft Law No. 5795 on changes in the field of employment of foreigners",
+    "thirdArticle": "E-residency for foreigners",
+    "button": "View all articles"
   }
+
 }

@@ -11,6 +11,7 @@ import Two from "../../../../../public/assets/icons/Numbers/Two";
 import Three from "../../../../../public/assets/icons/Numbers/Three";
 import Four from "../../../../../public/assets/icons/Numbers/Four";
 import Five from "../../../../../public/assets/icons/Numbers/Five";
+import CustomLi from "@/components/CustomLi/CustomLi";
 
 const Page = () => {
   return (
@@ -101,12 +102,12 @@ Intermarium law firm пропонує повний комплекс послуг
           </div>
           <div className={classes.list}>
             <ul>
-              <li>галузь нерухомості</li>
-              <li>галузь транспорту та логістики</li>
-              <li>галузь рітейлу</li>
-              <li>туристичних послугах</li>
-              <li>освітніх послугах</li>
-              <li>і багато інших</li>
+              <CustomLi>галузь нерухомості</CustomLi>
+              <CustomLi>галузь транспорту та логістики</CustomLi>
+              <CustomLi>галузь рітейлу</CustomLi>
+              <CustomLi>туристичних послугах</CustomLi>
+              <CustomLi>освітніх послугах</CustomLi>
+              <CustomLi>і багато інших</CustomLi>
             </ul>
             <div className={classes.text}>
               Однією із основних цілей Intermarium Law Firm є максимальне сприяння іноземним клієнтам у веденні бізнесу

@@ -30,7 +30,11 @@ const Header:FC<IProps> = ({lng}) => {
                     <MainLogo isDark={true}/>
                 </div>
                 <div className={classes.headerButtons}>
-                    <span className={classes.blogLink}>{t('header.lawBlog')}</span>
+                    <span
+                      className={classes.blogLink}
+                      onClick={()=>  router.push(`${lng}/blog`)}
+                    >
+                        {t('header.lawBlog')}</span>
                     <LanguageSwitcher lng={lng}/>
                     <div
                       className={burgerOpen ? `${classes.burger} ${classes.active}` : classes.burger}

@@ -58,36 +58,36 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger, lng}) => {
                         className={isPracticeOpen ? `${classes.practiceList} ${classes.active}` : classes.practiceList}
                     >
                         <Link
-                            href={"/practices/migrationLaw"}
-                            className={pathname === "/practices/migrationLaw" ? classes.active : ''}
+                            href={`/${lng}/practices/migrationLaw`}
+                            className={pathname === `/${lng}/practices/migrationLaw` ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
                             {t('burgerMenu.practice.migrationLaw')}
                         </Link>
                         <Link
-                            href={"/practices/corporateLaw"}
-                            className={pathname === "/practices/corporateLaw" ? classes.active : ''}
+                            href={`/${lng}/practices/corporateLaw`}
+                            className={pathname === `/${lng}/practices/corporateLaw` ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
                             {t('burgerMenu.practice.corporateLaw')}
                         </Link>
                         <Link
-                            href={"/practices/visaSupport"}
-                            className={pathname === "/practices/visaSupport" ? classes.active : ''}
+                            href={`/${lng}/practices/visaSupport`}
+                            className={pathname === `/${lng}/practices/visaSupport` ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
                             {t('burgerMenu.practice.visaSupport')}
                         </Link>
                         <Link
-                            href={"/practices/dueDiligence"}
-                            className={pathname === "/practices/dueDiligence" ? classes.active : ''}
+                            href={`/${lng}/practices/dueDiligence`}
+                            className={pathname === `/${lng}/practices/dueDiligence` ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
                             {t('burgerMenu.practice.dueDiligence')}
                         </Link>
                         <Link
-                            href={"/practices/customerService"}
-                            className={pathname === "/practices/customerService" ? classes.active : ''}
+                            href={`/${lng}/practices/customerService`}
+                            className={pathname === `/${lng}/practices/customerService` ? classes.active : ''}
                             onClick={onCloseBurger}
                         >
                             {t('burgerMenu.practice.customerService')}
@@ -95,16 +95,16 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger, lng}) => {
                     </div>
                 </div>
                 <Link
-                    className={pathname === "/blog" ? classes.active : ''}
+                    className={pathname === `/${lng}/blog` ? classes.active : ''}
                     onClick={onCloseBurger}
-                    href={'/blog'}
+                    href={`/${lng}/blog`}
                 >
                     {t('burgerMenu.blog')}
                 </Link>
                 <Link
-                    className={pathname === "/contacts" ? classes.active : ''}
+                    className={pathname === `/${lng}/contacts` ? classes.active : ''}
                     onClick={onCloseBurger}
-                    href={'/contacts'}
+                    href={`/${lng}/contacts`}
                 >
                     {t('burgerMenu.contacts')}
                 </Link>
