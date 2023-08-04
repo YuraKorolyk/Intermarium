@@ -20,6 +20,7 @@ interface HomeProps {
   }
 }
 
+
 export default function Home({params: {lng}}: HomeProps) {
   const router = useRouter();
   // const { t } = useTranslation(lng, "client-page")
