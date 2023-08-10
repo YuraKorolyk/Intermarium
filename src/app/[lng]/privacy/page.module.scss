@@ -1,0 +1,404 @@
+@import "src/styles/base/vars";
+
+.intro {
+  padding: 50px 0 60px;
+
+  .wrapper {
+    .title {
+      text-align: center;
+      font-size: 98px;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      color: $accent;
+      margin-bottom: 30px;
+    }
+
+    .lastUpdate {
+      text-align: center;
+      font-size: 20px;
+      color: $dark;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .intro {
+    padding: 40px 0 50px;
+    .wrapper {
+      .title {
+        font-size: 75px;
+        margin-bottom: 25px;
+      }
+      .lastUpdate {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .intro {
+    .wrapper {
+      .title {
+        font-size: 44px;
+        margin-bottom: 15px;
+      }
+      .lastUpdate {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .intro {
+    padding: 30px 0 40px;
+
+    .wrapper {
+      .title {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+      .lastUpdate {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.contents {
+  padding-bottom: 100px;
+
+  .wrapper {
+    .title {
+      font-size: 30px;
+      color: $accent;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      padding-left: 115px;
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .contents {
+    padding-bottom: 90px;
+    .wrapper {
+      .title {
+        font-size: 25px;
+      }
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .contents {
+    .wrapper {
+      .title {
+        font-size: 20px;
+      }
+
+      ul {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .contents {
+    padding-bottom: 80px;
+    .wrapper {
+      .title {
+        font-size: 16px;
+      }
+      ul {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.list {
+  padding-bottom: 80px;
+  .wrapper {
+    .item {
+      &:not(:last-child) {
+        margin-bottom: 100px;
+      }
+
+      .title {
+        margin-bottom: 15px;
+
+      }
+      .text {
+        padding: 0 80px;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: normal;
+
+        p {
+          .highlightsP {
+            color: $accent;
+            font-weight: 700;
+            text-decoration-line: underline;
+          }
+
+          ul {
+            li {
+              margin-left: 30px;
+              list-style-type: disc;
+
+              &:not(:last-child) {
+                margin-bottom: 8px;
+              }
+
+              .highlights {
+                font-weight: 700;
+              }
+            }
+          }
+
+          &.strong {
+            color: $accent;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    .first {
+    }
+
+    .second {
+    }
+
+    .third {
+    }
+
+    .fourth {
+    }
+
+    .fifth {
+      .title {
+        .bottomText {
+          font-size: 96px;
+        }
+      }
+    }
+
+    .sixth {
+    }
+  }
+}
+
+
+@media (max-width: $tabletBig) {
+  .list {
+    padding-bottom: 70px;
+    .wrapper {
+      .item {
+        &:not(:last-child) {
+          margin-bottom: 80px;
+        }
+        .text {
+          padding: 0 70px;
+          font-size: 23px;
+          p {
+            &:not(:last-child) {
+              margin-bottom: 25px;
+            }
+          }
+        }
+      }
+
+      .first {
+        .title {
+          .bottomText {
+            font-size: 78px;
+          }
+        }
+      }
+
+
+      .fourth {
+        .title {
+          .bottomText {
+            font-size: 66px;
+          }
+        }
+      }
+
+      .fifth {
+        .title {
+          .bottomText {
+            font-size: 63px;
+          }
+        }
+      }
+
+      .sixth {
+        .title {
+          .bottomText {
+            font-size: 75px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: $tablet) {
+  .list {
+    .wrapper {
+      .item {
+        &:not(:last-child) {
+          margin-bottom: 50px;
+        }
+        .text {
+          padding: 0;
+          font-size: 20px;
+          p {
+            &:not(:last-child) {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+      .first {
+        .title {
+          .bottomText {
+            font-size: 44px;
+          }
+        }
+      }
+
+      .second {
+        .title {
+          .bottomText {
+            font-size: 53px;
+          }
+        }
+      }
+
+      .third {
+        .title {
+          .bottomText {
+            font-size: 58px;
+          }
+        }
+      }
+
+      .fourth {
+        .title {
+          .bottomText {
+            font-size: 38px;
+          }
+        }
+      }
+
+      .fifth {
+        .title {
+          .bottomText {
+            font-size: 36px;
+          }
+        }
+      }
+
+      .sixth {
+        .title {
+          .bottomText {
+            font-size: 42px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .list {
+    padding-bottom: 60px;
+    .wrapper {
+      .item {
+        &:not(:last-child) {
+          margin-bottom: 50px;
+        }
+        .text {
+          padding: 0;
+          font-size: 14px;
+          p {
+            &:not(:last-child) {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+      .first {
+        .title {
+          .bottomText {
+            font-size: 34px;
+          }
+        }
+      }
+
+      .second {
+        .title {
+          .bottomText {
+            font-size: 40px;
+          }
+        }
+      }
+
+      .third {
+        .title {
+          .bottomText {
+            font-size: 40px;
+          }
+        }
+      }
+
+      .fourth {
+        .title {
+          .bottomText {
+            font-size: 28px;
+          }
+        }
+      }
+
+      .fifth {
+        .title {
+          .bottomText {
+            font-size: 27px;
+          }
+        }
+      }
+
+      .sixth {
+        .title {
+          .bottomText {
+            font-size: 33px;
+          }
+        }
+      }
+    }
+  }
+}

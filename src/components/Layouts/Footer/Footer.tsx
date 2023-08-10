@@ -20,7 +20,7 @@ const Footer:FC<IProps> = ({lng}) => {
         <footer className={classes.footer}>
             <Container className={classes.wrapper}>
                 <div className={classes.logoBlock}>
-                    <div className={classes.logoBox}>
+                    <div className={classes.logoBox} onClick={()=> router.push(`/${lng}`)}>
                         <MainLogo isDark={false}/>
                     </div>
                     <span>©2023 Intermarium law firm</span>
