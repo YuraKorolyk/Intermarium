@@ -4,43 +4,44 @@
   padding: 30px 0 60px;
   .wrapper {
     .title {
-      margin-bottom: 15px;
-      .bottomText {
-        font-size: 59px;
-      }
+      margin-bottom: 20px;
     }
+
     .text {
-      padding-right: 18%;
       font-size: 30px;
       font-weight: 400;
       line-height: normal;
-      margin-bottom: 50px;
+      margin-bottom: 120px;
+      p:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
-    .list {
-      .title {
+    .support {
+      .supportTitle {
         font-size: 30px;
         font-weight: 700;
+        color: $accent;
         line-height: normal;
         text-transform: uppercase;
-        color: $accent;
+        margin-bottom: 20px;
       }
       ul {
-        margin-top: 30px;
-        margin-bottom: 50px;
-        font-size: 25px;
         display: flex;
         flex-direction: column;
         row-gap: 25px;
-        font-weight: 400;
-        line-height: normal;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 50px;
       }
     }
+
     .button {
       display: flex;
       justify-content: center;
     }
   }
 }
+
 @media (max-width: $tabletBig) {
   .intro {
     .wrapper {
@@ -49,12 +50,21 @@
           font-size: 50px;
         }
       }
+
       .text {
         font-size: 25px;
+        margin-bottom: 40px;
+        p:not(:last-child) {
+          margin-bottom: 25px;
+        }
       }
-      .list {
-        .title {
+      .support {
+        .supportTitle {
           font-size: 25px;
+        }
+        ul {
+          row-gap: 20px;
+          margin-bottom: 40px;
         }
       }
     }
@@ -64,53 +74,61 @@
 @media (max-width: $tablet) {
   .intro {
     padding: 30px 0 50px;
+
     .wrapper {
       .title {
         .bottomText {
           font-size: 40px;
         }
       }
+
       .text {
         padding-right: 0;
         text-align: justify;
         font-size: 20px;
         margin-bottom: 40px;
-      }
-      .list {
-        .title {
-          font-size: 20px;
+        p:not(:last-child) {
+          margin-bottom: 20px;
         }
+      }
+      .support {
+        .supportTitle {
+          font-size: 23px;
 
+        }
         ul {
-          margin-top: 20px;
-          margin-bottom: 30px;
+          margin: 0 0 30px 0;
           row-gap: 15px;
         }
       }
     }
   }
 }
+
 @media (max-width: $mobile) {
   .intro {
     .wrapper {
       .title {
         .bottomText {
-          font-size: 43px;
+          font-size: 55px;
         }
       }
+
       .text {
         font-size: 16px;
         margin-bottom: 30px;
+        p:not(:last-child) {
+          margin-bottom: 15px;
+        }
       }
-      .list {
-        .title {
+      .support {
+        .supportTitle {
           font-size: 16px;
+          margin-bottom: 15px;
         }
         ul {
-          margin-top: 15px;
-          margin-bottom: 20px;
-          font-size: 14px;
           row-gap: 10px;
+          margin: 0 0 20px 0;
         }
       }
     }

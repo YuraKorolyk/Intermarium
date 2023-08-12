@@ -9,25 +9,27 @@ import React from "react";
 
 
 export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }))
+  return languages.map((lng) => ({lng}))
 }
-export default async function RootLayout({children, params: {lng}
-}: {
+
+export default async function RootLayout({
+                                           children, params: {lng}
+                                         }: {
   children: React.ReactNode
-  params: {lng: string}
+  params: { lng: string }
 }) {
   return (
     <html lang={lng} dir={dir(lng)}>
     <Head>
       <title>My page title</title>
     </Head>
-      <body >
-      <main>
-              <Header lng={lng}/>
+    <body>
+    <main>
+      <Header lng={lng}/>
       {children}
-        <Footer lng={lng}/>
-      </main>
-      </body>
+      <Footer lng={lng}/>
+    </main>
+    </body>
     </html>
   )
 }

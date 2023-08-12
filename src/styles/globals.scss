@@ -16,17 +16,31 @@ body.lock {
   color: $accent;
   font-size: 100px;
   font-weight: 700;
-  line-height: 93%;
+  //line-height: 93%;
   text-transform: uppercase;
+}
+.MLblock {
+  margin-left: 80px;
 }
 @media (max-width: $tabletBig) {
   .bottomTextWithLine {
     font-size: 90px;
   }
+  .MLblock {
+    margin-left: 62px;
+  }
 }
 @media (max-width: $tablet) {
   .bottomTextWithLine {
     font-size: 80px;
+  }
+  .MLblock {
+    margin-left: 50px;
+  }
+}
+@media (max-width: $mobile) {
+  .MLblock {
+    margin-left: 0;
   }
 }
 //.container {

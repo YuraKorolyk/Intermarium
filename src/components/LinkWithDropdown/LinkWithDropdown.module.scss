@@ -73,8 +73,10 @@
 }
 @media (max-width: $tablet) {
   .list {
+    max-height: 100px;
     .numbers {
       .iconBox {
+        margin-bottom: 1px;
         min-width: 85px;
         transform-origin: 0 100%;
         transform: scale(0.85);

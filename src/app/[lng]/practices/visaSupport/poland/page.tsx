@@ -4,7 +4,7 @@ import Container from "@/components/Layouts/Container/Container";
 import classes from "./page.module.scss";
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import Button from "@/components/Button/Button";
-import LinkWithDropdown from "@/components/LinkWithDropdown/LinkWithDropdown";
+import CustomLi from "@/components/CustomLi/CustomLi";
 
 const Page = () => {
   return (
@@ -17,39 +17,21 @@ const Page = () => {
               <span className={`${classes.bottomText} bottomTextWithLine`}>Польщу, Румунію, Угорщину</span>
             </TextWithLine>
           </div>
-          <div className={classes.text}>
-            Молдова - найбільш доступний варіант транзиту для громадян азіатських та африканських країн, які хочуть виїхати з України або заїхати на територію України.
+          <div className="MLblock">
+            <div className={classes.text}>
+              <span className="highlightDark">Іноземці, що проживають на території України</span>, можуть мати потребу або бажання відвідати сусідні країни <span className="highlightDark">з метою транзиту або з туристичною метою</span>, або вже мають наявне <span className="highlightDark">бізнес-запрошення</span>.
+            </div>
+            <div className={classes.list}>
+              <span className={classes.title}>Ми можемо надати послуги повного циклу візової підтримки, що включає:</span>
+              <ul>
+                <CustomLi>попередню консультацію та зʼясування задачі, що стоїть перед вами та типу візи, який найкращим чином буде відповідати поставленій меті</CustomLi>
+                <CustomLi>бронювання дати прийому в консульстві, підготовку візової анкети, бронювань транспорту та житла, отримання страхового полісу та підготовку інших супровідних документів для прийому в консула</CustomLi>
+                <CustomLi>консультацію щодо можливих питань, які можуть задавати в консульстві</CustomLi>
+                <CustomLi>підготовку апеляції у випадку негативного рішення консульства</CustomLi>
+              </ul>
+            </div>
           </div>
-          <Button text="Залишити заявку"/>
-        </Container>
-      </div>
-      <div className={classes.questions}>
-        <Container className={classes.wrapper}>
-          <div className={classes.title}>
-            <TextWithLine topText="Наша компанія надає візову підтримку з" topColor="light">
-              <span className={`${classes.bottomText} bottomTextWithLine`}>наступних питань</span>
-            </TextWithLine>
-          </div>
-          <div className={classes.link}>
-
-          </div>
-        </Container>
-      </div>
-      <div className={classes.help}>
-        <Container className={classes.wrapper}>
-          <div className={classes.title}>
-            Візова підтримка включає повний цикл допомоги, а саме:
-          </div>
-          <div className={classes.list}>
-            <ul>
-              <li>отримання дат бронювань в консульстві</li>
-              <li>отримання запрошень</li>
-              <li>підготовку усієї документації для подачі на візу</li>
-              <li>особистий супровід при подачі документів </li>
-              <li>освітніх послугах</li>
-              <li>подальша відправка вашого паспорту з проставленою візою за вашою адресою</li>
-            </ul>
-
+          <div className={classes.button}>
             <Button text="Залишити заявку"/>
           </div>
         </Container>
