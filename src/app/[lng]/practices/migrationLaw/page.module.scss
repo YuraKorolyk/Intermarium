@@ -67,7 +67,7 @@
 
   .wrapper {
 
-    .favourList {
+    .list {
       margin-top: 30px;
       display: flex;
       flex-wrap: wrap;
@@ -75,7 +75,7 @@
       //column-gap: 10px;
       justify-content: space-between;
 
-      li {
+      div {
         padding: 20px 10px;
         text-align: center;
         flex: 0 1 32%;
@@ -95,8 +95,8 @@
 @media (max-width: $tablet) {
   .order {
     .wrapper {
-      .favourList {
-        li {
+      .list {
+        div {
           flex: 0 1 49%;
         }
       }
@@ -112,10 +112,10 @@
           font-size: 57px;
         }
       }
-      .favourList {
+      .list {
         row-gap: 10px;
         justify-content: center;
-        li {
+        div {
           padding: 15px 10px;
           flex: 0 1 90%;
         }

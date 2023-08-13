@@ -36,6 +36,7 @@
     }
 
   }
+
   .description {
     border-top: 3px solid $accent;
     margin-top: -5px;
@@ -54,6 +55,7 @@
         visibility: visible;
         height: auto;
       }
+
     }
   }
 }
@@ -73,7 +75,7 @@
 }
 @media (max-width: $tablet) {
   .list {
-    max-height: 100px;
+    //max-height: 100px;
     .numbers {
       .iconBox {
         margin-bottom: 1px;
@@ -106,7 +108,7 @@
       }
       .titleArrowBox {
         .textTitle {
-          font-size: 12px;
+          font-size: 13px;
           padding-bottom: 15px;
           margin-left: 0;
         }

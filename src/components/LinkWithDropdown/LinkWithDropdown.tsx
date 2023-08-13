@@ -6,13 +6,14 @@ import {useRouter} from "next/navigation";
 
 interface IProps {
   title: string,
-  description?: string,
+  description?: string | any,
   children: ReactNode,
   dropdown: string,
   linkTo?: string,
+  dark?: boolean,
 }
 
-const LinkWithDropdown: FC<IProps> = ({title, description, children, dropdown, linkTo}) => {
+const LinkWithDropdown: FC<IProps> = ({title, description, children, dropdown, linkTo, dark}) => {
   const [descriptionOpened, setDescriptionOpened] = useState<boolean>(false)
   const router = useRouter();
   const arrowDropdownHandler = () => {
@@ -28,13 +29,13 @@ const LinkWithDropdown: FC<IProps> = ({title, description, children, dropdown, l
           {children}
         </div>
         <div className={classes.titleArrowBox}>
-          <div className={classes.textTitle}>
+          <div className={classes.textTitle} style={dark ? {color: "#013043"} : undefined}>
             {title}
           </div>
           {dropdown === "dropdown" ? (
             <div className={descriptionOpened ? `${classes.arrow} ${classes.active}` : classes.arrow}
                  onClick={arrowDropdownHandler}>
-              <Arrow color="#ECECEC"/>
+              <Arrow color={dark ? "#013043" : "#ECECEC"}/>
             </div>
           ) : dropdown === "link" ? (
             <div
@@ -47,7 +48,7 @@ const LinkWithDropdown: FC<IProps> = ({title, description, children, dropdown, l
         </div>
       </div>
       <div className={classes.description}>
-        <div className={descriptionOpened ? `${classes.text} ${classes.active}` : classes.text}>
+        <div className={descriptionOpened ? `${classes.text} ${classes.active}` : classes.text} style={dark ? {color: "#013043"} : undefined}>
           {description}
         </div>
       </div>
