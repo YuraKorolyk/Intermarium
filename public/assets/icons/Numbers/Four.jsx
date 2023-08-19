@@ -16,3 +16,21 @@ const Four = (props) => (
     </svg>
 )
 export default Four
+
+// import * as React from "react"
+// const Four = (props) => (
+//     <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         width={84}
+//         height={111}
+//         fill="none"
+//         {...props}
+//     >
+//         <path
+//             stroke="#286E8D"
+//             strokeWidth={3}
+//             d="M34.875 21.93a800.362 800.362 0 0 0-9.594 12.831c-3.391 4.624-6.242 9.364-8.554 14.219h18.148V21.93ZM51.752.892V48.98h8.554v14.103h-8.554V81H34.875V63.083H.312v-12.6c1.695-3.391 3.815-7.206 6.358-11.444a219.888 219.888 0 0 1 8.438-13.179 238.503 238.503 0 0 1 9.941-13.293C28.517 8.251 31.985 4.36 35.453.892h16.3Z"
+//         />
+//     </svg>
+// )
+// export default Four

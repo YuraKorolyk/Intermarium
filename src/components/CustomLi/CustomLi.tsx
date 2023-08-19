@@ -8,7 +8,7 @@ interface IProps {
 
 const CustomLi:FC<IProps> = ({children, color}) => {
   return (
-    <li className={classes.customLi}>
+    <li className={classes.customLi} style={color === "light" ? {color: "#ECECEC"} : {}}>
       {children}
     </li>
   );

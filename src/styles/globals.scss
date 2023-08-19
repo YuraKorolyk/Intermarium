@@ -16,11 +16,30 @@ body.lock {
   color: $accent;
   font-size: 100px;
   font-weight: 700;
-  //line-height: 93%;
   text-transform: uppercase;
 }
 .MLblock {
   margin-left: 80px;
+}
+.listWithPointer {
+  font-weight: 400;
+  li {
+    position: relative;
+    padding-left: 20px;
+    &:before {
+      content: '';
+      position: absolute;
+      background: rgba(236, 236, 236, 0.80);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      top: 10px;
+      left: 0;
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 @media (max-width: $tabletBig) {
   .bottomTextWithLine {
@@ -37,10 +56,30 @@ body.lock {
   .MLblock {
     margin-left: 50px;
   }
+  .listWithPointer {
+    li {
+      &:before {
+        top: 9px;
+      }
+    }
+  }
 }
 @media (max-width: $mobile) {
   .MLblock {
     margin-left: 0;
+  }
+  .listWithPointer {
+    li {
+      padding-left: 12px;
+      &:before {
+        width: 4px;
+        height: 4px;
+        top: 6px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 //.container {

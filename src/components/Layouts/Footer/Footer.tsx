@@ -31,7 +31,7 @@ const Footer:FC<IProps> = ({lng}) => {
                         <Facebook/>
                         <Mail/>
                     </div>
-                    <span onClick={()=> router.push(`${lng}/privacy`)}>
+                    <span onClick={()=> router.push(`/${lng}/privacy`)}>
                         {t('footer.rulesAndPrivacy')}
                     </span>
                 </div>

@@ -32,7 +32,7 @@ const Header:FC<IProps> = ({lng}) => {
                 <div className={classes.headerButtons}>
                     <span
                       className={classes.blogLink}
-                      onClick={()=>  router.push(`${lng}/blog`)}
+                      onClick={()=>  router.push(`/${lng}/blog`)}
                     >
                         {t('header.lawBlog')}</span>
                     <LanguageSwitcher lng={lng}/>

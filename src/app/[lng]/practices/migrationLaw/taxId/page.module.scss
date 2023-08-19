@@ -1,0 +1,331 @@
+@import "src/styles/base/vars";
+
+.intro {
+  padding: 30px 0 60px;
+
+  .wrapper {
+    .title {
+      margin-bottom: 20px;
+    }
+
+    .text {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+
+      & p:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .intro {
+    padding: 30px 0 50px;
+
+    .wrapper {
+      display: block;
+
+      .title {
+        margin-bottom: 20px;
+        .bottomText {
+          font-size: 83px;
+        }
+      }
+
+      .text {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .intro {
+
+    .wrapper {
+      .title {
+        .bottomText {
+          font-size: 65px;
+        }
+      }
+
+      .text {
+        font-size: 20px;
+
+        & p:not(:last-child) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .intro {
+    padding: 20px 0 40px;
+
+    .wrapper {
+      .title {
+        .bottomText {
+          font-size: 35px;
+        }
+      }
+
+      .text {
+        font-size: 14px;
+
+        & p:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.lists {
+  padding: 60px 0;
+  background: $dark;
+
+  .wrapper {
+    .listOfDoc {
+      padding-bottom: 100px;
+      .title {
+        margin-bottom: 30px;
+        .bottomText {
+          font-size: 68px;
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+    .nextDoc {
+      margin-bottom: 100px;
+      .title {
+        margin-bottom: 30px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+    .procedure {
+      margin-bottom: 100px;
+      .title {
+        margin-bottom: 30px;
+        .bottomText {
+          font-size: 68px;
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+    .term {
+      padding: 0 10%;
+      color: $light;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .lists {
+    .wrapper {
+      .listOfDoc {
+        padding-bottom: 90px;
+        .title {
+          .bottomText {
+            font-size: 58px;
+          }
+        }
+      }
+      .nextDoc {
+        margin-bottom: 90px;
+        .title {
+          .bottomText {
+            //font-size: 55px;
+          }
+        }
+      }
+      .procedure {
+        .title {
+          .bottomText {
+            font-size: 58px;
+          }
+        }
+      }
+      .term {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .lists {
+    padding: 50px 0;
+    .wrapper {
+      .listOfDoc {
+        padding-bottom: 80px;
+        .title {
+          margin-bottom: 20px;
+          .bottomText {
+            font-size: 33px;
+          }
+        }
+        ul {
+          row-gap: 15px;
+        }
+      }
+      .nextDoc {
+        margin-bottom: 80px;
+        .title {
+          margin-bottom: 20px;
+          .bottomText {
+            font-size: 56px;
+          }
+        }
+        ul {
+          row-gap: 15px;
+        }
+      }
+      .procedure {
+        margin-bottom: 50px;
+        .title {
+          .bottomText {
+            font-size: 33px;
+          }
+        }
+        ul {
+          row-gap: 15px;
+        }
+      }
+      .term {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .lists {
+    padding: 40px 0;
+    .wrapper {
+      .listOfDoc {
+        padding-bottom: 60px;
+        .title {
+          .bottomText {
+            font-size: 25px;
+          }
+        }
+        ul {
+          row-gap: 10px;
+        }
+      }
+      .nextDoc {
+        margin-bottom: 60px;
+        .title {
+          .bottomText {
+            font-size: 42px;
+          }
+        }
+        ul {
+          row-gap: 10px;
+        }
+      }
+      .procedure {
+        margin-bottom: 30px;
+        //margin-bottom: 100px;
+        .title {
+          //margin-bottom: 30px;
+          .bottomText {
+            font-size: 25px;
+          }
+        }
+        ul {
+          row-gap: 10px;
+        }
+        //ul {
+        //  display: flex;
+        //  flex-direction: column;
+        //  row-gap: 20px;
+        //}
+      }
+      .term {
+        font-size: 16px;
+
+      }
+    }
+  }
+}
+
+.application {
+  padding: 60px 0 80px;
+
+  .wrapper {
+    .text {
+      max-width: 80%;
+      margin: 0 auto;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .application {
+    .wrapper {
+
+      .text {
+        font-size: 25px;
+        //margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .application {
+    padding: 50px 0 70px;
+    .wrapper {
+
+      .text {
+        font-size: 20px;
+        //margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .application {
+    padding: 40px 0 60px;
+
+    .wrapper {
+      .text {
+        max-width: 100%;
+        font-size: 16px;
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+}

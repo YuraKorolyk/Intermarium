@@ -7,16 +7,28 @@
     .title {
       margin-bottom: 20px;
     }
-
     .text {
       font-size: 30px;
       font-weight: 400;
       line-height: normal;
-
+      margin-bottom: 50px;
       & p:not(:last-child) {
-
         margin-bottom: 50px;
-
+      }
+    }
+    .advantages {
+      .description {
+        color: $accent;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      ul {
+        margin-left: 40%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
       }
     }
   }
@@ -31,11 +43,21 @@
 
       .title {
         margin-bottom: 20px;
+        .bottomText {
+          font-size: 87px;
+        }
       }
 
       .text {
         font-size: 25px;
-
+      }
+      .advantages {
+        .description {
+          font-size: 25px;
+        }
+        ul {
+          row-gap: 25px;
+        }
       }
     }
   }
@@ -48,13 +70,22 @@
     .wrapper {
       .title {
         .bottomText {
-          font-size: 70px;
+          font-size: 50px;
         }
       }
       .text {
         font-size: 20px;
+        margin-bottom: 25px;
         & p:not(:last-child) {
           margin-bottom: 25px;
+        }
+      }
+      .advantages {
+        .description {
+          font-size: 20px;
+        }
+        ul {
+          row-gap: 17px;
         }
       }
     }
@@ -67,14 +98,24 @@
     .wrapper {
       .title {
         .bottomText {
-          font-size: 55px;
+          font-size: 38px;
         }
       }
-
       .text {
         font-size: 14px;
+        margin-bottom: 30px;
         & p:not(:last-child) {
           margin-bottom: 20px;
+        }
+      }
+      .advantages {
+        .description {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+        ul {
+          row-gap: 12px;
+          margin-left: 0;
         }
       }
     }
@@ -98,25 +139,6 @@
     }
     .light {
       font-weight: 400;
-    }
-    ul {
-      li {
-        position: relative;
-        padding-left: 20px;
-        &:before {
-          content: '';
-          position: absolute;
-          background: rgba(236, 236, 236, 0.80);;
-          width: 5px;
-          height: 5px;
-          border-radius: 50%;
-          top: 8px;
-          left: 0;
-        }
-        &:not(:last-child) {
-          margin-bottom: 10px;
-        }
-      }
     }
   }
 }

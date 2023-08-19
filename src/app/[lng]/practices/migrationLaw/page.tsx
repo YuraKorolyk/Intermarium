@@ -10,11 +10,11 @@ import {useRouter} from "next/navigation";
 const data = [
   {
     "label": "Посвідка на тимчасове проживання",
-    "link": "/link"
+    "link": "temporaryResidence"
   },
   {
     "label": "Посвідка на постійне проживання",
-    "link": "/link"
+    "link": "permanentResidence"
   },
   {
     "label": "Дозвіл на імміграцію",
@@ -26,11 +26,11 @@ const data = [
   },
   {
     "label": "Супровід в оформленні шлюбу з резидентами України",
-    "link": "/link"
+    "link": "marriageRegistration"
   },
   {
     "label": "Продовження терміну перебування в Україні",
-    "link": "/link"
+    "link": "extensionOfStayInUkraine"
   },
   {
     "label": "Оформлення громадянство України",
@@ -46,15 +46,19 @@ const data = [
   },
   {
     "label": "Оскарження рішень Державної міграційної служби",
-    "link": "/link"
+    "link": "appealOfMigrationServiceDecisions"
   },
   {
     "label": "Оформлення довідки про несудимість в Україні",
-    "link": "/link"
+    "link": "policeClearance"
+  },
+  {
+    "label": "Оформлення податкового номеру для іноземців",
+    "link": "taxId"
   },
   {
     "label": "Отримання статусу закордонного українця",
-    "link": "/link"
+    "link": "foreignUkrainian"
   },
   {
     "label": "Оформлення довідки громадянина України",

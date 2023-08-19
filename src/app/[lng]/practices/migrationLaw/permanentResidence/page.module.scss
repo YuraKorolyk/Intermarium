@@ -1,0 +1,288 @@
+@import "src/styles/base/vars";
+
+.intro {
+  padding: 30px 0 60px;
+
+  .wrapper {
+    .title {
+      margin-bottom: 20px;
+    }
+
+    .text {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+
+      & p:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .intro {
+    padding: 30px 0 50px;
+
+    .wrapper {
+      display: block;
+
+      .title {
+        margin-bottom: 20px;
+        .bottomText {
+          font-size: 83px;
+        }
+      }
+
+      .text {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .intro {
+
+    .wrapper {
+      .title {
+        .bottomText {
+          font-size: 50px;
+        }
+      }
+
+      .text {
+        font-size: 20px;
+
+        & p:not(:last-child) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .intro {
+    padding: 20px 0 40px;
+    .wrapper {
+      .title {
+        .bottomText {
+          font-size: 38px;
+        }
+      }
+      .text {
+        font-size: 14px;
+
+        & p:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.lists {
+  padding: 60px 0;
+  background: $dark;
+  color: $light;
+  .wrapper {
+    .title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .text {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 400;
+      max-width: 80%;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    .advantages {
+      margin-bottom: 50px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+    .listOfDoc {
+      margin-bottom: 50px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+    .term {
+      padding: 0 10%;
+      color: $light;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+    .after {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .lists {
+    .wrapper {
+      .title {
+        font-size: 25px;
+      }
+      .text {
+        font-size: 25px;
+      }
+      .advantages {
+      }
+      .listOfDoc {
+
+      }
+      .term {
+        font-size: 32px;
+      }
+      .after {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .lists {
+    padding: 50px 0;
+    .wrapper {
+      .title {
+        font-size: 20px;
+      }
+      .text {
+        font-size: 20px;
+        max-width: 90%;
+        margin-top: 30px;
+
+      }
+      .advantages {
+
+        ul {
+          row-gap: 15px;
+        }
+      }
+      .listOfDoc {
+        margin-bottom: 80px;
+        ul {
+          row-gap: 15px;
+        }
+      }
+      .term {
+        font-size: 25px;
+      }
+      .after {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .lists {
+    padding: 40px 0;
+    .wrapper {
+      .title {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      .text {
+        font-size: 14px;
+        max-width: 100%;
+        margin: 30px 0 0 0;
+      }
+      .advantages {
+        margin-bottom: 30px;
+        ul {
+          row-gap: 10px;
+        }
+      }
+      .listOfDoc {
+        margin-bottom: 30px;
+        ul {
+          row-gap: 10px;
+        }
+      }
+      .term {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+      .after {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.application {
+  padding: 60px 0 80px;
+  .wrapper {
+    .text {
+      max-width: 80%;
+      margin: 0 auto;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .application {
+    .wrapper {
+
+      .text {
+        font-size: 25px;
+        //margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .application {
+    padding: 50px 0 70px;
+    .wrapper {
+
+      .text {
+        font-size: 20px;
+        //margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .application {
+    padding: 40px 0 60px;
+
+    .wrapper {
+      .text {
+        max-width: 100%;
+        font-size: 16px;
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+}

@@ -1,31 +1,13 @@
 @import "src/styles/base/vars";
 
 .intro {
-  padding: 30px 0 70px;
+  padding: 30px 0 120px;
 
   .wrapper {
     .title {
       margin-bottom: 20px;
     }
-    .list {
-      p {
-        padding-right: 20%;
-        &:not(:last-child) {
-          margin-bottom: 20px;
-        }
-      }
-      .light {
-        font-weight: 400;
-      }
-      ol {
-        list-style: decimal inside;
-      }
-      ul {
-        li:before {
-          background-color: $dark;
-        }
-      }
-    }
+
     .text {
       font-size: 30px;
       font-weight: 400;
@@ -40,13 +22,15 @@
 
 @media (max-width: $tabletBig) {
   .intro {
-    padding: 30px 0 60px;
+    padding: 30px 0 110px;
 
     .wrapper {
       display: block;
+
       .title {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
       }
+
       .text {
         font-size: 25px;
       }
@@ -56,18 +40,12 @@
 
 @media (max-width: $tablet) {
   .intro {
-    padding: 30px 0 50px;
+    padding: 30px 0 100px;
 
     .wrapper {
       .title {
-        margin-bottom: 10px;
         .bottomText {
           font-size: 70px;
-        }
-      }
-      .list {
-        p {
-          padding-right: 0;
         }
       }
       .text {
@@ -82,35 +60,92 @@
 
 @media (max-width: $mobile) {
   .intro {
-    padding: 20px 0 40px;
+    padding: 20px 0 80px;
     .wrapper {
       .title {
         .bottomText {
-          font-size: 54px;
+          font-size: 55px;
         }
       }
-      .list {
-        p {
-          font-size: 12px;
-          &:not(:last-child) {
-            margin-bottom: 15px;
-          }
-        }
-      }
+
       .text {
         font-size: 14px;
+        & p:not(:last-child) {
+          margin-bottom: 20px;
+        }
       }
     }
   }
 }
 
+.appeal {
+  padding-bottom: 100px;
+  .wrapper {
+    .title {
+      color: $accent;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .text {
+      font-size: 25px;
+      font-weight: 400;
+      line-height: normal;
+      p:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media (max-width: $tabletBig) {
+  .appeal {
+    padding-bottom: 90px;
+    .wrapper {
+      .title {
+        font-size: 25px;
+      }
+      .text {
+        font-size: 23px;
+      }
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .appeal {
+    padding-bottom: 80px;
+    .wrapper {
+      .title {
+        font-size: 20px;
+      }
+      .text {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .appeal {
+    padding-bottom: 60px;
+    .wrapper {
+      .title {
+        font-size: 16px;
+      }
+      .text {
+        font-size: 12px;
+      }
+    }
+  }
+}
 
 .application {
-  padding-bottom: 70px;
+  padding-bottom: 80px;
   .wrapper {
-    //max-width: 900px;
-
     .text {
+      max-width: 80%;
+      margin: 0 auto;
       font-size: 30px;
       font-weight: 400;
       line-height: normal;
@@ -147,12 +182,12 @@
 }
 @media (max-width: $mobile) {
   .application {
-    //padding: 40px 0 60px;
+    padding-bottom: 60px;
     .wrapper {
-
       .text {
+        max-width: 100%;
         font-size: 16px;
-        margin-bottom: 20px;
+        margin: 0 0 20px 0;
       }
     }
   }

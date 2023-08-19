@@ -8,17 +8,17 @@
       margin-bottom: 20px;
     }
     .list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
       p {
         padding-right: 20%;
         &:not(:last-child) {
           margin-bottom: 20px;
         }
       }
-      .light {
-        font-weight: 400;
-      }
-      ol {
-        list-style: decimal inside;
+      .bold {
+        font-weight: 500;
       }
       ul {
         li:before {
@@ -66,6 +66,7 @@
         }
       }
       .list {
+        row-gap: 10px;
         p {
           padding-right: 0;
         }
@@ -90,15 +91,20 @@
         }
       }
       .list {
+        row-gap: 0;
         p {
           font-size: 12px;
           &:not(:last-child) {
             margin-bottom: 15px;
           }
         }
+
       }
       .text {
         font-size: 14px;
+        & p:not(:last-child) {
+          margin-bottom: 20px;
+        }
       }
     }
   }

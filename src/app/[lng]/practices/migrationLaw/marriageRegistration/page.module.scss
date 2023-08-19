@@ -1,0 +1,299 @@
+@import "src/styles/base/vars";
+
+.intro {
+  padding: 30px 0 60px;
+
+  .wrapper {
+    .title {
+      margin-bottom: 20px;
+    }
+
+    .text {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+
+      & p:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .intro {
+    padding: 30px 0 50px;
+
+    .wrapper {
+      display: block;
+
+      .title {
+        margin-bottom: 20px;
+      }
+
+      .text {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .intro {
+
+    .wrapper {
+      .title {
+        .bottomText {
+          font-size: 75px;
+        }
+      }
+
+      .text {
+        font-size: 20px;
+
+        & p:not(:last-child) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .intro {
+    padding: 20px 0 40px;
+
+    .wrapper {
+      .title {
+        .bottomText {
+          font-size: 57px;
+        }
+      }
+
+      .text {
+        font-size: 14px;
+
+        & p:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.lists {
+  padding: 60px 0;
+  background: $dark;
+  color: $light;
+  .wrapper {
+    .reasons {
+      padding-bottom: 100px;
+      .title {
+        margin-bottom: 30px;
+      }
+      ul {
+        padding-right: 20%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+    .documents {
+      margin-bottom: 100px;
+      .title {
+        margin-bottom: 30px;
+      }
+      ul {
+        padding-right: 20%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+    .term {
+      .title {
+        margin-bottom: 30px;
+      }
+      .text {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: normal;
+        p:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .lists {
+    .wrapper {
+      .reasons {
+        padding-bottom: 90px;
+        .title {
+
+        }
+      }
+      .documents {
+        margin-bottom: 90px;
+        .title {
+          .bottomText {
+            //font-size: 55px;
+          }
+        }
+      }
+      .term {
+        .text {
+          font-size: 23px;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .lists {
+    padding: 50px 0;
+    .wrapper {
+      .reasons {
+        padding-bottom: 80px;
+        .title {
+          margin-bottom: 20px;
+          .bottomText {
+            font-size: 75px;
+          }
+        }
+        ul {
+          padding: 0;
+          row-gap: 15px;
+        }
+      }
+      .documents {
+        margin-bottom: 80px;
+        .title {
+          margin-bottom: 20px;
+          .bottomText {
+            font-size: 56px;
+          }
+        }
+        ul {
+          padding: 0;
+          row-gap: 15px;
+        }
+      }
+      .term {
+
+        .title {
+          margin-bottom: 20px;
+          .bottomText {
+            font-size: 80px;
+          }
+        }
+        .text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .lists {
+    padding: 40px 0;
+    .wrapper {
+      .reasons {
+        padding-bottom: 60px;
+        .title {
+          .bottomText {
+            font-size: 57px;
+          }
+        }
+        ul {
+          row-gap: 10px;
+        }
+      }
+      .documents {
+        margin-bottom: 60px;
+        .title {
+          .bottomText {
+            font-size: 42px;
+          }
+        }
+        ul {
+          row-gap: 10px;
+        }
+      }
+      .term {
+        .title {
+          .bottomText {
+            font-size: 60px;
+          }
+        }
+        .text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.application {
+  padding: 60px 0 80px;
+
+  .wrapper {
+    .text {
+      max-width: 80%;
+      margin: 0 auto;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: $tabletBig) {
+  .application {
+    .wrapper {
+
+      .text {
+        font-size: 25px;
+        //margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .application {
+    padding: 50px 0 70px;
+    .wrapper {
+
+      .text {
+        font-size: 20px;
+        //margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .application {
+    padding: 40px 0 60px;
+
+    .wrapper {
+      .text {
+        max-width: 100%;
+        font-size: 16px;
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+}
