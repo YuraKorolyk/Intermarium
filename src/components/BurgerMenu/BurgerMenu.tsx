@@ -13,7 +13,7 @@ interface IProps {
 }
 const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger, lng}) => {
 
-    const { t, i18n } = useTranslation('layout')
+    const { t, i18n } = useTranslation()
 
     const pathname = usePathname();
     useEffect(()=> {
@@ -35,10 +35,6 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger, lng}) => {
                     className={pathname === `/${lng}` ? classes.active : ''}
                     onClick={onCloseBurger}
                     href={`/${lng}`}
-                    // href={{
-                    //     pathname: "/some-page",
-                    //     query: lng, // the data
-                    // }}
                 >
                     {t('burgerMenu.main')}
                 </Link>

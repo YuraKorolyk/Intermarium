@@ -21,7 +21,7 @@ const Header:FC<IProps> = ({lng}) => {
         setBurgerOpen(false)
     }
     const router = useRouter();
-    const { t } = useTranslation('layout')
+    const { t } = useTranslation()
     return (
         <header className={classes.header}>
             <BurgerMenu isOpen={burgerOpen} onCloseBurger={closeBurgerHandler} lng={lng}/>

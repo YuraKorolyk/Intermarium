@@ -5,6 +5,7 @@ import Container from "@/components/Layouts/Container/Container";
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 import {useRouter} from "next/navigation";
+import {useTranslation} from "react-i18next";
 
 
 const data = [
@@ -18,11 +19,11 @@ const data = [
   },
   {
     "label": "Дозвіл на імміграцію",
-    "link": "/link"
+    "link": "immigrationPermit"
   },
   {
     "label": "Відновлення втраченої/викраденої посвідки на проживання",
-    "link": "/link"
+    "link": "renewalOfResidencePermitInCaseOfLossOrTheft"
   },
   {
     "label": "Супровід в оформленні шлюбу з резидентами України",
@@ -33,8 +34,8 @@ const data = [
     "link": "extensionOfStayInUkraine"
   },
   {
-    "label": "Оформлення громадянство України",
-    "link": "/link"
+    "label": "Оформлення громадянства України",
+    "link": "acquisitionOfUkrainianCitizenship"
   },
   {
     "label": "Дозвіл на працевлаштування в Україні",
@@ -62,11 +63,12 @@ const data = [
   },
   {
     "label": "Оформлення довідки громадянина України",
-    "link": "/link"
+    "link": "registrationAsCitizenOfUkraine"
   }
 ]
 const Page = () => {
   const router = useRouter();
+  const {t, i18n} = useTranslation()
     return (
         <>
             <HeaderBackground background="1"/>
@@ -100,7 +102,7 @@ const Page = () => {
                     {data && data.map((item, i) => (
                       <div
                         key={i}
-                        onClick={()=> router.push(`/practices/migrationLaw/${item.link}`)}
+                        onClick={()=> router.push(`migrationLaw/${item.link}`)}
                       >{item.label}</div>
                     ))}
                   </div>

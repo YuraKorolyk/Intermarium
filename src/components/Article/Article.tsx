@@ -4,34 +4,35 @@ import Logo from "../../../public/assets/icons/Logo";
 import Calendar from "../../../public/assets/icons/Calendar";
 import ArticleAuthor from "@/components/ArticleAuthor/ArticleAuthor";
 import Arrow from "../../../public/assets/icons/Arrow";
+import {useTranslation} from "react-i18next";
 
 interface IProps {
-    title: string,
-    date: string,
-    author: string,
+  title: string,
+  date: string,
+  author: string,
 }
 
-const Article:FC<IProps> = ({title, date, author}) => {
+const Article: FC<IProps> = ({title, date, author}) => {
 
-    return (
-        <div className={classes.wrapper}>
-            <div className={classes.image}>
-                <Logo/>
-            </div>
-            <div className={classes.description}>
-                <div className={classes.details}>
+  return (
+    <div className={classes.wrapper}>
+      <div className={classes.image}>
+        <Logo/>
+      </div>
+      <div className={classes.description}>
+        <div className={classes.details}>
 
-                    <ArticleAuthor author={author}/>
-                    <div className={classes.date}>
-                        <Calendar />
-                        <span>{date}</span>
-                    </div>
-                </div>
-                <div className={classes.title}>{title}</div>
-                <div className={classes.arrow}><Arrow color="#ECECEC"/></div>
-            </div>
+          <ArticleAuthor author={author}/>
+          <div className={classes.date}>
+            <Calendar/>
+            <span>{date}</span>
+          </div>
         </div>
-    );
+        <div className={classes.title}>{title}</div>
+        <div className={classes.arrow}><Arrow color="#ECECEC"/></div>
+      </div>
+    </div>
+  );
 };
 
 export default Article;

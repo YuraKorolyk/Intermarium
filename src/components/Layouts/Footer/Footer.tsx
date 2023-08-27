@@ -15,7 +15,8 @@ interface IProps {
 
 const Footer:FC<IProps> = ({lng}) => {
     const router = useRouter();
-    const { t } = useTranslation('layout')
+    const { t } = useTranslation()
+    const currentYear = new Date().getFullYear();
     return (
         <footer className={classes.footer}>
             <Container className={classes.wrapper}>
@@ -23,7 +24,7 @@ const Footer:FC<IProps> = ({lng}) => {
                     <div className={classes.logoBox} onClick={()=> router.push(`/${lng}`)}>
                         <MainLogo isDark={false}/>
                     </div>
-                    <span>©2023 Intermarium law firm</span>
+                    <span>©{currentYear} Intermarium law firm</span>
                 </div>
                 <div className={classes.networks}>
                     <div className={classes.icons}>

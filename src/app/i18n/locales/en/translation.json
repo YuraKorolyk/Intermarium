@@ -1,5 +1,138 @@
 {
+  "header": {
+    "lawBlog": "Legal Blog"
+  },
+  "burgerMenu" : {
+    "main": "Main page",
+    "about": "About us",
+    "practice": {
+      "title": "Practices",
+      "migrationLaw": "— migration law",
+      "corporateLaw": "— corporate law",
+      "visaSupport": "— visa support",
+      "dueDiligence": "— lawyer due-diligence",
+      "customerService": "— customer service"
+    },
+    "blog": "blog",
+    "contacts": "contacts"
+  },
+  "footer" : {
+    "rulesAndPrivacy":"Rules and privacy notices"
+  },
   "homePage": {
-
+    "mission": {
+      "title": {
+        "topText": "Our",
+        "bottomText": "Mission"
+      },
+      "text": "We stand for the protection of the interests of foreigners and their businesses in order to make <span>Ukraine</span> and the entire <span>Central European</span> region the most investment-attractive part of the world, so that millions of people from all over the world invest, migrate in search of career and business opportunities, and build a better life in the <span>Intermarium</span> countries.",
+      "button": "More detail"
+    },
+    "whyWe": {
+      "title": {
+        "topText": "WHAT MAKES CLIENTS ",
+        "bottomText": "CHOOSE US?"
+      },
+      "first": {
+        "title": "A thorough study of the problem of the request",
+        "text": "Familiarization with the situation for which the client requested help, familiarization with the documentation, wishes, and vision of the client, analysis of precedents, and familiarization with the entire background of the client's request"
+      },
+      "second": {
+        "title": "Choosing the best solution strategy",
+        "text": "Selection of the most effective, legally correct, and justified model of actions, which would combine compliance with legal norms, the wishes of the client, and a detailed analysis of the possible development of events and assessment of risks and prospects. When choosing a decision strategy, the client's wishes regarding terms, budget, and final result are taken into account"
+      },
+      "third": {
+        "title": "Bringing a result",
+        "text": "Every client who trusts us receives a guarantee of the result because our team starts working with the client only after a detailed study of each situation individually, and assesses the risks and the chances of their solution"
+      }
+    },
+    "practices": {
+      "title": {
+        "topText": "Our",
+        "bottomText": "practices"
+      },
+      "migrationLaw": {
+        "title": "Migration law",
+        "description": "Intermarium Law Firm provides a full cycle of support for foreigners wishing to migrate to Ukraine or obtain Ukrainian citizenship"
+      },
+      "corporateLaw": {
+        "title": "Corporate law",
+        "description": "Intermarium Law Firm provides a full cycle of support for foreigners wishing to migrate to Ukraine or obtain Ukrainian citizenship"
+      },
+      "visaSupport": {
+        "title": "Visa support",
+        "description": "Intermarium Law Firm will select for you the most optimal type of visa, country, consulate, and time of submission of documents"
+      },
+      "dueDiligence": {
+        "title": "Legal due diligence",
+        "description": "Proper preparation for Due Diligence together with the experts of Intermarium Law Firm significantly increases the chances of successful completion of the transaction"
+      },
+      "customerService": {
+        "title": "Legal business support",
+        "description": "Intermarium law company provides full support in opening a business in Ukraine and its subsequent introduction in matters related to the legal component"
+      }
+    },
+    "blog" : {
+      "title": {
+        "topText": "Our",
+        "bottomText": "legal blog"
+      },
+      "firstArticle": "Law of Ukraine for citizens of the Republic of Poland who are in the territory of Ukraine",
+      "secondArticle": "Draft Law No. 5795 on changes in the field of employment of foreigners",
+      "thirdArticle": "E-residency for foreigners",
+      "button": "View all articles"
+    }
+  },
+  "practices": {
+    "acquisitionOfUkrainianCitizenship": {
+      "intro": {
+        "title": {
+          "topText": "Acquisition of Ukrainian",
+          "bottomText": "citizenship"
+        },
+        "text": {
+          "p1": "<span>Citizenship of Ukraine</span> can be obtained only if the person has the grounds for this, which are provided for <span>in the Law of Ukraine “On Citizenship of Ukraine”.</span>",
+          "p2": {
+            "headline": "Grounds for obtaining Ukrainian citizenship are such as:",
+            "list": {
+              "li1": "territorial origin",
+              "li2": "restoration of Ukrainian citizenship",
+              "li3": "acquisition as a result of adoption or by birth"
+            }
+          },
+          "p3": "But what to do with persons for whom none of these grounds are suitable, in such a case, according to Article 9 of the Law of Ukraine “On Citizenship of Ukraine”, a foreigner or a stateless person may be admitted to the citizenship of Ukraine at their request.",
+          "p4": "The procedure is quite complicated and long, since the decision on acceptance of citizenship is taken by the President of Ukraine, such a procedure can last more than two years."
+        }
+      },
+      "lists": {
+        "requirements": {
+          "title": {
+            "topText": "Grounds and requirements for obtaining Ukrainian",
+            "bottomText": "citizenship"
+          },
+          "li1": "Recognize and observe constitutional rights and obligations, as well as all legislative norms.",
+          "li2": "Availability of a declaration of lack of citizenship of another country or readiness to renounce it if it exists.",
+          "li3": "Permanent residence in Ukraine for five years on legal grounds.",
+          "li4": "For foreigners who have married a citizen of Ukraine, permanent residence for two years is required.",
+          "li5": "Legal stay in the territory of the country for at least three years with the status of a refugee, stateless person or granted asylum in Ukraine.",
+          "li6": "Military service as part of the Armed Forces on a contract basis.",
+          "li7": "Knowledge of the state language.",
+          "li8": "Availability of livelihood in the amount of at least 12 minimum wages."
+        },
+        "changes": {
+          "title": {
+            "topText": "внесення змін до",
+            "bottomText": "Законів України"
+          },
+          "text": {
+            "p1": "Also, recently the President of Ukraine Volodymyr Zelenskyi <span>signed the Law No. 7606 \"On Amendments to the Laws of Ukraine</span> \"On the Citizenship of Ukraine\" and \"On Ensuring the Functioning of the Ukrainian Language as the State Language\" Regarding the Conditions of Acceptance to the Citizenship of Ukraine\", which <span>provides for new rules for acquiring citizenship.</span>",
+            "p2": "According to the document, now <span>in order to obtain Ukrainian citizenship, it will be necessary to pass exams</span> on knowledge of the Ukrainian language, history and the Constitution.",
+            "p3": "<span>Foreigners or stateless persons who have outstanding merits for Ukraine</span>, whose admission to Ukrainian citizenship is in the state interest, or who, in accordance with the procedure established by law, perform military service under a contract in the Armed Forces, the State Special Service of Transport or the National Guard of Ukraine, persons who received a temporary permit residence, <span>within two years from the moment of acquiring citizenship, they must pass the relevant exams and submit documents about their passing.</span>",
+            "p4": "Невиконання зобов’язання про складання іспитів з основ Конституції України, історії України, та на рівень володіння державною мовою цими категоріями осіб <span>є підставою для втрати громадянства України.</span>",
+            "p5": "Складання іспитів має здійснюватися <span>в порядку, встановленому Кабміном.</span>"
+          }
+        }
+      }
+    }
   }
 }

@@ -3,8 +3,12 @@ import classes from './page.module.scss';
 import Container from "@/components/Layouts/Container/Container";
 import CustomLi from "@/components/CustomLi/CustomLi";
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
+import CustomAnchorLi from "@/components/CustomAnchorLi/CustomAnchorLi";
 
 const Page = () => {
+
+
+
   return (
     <>
       <div className={classes.intro}>
@@ -23,18 +27,18 @@ const Page = () => {
             Зміст
           </div>
           <ul>
-            <CustomLi>Умови використання</CustomLi>
-            <CustomLi>Користування веб-сайтом</CustomLi>
-            <CustomLi>Права інтелектуальної власності</CustomLi>
-            <CustomLi>Зміст даних та мета, для якої вона збирається</CustomLi>
-            <CustomLi>Права осіб щодо яких збираються персональні дані</CustomLi>
-            <CustomLi>Оновлення цього повідомлення</CustomLi>
+            <CustomAnchorLi targetId="conditions">Умови використання</CustomAnchorLi>
+            <CustomAnchorLi targetId="use">Користування веб-сайтом</CustomAnchorLi>
+            <CustomAnchorLi targetId="rights">Права інтелектуальної власності</CustomAnchorLi>
+            <CustomAnchorLi targetId="dataContent">Зміст даних та мета, для якої вона збирається</CustomAnchorLi>
+            <CustomAnchorLi targetId="humanRights">Права осіб щодо яких збираються персональні дані</CustomAnchorLi>
+            <CustomAnchorLi targetId="update">Оновлення цього повідомлення</CustomAnchorLi>
           </ul>
         </Container>
       </div>
       <div className={classes.list}>
         <Container className={classes.wrapper}>
-          <div className={`${classes.item} ${classes.first}`}>
+          <div className={`${classes.item} ${classes.first}`} id="conditions">
             <div className={classes.title}>
               <TextWithLine topText="умови" topColor="dark">
                 <span className={`${classes.bottomText} bottomTextWithLine`}>ВИКОРИСТАННЯ</span>
@@ -47,7 +51,7 @@ const Page = () => {
                 Продовження використання цього веб-сайту буде вважатися прийняттям оновлених або змінених умов.</p>
             </div>
           </div>
-          <div className={`${classes.item} ${classes.second}`}>
+          <div className={`${classes.item} ${classes.second}`} id="use">
             <div className={classes.title}>
               <TextWithLine topText="КОРИСТУВАННЯ" topColor="dark">
                 <span className={`${classes.bottomText} bottomTextWithLine`}>ВЕБ-САЙТОМ</span>
@@ -60,7 +64,7 @@ const Page = () => {
                 внутрішнього ділового використання.</p>
             </div>
           </div>
-          <div className={`${classes.item} ${classes.third}`}>
+          <div className={`${classes.item} ${classes.third}`} id="rights">
             <div className={classes.title}>
               <TextWithLine topText="ПРАВА ІНТЕЛЕКТУАЛЬНОЇ" topColor="dark">
                 <span className={`${classes.bottomText} bottomTextWithLine`}>власності</span>
@@ -77,7 +81,7 @@ const Page = () => {
           </div>
 
 
-          <div className={`${classes.item} ${classes.fourth}`}>
+          <div className={`${classes.item} ${classes.fourth}`} id="dataContent">
             <div className={classes.title}>
               <TextWithLine topText="Зміст даних та мета, для якої" topColor="dark">
                 <span className={`${classes.bottomText} bottomTextWithLine`}>вона збирається</span>
@@ -115,7 +119,7 @@ const Page = () => {
                 вашої згоди.</p>
             </div>
           </div>
-          <div className={`${classes.item} ${classes.fifth}`}>
+          <div className={`${classes.item} ${classes.fifth}`} id="humanRights">
             <div className={classes.title}>
               <TextWithLine topText="Права осіб щодо яких збираються" topColor="dark">
                 <span className={`${classes.bottomText} bottomTextWithLine`}>персональні дані</span>
@@ -137,7 +141,7 @@ const Page = () => {
               <p> Зверніть увагу: право на видалення даних не є абсолютним — ми не можемо видалити ті ваші дані, які зобов&apos;язані зберігати за законодавством.</p>
             </div>
           </div>
-          <div className={`${classes.item} ${classes.sixth}`}>
+          <div className={`${classes.item} ${classes.sixth}`} id="update">
             <div className={classes.title}>
               <TextWithLine topText="ОНОВЛЕННЯ ЦЬОГО" topColor="dark">
                 <span className={`${classes.bottomText} bottomTextWithLine`}>ПОВІДОМЛЕННЯ</span>

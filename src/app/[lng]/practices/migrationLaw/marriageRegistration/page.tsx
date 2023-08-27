@@ -30,7 +30,7 @@ const Page = () => {
       </div>
       <div className={classes.lists}>
         <Container className={classes.wrapper}>
-          <div className={classes.reasons}>
+          <div className={classes.documents}>
             <div className={classes.title}>
               <TextWithLine topText="Перелік необхідних" topColor="light">
                 <span className={`${classes.bottomText} bottomTextWithLine`}>документів</span>
@@ -55,18 +55,18 @@ const Page = () => {
               стосовно цього питання призведе до зайвих чималих фінансових витрат і втрати часу.
             </p>
           </div>
-          <div className={classes.documents}>
+          <div className={classes.war}>
             <div className={classes.title}>
               <TextWithLine topText="ШЛЮБ З ІНОЗЕМЦЕМ ПІД ЧАС" topColor="light">
                 <span className={`${classes.bottomText} bottomTextWithLine`}>воєнного стану</span>
               </TextWithLine>
             </div>
-            <ul>
-              <p>
+            <div>
+              <p className={classes.because}>
                 У звʼязку із загрозою життю та здоровʼю осіб, під час воєнного стану доступна прискорена процедура реєстрації шлюбу без звернення за послугою «Шлюб за добу».
               </p>
               <p>
-                <div className={classes.title}>
+                <div className={classes.subtitle}>
                   Що для цього потрібно?
                 </div>
                 <ul>
@@ -77,7 +77,7 @@ const Page = () => {
                 </ul>
               </p>
 
-            </ul>
+            </div>
           </div>
         </Container>
       </div>
