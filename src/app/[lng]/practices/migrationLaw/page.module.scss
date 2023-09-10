@@ -95,6 +95,11 @@
 @media (max-width: $tablet) {
   .order {
     .wrapper {
+      .title {
+        .bottomText {
+          font-size: 73px;
+        }
+      }
       .list {
         div {
           flex: 0 1 49%;
@@ -109,7 +114,7 @@
     .wrapper {
       .title {
         .bottomText {
-          font-size: 57px;
+          font-size: 55px;
         }
       }
       .list {

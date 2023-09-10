@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import classes from './page.module.scss'
 import Container from "@/components/Layouts/Container/Container";
@@ -5,107 +6,84 @@ import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import Button from "@/components/Button/Button";
 import CustomLi from "@/components/CustomLi/CustomLi";
+import {useTranslation} from "react-i18next";
+import {trans} from "@/services";
 
 const Page = () => {
+  const {t} = useTranslation();
   return (
     <>
       <HeaderBackground background="4"/>
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>
-            <TextWithLine topText="Юридичний" topColor="dark">
-              <span className={`${classes.bottomText} bottomTextWithLine`}>дью-ділідженс</span>
+            <TextWithLine topText={t('practices.dueDiligence.intro.title.topText')} topColor="dark">
+              <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.dueDiligence.intro.title.bottomText')}</span>
             </TextWithLine>
           </div>
           <div className={classes.text}>
-            <p>
-              <span className="highlightDark">Юридичний дью-ділідженс</span> - процес збору і аналізу різноманітної
-              юридичної інформації про Об&apos;єкт: статусу
-              реєстрації та права власності на основні активи, умови ключових договорів, судові процеси та обтяження,
-              відповідність вимогам чинного законодавства тощо.
-            </p>
-            <p>
-              Належна підготовка до Due Diligence <span
-              className="highlightDark">дозволить суттєво скоротити час</span> і необхідний обсяг ресурсів для його
-              проходження та <span className="highlightDark">значно підвищує шанси на успішне завершення угоди</span>.
-            </p>
+            <p>{trans('practices.dueDiligence.intro.text.p1', 'dark')}</p>
+            <p>{trans('practices.dueDiligence.intro.text.p2', 'dark')}</p>
           </div>
         </Container>
       </div>
       <div className={classes.check}>
         <Container className={classes.wrapper}>
           <div className={classes.mainTitle}>
-            Перевірка Об&apos;єктів нерухомості перед купівлею:
+            {t('practices.dueDiligence.check.mainTitle')}
           </div>
           <div className={classes.blocks}>
             <div>
               <div className={classes.title}>
-                <TextWithLine topText="первинний" topColor="light">
-                  <span className={`${classes.bottomText} bottomTextWithLine`}>ринок</span>
+                <TextWithLine topText={t('practices.dueDiligence.check.block1.title.topText')} topColor="light">
+                  <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.dueDiligence.check.block1.title.bottomText')}</span>
                 </TextWithLine>
               </div>
               <div className={classes.text}>
-                На первинному ринку квартири часто продають ще до завершення будівництва, що передбачає низку ризиків для покупця, тому наші юристи роблять юридичну перевірку кожного Об&apos;єкта, перевірка полягає в наступному:
+                {t('practices.dueDiligence.check.block1.text')}
               </div>
               <ul>
-                <CustomLi>перевірка забудовника і об&apos;єкта будівництва</CustomLi>
-                <CustomLi>аналіз реєстраційних документів забудовника і пов&apos;язаних компаній</CustomLi>
-                <CustomLi>наявність виконавчих проваджень та будь-яких записів у реєстрі обтяжень</CustomLi>
-                <CustomLi>наявність судових справ, наприклад, із кредиторами або комунальними службами</CustomLi>
-                <CustomLi>наявність арештів та обтяжень</CustomLi>
-                <CustomLi>аналіз законності будівництва</CustomLi>
-                <CustomLi>перевірка дозвільних документів на будівництво (наявність ліцензії, інших необхідних документів)
-                </CustomLi>
-                <CustomLi>аналіз схеми покупки, запропонованої забудовником на предмет відповідності законодавству</CustomLi>
-                <CustomLi>вивчення договорів забудовника (інвестиційний договір; попередній договір, договір купівлі-продажу
-                  майнових прав
-                </CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block1.li1')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block1.li2')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block1.li3')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block1.li4')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block1.li5')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block1.li6')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block1.li7')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block1.li8')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block1.li9')}</CustomLi>
               </ul>
             </div>
             <div>
               <div className={classes.title}>
-                <TextWithLine topText="вторинний" topColor="light">
-                  <span className={`${classes.bottomText} bottomTextWithLine`}>ринок</span>
+                <TextWithLine topText={t('practices.dueDiligence.check.block2.title.topText')} topColor="light">
+                  <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.dueDiligence.check.block2.title.bottomText')}</span>
                 </TextWithLine>
               </div>
               <ul>
-                <CustomLi>перевірка законності права власності власника (договір купівлі-продажу, дарча, спадок, ін.)</CustomLi>
-                <CustomLi>перевірка на наявність обтяжень, судових або виконавчих проваджень щодо об&apos;єкта нерухомості,
-                  перевірка
-                  арештів, іпотек
-                </CustomLi>
-                <CustomLi>перевірка власника</CustomLi>
-                <CustomLi>перевірка кількості зареєстрованих осіб</CustomLi>
-                <CustomLi>аналіз на предмет можливості вимог третіх осіб</CustomLi>
-                <CustomLi>супровід укладення угод та узгодження умов договору купівлі-продажу</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block2.li1')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block2.li2')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block2.li3')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block2.li4')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block2.li5')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.block2.li6')}</CustomLi>
               </ul>
             </div>
-
             <div className={classes.checkList}>
               <div className={classes.title}>
-                <TextWithLine topText="Перевірка Об&apos;єкту" topColor="light">
-                  <span className={`${classes.bottomText} bottomTextWithLine`}>інвестування</span>
+                <TextWithLine topText={t('practices.dueDiligence.check.checkList.title.topText')} topColor="light">
+                  <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.dueDiligence.check.checkList.title.bottomText')}</span>
                 </TextWithLine>
               </div>
               <ul>
-                <CustomLi>повна юридична перевірка Об&apos;єкту, його історію та формування експертного висновку щодо ризиків
-                  купівлі
-                </CustomLi>
-                <CustomLi>аудит договір, ліцензій, дозвільних документів</CustomLi>
-                <CustomLi>перевірка власника Об&apos;єкту в тому числі і попередніх власників, аналіз результатів угод з
-                  резидентами
-                  і нерезидентами
-                </CustomLi>
-                <CustomLi>огляд установчих документів, їхнього юридичного статусу</CustomLi>
-                <CustomLi>огляд документів про корпоративне управління, рішень колегіальних органів управління та основних
-                  довіреностей
-                </CustomLi>
-                <CustomLi>аналіз угод з акціями (частками) товариства, відомості про акціонерів,
-                  їх майнові та немайнові права
-                </CustomLi>
-                <CustomLi>аналіз правомірності діяльності Товариства – наявність необхідних ліцензій, дозволів, сертифікатів
-                </CustomLi>
-                <CustomLi>аналіз трудових відносин</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.checkList.li1')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.checkList.li2')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.checkList.li3')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.checkList.li4')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.checkList.li5')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.checkList.li6')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.checkList.li7')}</CustomLi>
+                <CustomLi>{t('practices.dueDiligence.check.checkList.li8')}</CustomLi>
               </ul>
             </div>
           </div>
@@ -114,11 +92,11 @@ const Page = () => {
       </div>
       <div className={classes.application}>
         <Container className={classes.wrapper}>
-          <div className={classes.text}>Компанія Intermarium проводить юридичну перевірку як Об&apos;єктів нерухомості для
-            купівлі так і Об&apos;єктів інвестування.
+          <div className={classes.text}>
+            {t('practices.dueDiligence.application.text')}
           </div>
           <div className={classes.button}>
-            <Button text="залишити заявку"/>
+            <Button text={t('practices.dueDiligence.application.button')}/>
           </div>
         </Container>
       </div>

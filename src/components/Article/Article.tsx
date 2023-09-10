@@ -5,15 +5,22 @@ import Calendar from "../../../public/assets/icons/Calendar";
 import ArticleAuthor from "@/components/ArticleAuthor/ArticleAuthor";
 import Arrow from "../../../public/assets/icons/Arrow";
 import {useTranslation} from "react-i18next";
+import {useRouter} from "next/navigation";
 
 interface IProps {
-  title: string,
-  date: string,
-  author: string,
+  title: string;
+  date: string;
+  author: 'Taras' | 'Yurii';
+  color?: 'light' | 'dark';
+  linkTo: string;
 }
 
-const Article: FC<IProps> = ({title, date, author}) => {
-
+const Article: FC<IProps> = ({title, date, author, color, linkTo}) => {
+  const currColor = color === 'dark' ? '#013043' : '#ECECEC'
+  const router = useRouter();
+  const onArrowClick = () => {
+    router.push(`/blog/${linkTo}`);
+  }
   return (
     <div className={classes.wrapper}>
       <div className={classes.image}>
@@ -21,15 +28,14 @@ const Article: FC<IProps> = ({title, date, author}) => {
       </div>
       <div className={classes.description}>
         <div className={classes.details}>
-
-          <ArticleAuthor author={author}/>
+          <ArticleAuthor author={author} color='#013043'/>
           <div className={classes.date}>
-            <Calendar/>
-            <span>{date}</span>
+            <Calendar fill={currColor}/>
+            <span style={{color: currColor}}>{date}</span>
           </div>
         </div>
-        <div className={classes.title}>{title}</div>
-        <div className={classes.arrow}><Arrow color="#ECECEC"/></div>
+        <div style={{color: currColor}} className={classes.title}>{title}</div>
+        <div className={classes.arrow} onClick={onArrowClick}><Arrow color={currColor}/></div>
       </div>
     </div>
   );

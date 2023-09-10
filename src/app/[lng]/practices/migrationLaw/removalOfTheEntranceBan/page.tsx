@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import classes from './page.module.scss'
 import Container from "@/components/Layouts/Container/Container";
@@ -10,48 +11,39 @@ import Four from "../../../../../../public/assets/icons/Numbers/Four";
 import Three from "../../../../../../public/assets/icons/Numbers/Three";
 import Two from "../../../../../../public/assets/icons/Numbers/Two";
 import Button from "@/components/Button/Button";
+import {useTranslation} from "react-i18next";
+import {trans} from "@/services";
 
 const Page = () => {
+  const {t} = useTranslation();
   return (
     <>
       <HeaderBackground background="1"/>
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>
-            <TextWithLine topText="Зняття заборони в&apos;їзду" topColor="dark">
-              <span className={`${classes.bottomText} bottomTextWithLine`}>в Україну</span>
+            <TextWithLine topText={t('practices.removalOfTheEntranceBan.intro.title.topText')} topColor="dark">
+              <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.removalOfTheEntranceBan.intro.title.bottomText')}</span>
             </TextWithLine>
           </div>
           <div className={classes.list}>
             <LinkWithDropdown
               dark={true}
               dropdown="dropdown"
-              title="Загальні умови перетину кордону іноземцями та особами без громадянства."
+              title={t('practices.removalOfTheEntranceBan.intro.list.one.title')}
               description={
                 <>
-                  <p>
-                    Уповноважені службові особи Державної прикордонної служби України надають іноземцю, особі без
-                    громадянства дозвіл на перетинання державного кордону у разі в&apos;їзду в Україну за умови:
-                  </p>
+                  <p>{t('practices.removalOfTheEntranceBan.intro.list.one.p1')}</p>
                   <p>
                     <ol className={classes.light}>
-                      <li>наявності в нього дійсного паспортного документа;</li>
-                      <li>відсутності щодо нього рішення уповноваженого державного органу України про заборону в&apos;їзду
-                        в Україну;
-                      </li>
-                      <li>наявності в нього в&apos;їзної візи, якщо інше не передбачено законодавством України;</li>
-                      <li>підтвердження мети запланованого перебування;</li>
-                      <li>наявності достатнього фінансового забезпечення на період запланованого перебування і для
-                        повернення до держави походження або транзиту до третьої держави або наявності в нього
-                        можливості отримати достатнє фінансове забезпечення в законний спосіб на території України.
-                      </li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.one.p2.li1')}</li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.one.p2.li2')}</li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.one.p2.li3')}</li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.one.p2.li4')}</li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.one.p2.li5')}</li>
                     </ol>
                   </p>
-                  <p>
-                    <span className={classes.bold}>Виняток</span> із цих правил може бути для іноземця або особи без
-                    громадянства, які просять про можливість розгляду в установленому законом порядку питання надання
-                    йому притулку або визнання його біженцем або особою, яка потребує додаткового захисту в Україні.
-                  </p>
+                  <p>{t('practices.removalOfTheEntranceBan.intro.list.one.p3')}</p>
                 </>
               }
             >
@@ -60,34 +52,19 @@ const Page = () => {
             <LinkWithDropdown
               dark={true}
               dropdown="dropdown"
-              title="Підстави для відмови у перетині кордоні іноземцям та особам без громадянства."
+              title={t('practices.removalOfTheEntranceBan.intro.list.two.title')}
               description={
                 <>
                   <p>
                     <ul className="listWithPointer">
-                      <li>загроза національній безпеці або охороні громадського порядку;</li>
-                      <li>з метою захисту здоров’я, прав та законних інтересів жителів України;</li>
-                      <li>подання неправдивих відомостей або підроблених документів на паспортний контроль на
-                        кордоні;
-                      </li>
-                      <li>пред’явлення підробленого, зіпсованого чи невідповідного встановленим стандартам паспорта;
-                      </li>
-                      <li>порушення правил перетину державного кордону України, митних правил, санітарних норм або
-                        правил на пункті перетину кордону України або
-                      </li>
-                      <li>недотримання вимог законодавства, зазначених посадовими особами органів державної прикордонної
-                        служби, органів доходів та зборів та інших органів;
-                      </li>
-                      <li>якщо під час попереднього перебування на території України іноземець або особа без
-                        громадянства не виконали рішення суду або адміністративні стягнення або мають інші невиконані
-                        майнові зобов’язання перед державою, фізичними або юридичними особами, у тому числі пов’язані з
-                        попередньою депортацією, зокрема після закінчення строку заборони на подальший в’їзд до України;
-                      </li>
-                      <li>в’їзд на тимчасово окуповану територію України або до зони проведення антитерористичної
-                        операції за межами контрольних пунктів в’їзду-виїзду.
-                      </li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.two.li1')}</li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.two.li2')}</li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.two.li3')}</li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.two.li4')}</li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.two.li5')}</li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.two.li6')}</li>
+                      <li>{t('practices.removalOfTheEntranceBan.intro.list.two.li7')}</li>
                     </ul>
-
                   </p>
                 </>
               }
@@ -97,19 +74,10 @@ const Page = () => {
             <LinkWithDropdown
               dark={true}
               dropdown="dropdown"
-              title="Хто ухвалює рішення про заборону на в'їзд?"
+              title={t('practices.removalOfTheEntranceBan.intro.list.three.title')}
               description={
                 <>
-                  <p>
-                    Рішення про заборону в&apos;їзду в Україну строком на три роки приймається центральним органом
-                    виконавчої влади, що реалізує державну політику у сфері міграції (імміграції та еміграції), у тому
-                    числі протидії нелегальній (незаконній) міграції, громадянства, реєстрації фізичних осіб, біженців
-                    та інших визначених законодавством категорій мігрантів, Службою безпеки України або органом охорони
-                    державного кордону, або уповноваженим підрозділом Національної поліції України. У разі невиконання
-                    рішення про заборону в’їзду в Україну іноземцям та особам без громадянства забороняється подальший
-                    в’їзд в Україну на десять років, що додається до частини строку заборони в’їзду в Україну, який не
-                    сплив до моменту прийняття повторного рішення про заборону в’їзду в Україну.
-                  </p>
+                  <p>{t('practices.removalOfTheEntranceBan.intro.list.three.p')}</p>
                 </>
               }
             >
@@ -118,20 +86,12 @@ const Page = () => {
             <LinkWithDropdown
               dark={true}
               dropdown="dropdown"
-              title="Що робити, якщо винесли рішення про заборону на в'їзд в Україну?"
+              title={t('practices.removalOfTheEntranceBan.intro.list.four.title')}
               description={
                 <>
-                  <p>
-                    Насамперед, якщо Вам стало відомо про заборону в’їзду в Україну при спробі пройти паспортний
-                    контроль на кордоні України, попросіть, щоб Вам видали на руки рішення про відмову у перетині
-                    кордону із зазначенням конкретної причини заборони на в’їзд.
-                  </p>
-                  <p>
-                    Надалі це може прискорити вирішення проблеми, так буде зрозуміло, хто саме прийняв рішення про
-                    заборону на в’їзд задля того, щоб у подальшому оскаржити заборону на в’їзд в Україну.
-                  </p>
-                  <p>Рішення про заборону на в&apos;їзд можна оскаржити протягом 30 днів із дня ознайомлення з
-                    ним.</p>
+                  <p>{t('practices.removalOfTheEntranceBan.intro.list.four.p1')}</p>
+                  <p>{t('practices.removalOfTheEntranceBan.intro.list.four.p2')}</p>
+                  <p>{t('practices.removalOfTheEntranceBan.intro.list.four.p3')}</p>
                 </>
               }
             >
@@ -140,27 +100,15 @@ const Page = () => {
             <LinkWithDropdown
               dark={true}
               dropdown="dropdown"
-              title="Куди можна оскаржити заборону на в’їзд?"
+              title={t('practices.removalOfTheEntranceBan.intro.list.five.title')}
               description={
                 <>
-                  <p>
-                    Іноземець, якому органом охорони державного кордону заборонено в’їзд в Україну, має право оскаржити
-                    відповідне рішення до регіонального управління Державної прикордонної служби або до суду.
-                  </p>
-                  <p>
-                    Рішення начальника органу охорони державного кордону центрального підпорядкування з цього питання
-                    оскаржується до Адміністрації Державної прикордонної служби України або до суду.
-                  </p>
-                  <p>
-                    Оскарження зазначеного рішення не зупиняє його дії.
-                  </p>
-                  <p>
-                    Суд у порядку забезпечення адміністративного позову може відповідною ухвалою зупинити дію рішення
-                    суб’єкта владних повноважень чи його окремих положень, що оскаржуються. Ухвала негайно надсилається
-                    до суб’єкта владних повноважень, що прийняв рішення, та є обов’язковою для виконання.
-                  </p>
+                  <p>{t('practices.removalOfTheEntranceBan.intro.list.five.p1')}</p>
+                  <p>{t('practices.removalOfTheEntranceBan.intro.list.five.p2')}</p>
+                  <p>{t('practices.removalOfTheEntranceBan.intro.list.five.p3')}</p>
+                  <p>{t('practices.removalOfTheEntranceBan.intro.list.five.p4')}</p>
                   <p className={classes.bold}>
-                    <span className="highlightDark">Юристи нашої компанії мають значний досвід в оскарженні подібних рішень тому можуть забезпечити ефективне оскарження рішення про заборону на в’їзд в Україну – як у вищому органі, так і в судовій інстанції. Вибір стратегії представництва інтересів клієнта у цьому випадку залежить від того, якою є підстава для заборони в’їзду.</span>
+                    <span className="highlightDark">{t('practices.removalOfTheEntranceBan.intro.list.five.p5')}</span>
                   </p>
                 </>
               }
@@ -175,13 +123,11 @@ const Page = () => {
         <Container className={classes.wrapper}>
           <div className="MLblock">
             <div className={classes.text}>
-              <span className="highlightDark">Intermarium Law Firm</span> надає повний цикл супроводу іноземців, що
-              бажають отримати дозвіл на працевлаштування в Україні. Ми допоможемо зекономити час та уникнути в
-              майбутньому значних витрат.
+              {trans('practices.removalOfTheEntranceBan.application.text', 'dark')}
             </div>
           </div>
           <div className={classes.button}>
-            <Button text="Залишити заявку"/>
+            <Button text={t('practices.removalOfTheEntranceBan.application.button')}/>
           </div>
         </Container>
       </div>

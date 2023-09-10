@@ -1,12 +1,26 @@
+'use client';
+
 import React from 'react';
 import classes from './page.module.scss';
 import Container from "@/components/Layouts/Container/Container";
-import CustomLi from "@/components/CustomLi/CustomLi";
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import CustomAnchorLi from "@/components/CustomAnchorLi/CustomAnchorLi";
+import {Trans, useTranslation} from "react-i18next";
+import {t} from "i18next";
 
 const Page = () => {
-
+  const {t} = useTranslation();
+  const transHighlights = (path: string) => {
+    return (
+      <Trans
+        i18nKey={t(path)}
+        tOptions={{interpolation: {escapeValue: true}}}
+        components={{
+          span: <span className={classes.highlights}/>
+        }}
+      />
+    )
+  }
 
 
   return (
@@ -14,25 +28,25 @@ const Page = () => {
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>
-            Правила та повідомлення про приватність
+            {t('privacy.intro.title')}
           </div>
           <div className={classes.lastUpdate}>
-            Останнє оновлення 01.09.2023 року
+            {t('privacy.intro.lastUpdate')}
           </div>
         </Container>
       </div>
       <div className={classes.contents}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>
-            Зміст
+            {t('privacy.contents.title')}
           </div>
           <ul>
-            <CustomAnchorLi targetId="conditions">Умови використання</CustomAnchorLi>
-            <CustomAnchorLi targetId="use">Користування веб-сайтом</CustomAnchorLi>
-            <CustomAnchorLi targetId="rights">Права інтелектуальної власності</CustomAnchorLi>
-            <CustomAnchorLi targetId="dataContent">Зміст даних та мета, для якої вона збирається</CustomAnchorLi>
-            <CustomAnchorLi targetId="humanRights">Права осіб щодо яких збираються персональні дані</CustomAnchorLi>
-            <CustomAnchorLi targetId="update">Оновлення цього повідомлення</CustomAnchorLi>
+            <CustomAnchorLi targetId="conditions">{t('privacy.contents.li1')}</CustomAnchorLi>
+            <CustomAnchorLi targetId="use">{t('privacy.contents.li2')}</CustomAnchorLi>
+            <CustomAnchorLi targetId="rights">{t('privacy.contents.li3')}</CustomAnchorLi>
+            <CustomAnchorLi targetId="dataContent">{t('privacy.contents.li4')}</CustomAnchorLi>
+            <CustomAnchorLi targetId="humanRights">{t('privacy.contents.li5')}</CustomAnchorLi>
+            <CustomAnchorLi targetId="update">{t('privacy.contents.li6')}</CustomAnchorLi>
           </ul>
         </Container>
       </div>
@@ -40,120 +54,111 @@ const Page = () => {
         <Container className={classes.wrapper}>
           <div className={`${classes.item} ${classes.first}`} id="conditions">
             <div className={classes.title}>
-              <TextWithLine topText="умови" topColor="dark">
-                <span className={`${classes.bottomText} bottomTextWithLine`}>ВИКОРИСТАННЯ</span>
+              <TextWithLine topText={t('privacy.list.conditions.title.topText')} topColor="dark">
+                <span
+                  className={`${classes.bottomText} bottomTextWithLine`}>{t('privacy.list.conditions.title.bottomText')}</span>
               </TextWithLine>
             </div>
             <div className={classes.text}>
-              <p>Доступ та використання www.intermarium.legal («Веб-сайт») надається ТОВ «ЮК» ІНТЕРМАРІУМ» на умовах,
-                викладених нижче. Заходячи на веб-сайт і використовуючи його, ви зобов&apos;язуйтесь виконувати ці Умови.</p>
-              <p>Зверніть увагу, що ці умови можуть періодично змінюватися, тому їх слід регулярно перевіряти.
-                Продовження використання цього веб-сайту буде вважатися прийняттям оновлених або змінених умов.</p>
+              <p>{t('privacy.list.conditions.text.p1')}</p>
+              <p>{t('privacy.list.conditions.text.p2')}</p>
             </div>
           </div>
           <div className={`${classes.item} ${classes.second}`} id="use">
             <div className={classes.title}>
-              <TextWithLine topText="КОРИСТУВАННЯ" topColor="dark">
-                <span className={`${classes.bottomText} bottomTextWithLine`}>ВЕБ-САЙТОМ</span>
+              <TextWithLine topText={t('privacy.list.use.title.topText')} topColor="dark">
+                <span
+                  className={`${classes.bottomText} bottomTextWithLine`}>{t('privacy.list.use.title.bottomText')}</span>
               </TextWithLine>
             </div>
             <div className={classes.text}>
-              <p>Наш веб-сайт створений з метою поширення інформацію про зміст, об&apos;єм, перелік послуг які надає наша
-                компанія, а також з метою поширення інформації про діяльність компанії для потенційних клієнтів.</p>
-              <p>Ви визнаєте, що будете використовувати Веб-сайт лише в законних цілях, для свого особистого або
-                внутрішнього ділового використання.</p>
+              <p>{t('privacy.list.use.text.p1')}</p>
+              <p>{t('privacy.list.use.text.p2')}</p>
             </div>
           </div>
           <div className={`${classes.item} ${classes.third}`} id="rights">
             <div className={classes.title}>
-              <TextWithLine topText="ПРАВА ІНТЕЛЕКТУАЛЬНОЇ" topColor="dark">
-                <span className={`${classes.bottomText} bottomTextWithLine`}>власності</span>
+              <TextWithLine topText={t('privacy.list.use.title.topText')} topColor="dark">
+                <span
+                  className={`${classes.bottomText} bottomTextWithLine`}>{t('privacy.list.use.title.topText')}</span>
               </TextWithLine>
             </div>
             <div className={classes.text}>
-              <p>Усі авторські права, торгові марки, права на дизайн, патенти та інші права інтелектуальної власності на
-                цьому Веб-сайті належать ТОВ «ЮК» ІНТЕРМАРІУМ» та захищаються законом України “Про авторське право і
-                суміжні права” та іншими законами України, використання їх третіми особами може бути можливим лише за
-                згодою ТОВ «ЮК» ІНТЕРМАРІУМ» та/або за згодою їх учасників.</p>
-              <p>Цей Веб-сайт не можна будь-яким чином модифікувати, декомпілювати або реконструювати. Жодна частина
-                веб-сайту не може бути відтворена без нашого прямого дозволу.</p>
+              <p>{t('privacy.list.rights.text.p1')}</p>
+              <p>{t('privacy.list.rights.text.p2')}</p>
             </div>
           </div>
 
-
           <div className={`${classes.item} ${classes.fourth}`} id="dataContent">
             <div className={classes.title}>
-              <TextWithLine topText="Зміст даних та мета, для якої" topColor="dark">
-                <span className={`${classes.bottomText} bottomTextWithLine`}>вона збирається</span>
+              <TextWithLine topText={t('privacy.list.dataContent.title.topText')} topColor="dark">
+                <span
+                  className={`${classes.bottomText} bottomTextWithLine`}>{t('privacy.list.dataContent.title.bottomText')}</span>
               </TextWithLine>
             </div>
             <div className={classes.text}>
-              <p>На нашому веб-сайті відвідувачі мають можливість залишати заявку зворотнього зв&apos;язку з нами в
-                результаті чого виникає збирання, використання та поширення інформації, яка відноситься до
-                «конфіденційної інформації» повідомляємо вас з якою метою та яку саме інформацію ми від вас
-                отримуємо.</p>
+              <p>{t('privacy.list.dataContent.text.p1')}</p>
               <p>
-                Дані, які ми збираємо та обробляємо за допомогою вебсайту, соціальних мереж, месенджерів діляться на
-                категорії:
+                {t('privacy.list.dataContent.text.p2.title')}
                 <ul>
-                  <li>дані, надані відвідувачами (ім&apos;я, електронна пошта та інформація з повідомлення, яке ви можете нам
-                    залишити).
-                  </li>
+                  <li>{t('privacy.list.dataContent.text.p2.li1')}</li>
                 </ul>
               </p>
               <p>
-                Ми можемо передати ваші персональні дані нашим співробітникам, підрядникам або партнерам для виконання
-                договору. Також ми передаємо ваші дані з наступних підстав:
+                {t('privacy.list.dataContent.text.p3.title')}
+
                 <ul>
-                  <li>для виконання державного запиту, постанови суду або відповідного законодавства;</li>
-                  <li>для запобігання незаконному використанню нашого вебсайту;</li>
-                  <li>для захисту від претензій третіх сторін;</li>
-                  <li>для запобігання або для допомоги в розслідуванні шахрайства.</li>
+                  <li>{t('privacy.list.dataContent.text.p3.li1')}</li>
+                  <li>{t('privacy.list.dataContent.text.p3.li2')}</li>
+                  <li>{t('privacy.list.dataContent.text.p3.li3')}</li>
+                  <li>{t('privacy.list.dataContent.text.p3.li4')}</li>
                 </ul>
               </p>
-              <p>А також, ми передаємо ваші персональні дані третім сторонам на підставі договору для обробки від нашого
-                імені, який містить перелік відповідних технічних та організаційних заходів з метою захисту ваших
-                персональних даних. Ми можемо передавати ваші дані конкретним компаніям, консультантам, підрядникам, які
-                надають певні послуги на наше замовлення.</p>
-              <p className={classes.strong}>У випадку, якщо передача даних не є частиною виконання договору ми запитаємо
-                вашої згоди.</p>
+              <p>{t('privacy.list.dataContent.text.p4')}</p>
+              <p className={classes.strong}>{t('privacy.list.dataContent.text.p5')}</p>
             </div>
           </div>
           <div className={`${classes.item} ${classes.fifth}`} id="humanRights">
             <div className={classes.title}>
-              <TextWithLine topText="Права осіб щодо яких збираються" topColor="dark">
-                <span className={`${classes.bottomText} bottomTextWithLine`}>персональні дані</span>
+              <TextWithLine topText={t('privacy.list.humanRights.title.topText')} topColor="dark">
+                <span
+                  className={`${classes.bottomText} bottomTextWithLine`}>{t('privacy.list.humanRights.title.bottomText')}</span>
               </TextWithLine>
             </div>
             <div className={classes.text}>
-              <p>У вас, як у власників персональних даних є наступні права:</p>
+              <p>{t('privacy.list.humanRights.text.p1')}</p>
               <p>
                 <ul>
-                  <li><span className={classes.highlights}>Право на доступ до інформації</span>: Ви можете запитати пояснення обробки ваших персональних даних.</li>
-                  <li><span className={classes.highlights}>Право на виправлення інформації</span>: Ви можете змінити інформацію, якщо вона неточна або неповна.</li>
-                  <li><span className={classes.highlights}>Право на обмеження обробки</span>: Ви можете частково або повністю заборонити нам обробляти ваші персональні дані.</li>
-                  <li><span className={classes.highlights}>Право на заперечення проти обробки</span>: Ви можете заперечувати проти обробки ваших персональних даних.</li>
-                  <li><span className={classes.highlights}>Право відкликати згоду</span>: Ви можете відкликати свою згоду в будь-який момент.</li>
-                  <li><span className={classes.highlights}>Право подати скаргу</span>: Якщо ваш запит не був задоволений, ви можете подати скаргу до регулюючого органу.</li>
+                  <li>{transHighlights('privacy.list.humanRights.text.p2.li1')}</li>
+                  <li>{transHighlights('privacy.list.humanRights.text.p2.li2')}</li>
+                  <li>{transHighlights('privacy.list.humanRights.text.p2.li3')}</li>
+                  <li>{transHighlights('privacy.list.humanRights.text.p2.li4')}</li>
+                  <li>{transHighlights('privacy.list.humanRights.text.p2.li5')}</li>
+                  <li>{transHighlights('privacy.list.humanRights.text.p2.li6')}</li>
                 </ul>
               </p>
-              <p>Якщо ваші права були порушені або у вас виникли питання з приводу тексту цього повідомлення ви можете звернутись до нас написавши листа на електронну пошту: <span className={classes.highlightsP}>office@intermarium.legal</span></p>
-              <p> Зверніть увагу: право на видалення даних не є абсолютним — ми не можемо видалити ті ваші дані, які зобов&apos;язані зберігати за законодавством.</p>
+              <p>
+                <Trans
+                  i18nKey={t('privacy.list.humanRights.text.p3')}
+                  tOptions={{interpolation: {escapeValue: true}}}
+                  components={{
+                    span: <span className={classes.highlightsP}/>
+                  }}
+                />
+              </p>
+              <p>{t('privacy.list.humanRights.text.p4')}</p>
             </div>
           </div>
           <div className={`${classes.item} ${classes.sixth}`} id="update">
             <div className={classes.title}>
-              <TextWithLine topText="ОНОВЛЕННЯ ЦЬОГО" topColor="dark">
-                <span className={`${classes.bottomText} bottomTextWithLine`}>ПОВІДОМЛЕННЯ</span>
+              <TextWithLine topText={t('privacy.list.update.title.topText')} topColor="dark">
+                <span className={`${classes.bottomText} bottomTextWithLine`}>{t('privacy.list.update.title.bottomText')}</span>
               </TextWithLine>
             </div>
             <div className={classes.text}>
-              <p>Це Повідомлення і правовідносини, що потрапляють під її дію, регулюються Законом України «Про захист
-                персональних даних». Чинні закони і вимоги до обробки персональних даних можуть змінитися. У випадку
-                оновлення тексту цього повідомлення ми одразу публікуємо його із зазначенням дати оновлення.</p>
+              <p>{t('privacy.list.update.text.p1')}</p>
             </div>
           </div>
-
         </Container>
       </div>
     </>

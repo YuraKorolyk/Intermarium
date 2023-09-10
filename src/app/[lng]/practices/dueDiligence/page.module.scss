@@ -24,6 +24,11 @@
 @media (max-width: $tabletBig) {
   .intro {
     .wrapper {
+      .title {
+        .bottomText {
+          font-size: 85px;
+        }
+      }
       .text {
         font-size: 25px;
       }
@@ -38,7 +43,7 @@
     .wrapper {
       .title {
         .bottomText {
-          font-size: 61px;
+          font-size: 49px;
         }
       }
 
@@ -55,7 +60,7 @@
     .wrapper {
       .title {
         .bottomText {
-          font-size: 45px;
+          font-size: 37px;
         }
       }
 
@@ -145,7 +150,7 @@
         }
         .title {
           .bottomText {
-            font-size: 60px;
+            font-size: 57px;
           }
         }
         .text {

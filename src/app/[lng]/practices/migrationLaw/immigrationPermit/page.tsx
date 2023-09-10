@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import classes from './page.module.scss'
 import Container from "@/components/Layouts/Container/Container";
@@ -5,37 +6,33 @@ import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 import Button from "@/components/Button/Button";
 import CustomLi from "@/components/CustomLi/CustomLi";
+import {useTranslation} from "react-i18next";
+import {trans} from "@/services";
 
 
 const Page = () => {
+  const {t} = useTranslation();
   return (
     <>
       <HeaderBackground background="1"/>
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>
-            <TextWithLine topText="ДОЗВІЛ НА" topColor="dark">
-              <span className={`${classes.bottomText} bottomTextWithLine`}>імміграцію</span>
+            <TextWithLine topText={t('practices.immigrationPermit.intro.title.topText')} topColor="dark">
+              <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.immigrationPermit.intro.title.bottomText')}</span>
             </TextWithLine>
           </div>
           <div className={classes.text}>
             <div className="MLblock">
-              <p>
-                <span className="highlightDark">Дозвіл на імміграцію</span> - рішення спеціально уповноваженого
-                центрального органу виконавчої влади з питань імміграції та підпорядкованих йому органів, яке надає
-                іноземцям та особам без громадянства право на імміграцію.
-              </p>
+              <p>{trans('practices.immigrationPermit.intro.text.p1', 'dark')}</p>
               <p className={classes.reasons}>
-                <div className={classes.headline}>Існує багато підстав, за якими іноземець може отримати дозвіл на
-                  імміграцію, але я ми поговоримо лише про найпоширеніші та ті з якими найчастіше використовуються
-                  іноземцями, а саме:
-                </div>
+                <div className={classes.headline}>{t('practices.immigrationPermit.intro.text.p2.headline')}</div>
                 <ul>
-                  <CustomLi>територіальне походження іноземця</CustomLi>
-                  <CustomLi>родинні зв&apos;язки з громадянами України</CustomLi>
-                  <CustomLi>висококваліфіковані спеціалісти</CustomLi>
-                  <CustomLi>інвестиції в економіку України</CustomLi>
-                  <CustomLi>особи, які раніше були громадянами України</CustomLi>
+                  <CustomLi>{t('practices.immigrationPermit.intro.text.p2.li1')}</CustomLi>
+                  <CustomLi>{t('practices.immigrationPermit.intro.text.p2.li2')}</CustomLi>
+                  <CustomLi>{t('practices.immigrationPermit.intro.text.p2.li3')}</CustomLi>
+                  <CustomLi>{t('practices.immigrationPermit.intro.text.p2.li4')}</CustomLi>
+                  <CustomLi>{t('practices.immigrationPermit.intro.text.p2.li5')}</CustomLi>
                 </ul>
               </p>
             </div>
@@ -44,53 +41,30 @@ const Page = () => {
       </div>
       <div className={classes.documents}>
         <Container className={classes.wrapper}>
-
           <div className={classes.permission}>
-            <p>
-              <span className="highlightLight">Для отримання дозволу на імміграцію іноземцю необхідно</span> зібрати необхідні документи та написати заяву на
-              отримання дозволу на імміграцію (оформляється в електронному вигляді при подачі документів) до ДМС,
-              територіального органу міграційної служби або територіального відділення ДМС. (Державна міграційна
-              служба)
-            </p>
-            <p>
-              Існує <span className="highlightLight">14 підстав для отримання дозволу на імміграцію:</span> за квотою і поза квотою.
-            </p>
-            <p>
-              <span className="highlightLight">Квота</span> - це максимальна кількість людей, які мають право на отримання дозволу на імміграцію. Такі квоти
-              щороку затверджуються Урядом України.
-            </p>
-            <p>
-              <span className="highlightLight">Поза</span> квотою є, наприклад, територіальне походження, одруження з громадянином України та ін.
-            </p>
-            <p>
-              Є загальний перелік документів та додаткові. <span className="highlightLight">Загальний перелік</span> єдиний для всіх підстав для отримання
-              дозволу на імміграцію.
-              А <span className="highlightLight">додаткові документи</span> підтверджують вашу підставу для звернення за дозволом на імміграцію. Наприклад,
-              свідоцтво про шлюб, дозвіл Мінсоцполітики, свідоцтво про народження та ін.
-            </p>
+            <p>{trans('practices.immigrationPermit.documents.permission.p1', 'light')}</p>
+            <p>{trans('practices.immigrationPermit.documents.permission.p2', 'light')}</p>
+            <p>{trans('practices.immigrationPermit.documents.permission.p3', 'light')}</p>
+            <p>{trans('practices.immigrationPermit.documents.permission.p4', 'light')}</p>
+            <p>{trans('practices.immigrationPermit.documents.permission.p5', 'light')}</p>
+
           </div>
           <div className={classes.listOfDoc}>
-            <div className={classes.title}>Перелік документів:</div>
+            <div className={classes.title}>{t('practices.immigrationPermit.documents.listOfDoc.title')}</div>
             <ul>
-              <CustomLi>Заява (заповнюється та підписується при подачі документів)</CustomLi>
-              <CustomLi>Оригінал паспорта (або копія посвідки на тимчасове проживання та довідка з місця реєстрації)</CustomLi>
-              <CustomLi>Адреса проживання в Україні (нотаріально завірена заява-згода орендодавця)</CustomLi>
-              <CustomLi>Паспорт власника житла та право власності на це житло</CustomLi>
-              <CustomLi>Документ, що підтверджує адресу реєстрації за кордоном (права, довідка про реєстрацію), або документ, що підтверджує відсутність такого місця проживання.</CustomLi>
-              <CustomLi>Довідка про несудимість</CustomLi>
-              <CustomLi>Загальна медична довідка та акт наркологічної експертизи</CustomLi>
-              <CustomLi>Та інші документи, які підтвердять підставу для отримання дозволу на імміграцію</CustomLi>
-              <CustomLi>Квитанція про сплату державного мита</CustomLi>
+              <CustomLi>{t('practices.immigrationPermit.documents.listOfDoc.li1')}</CustomLi>
+              <CustomLi>{t('practices.immigrationPermit.documents.listOfDoc.li2')}</CustomLi>
+              <CustomLi>{t('practices.immigrationPermit.documents.listOfDoc.li3')}</CustomLi>
+              <CustomLi>{t('practices.immigrationPermit.documents.listOfDoc.li4')}</CustomLi>
+              <CustomLi>{t('practices.immigrationPermit.documents.listOfDoc.li5')}</CustomLi>
+              <CustomLi>{t('practices.immigrationPermit.documents.listOfDoc.li6')}</CustomLi>
+              <CustomLi>{t('practices.immigrationPermit.documents.listOfDoc.li7')}</CustomLi>
+              <CustomLi>{t('practices.immigrationPermit.documents.listOfDoc.li8')}</CustomLi>
+              <CustomLi>{t('practices.immigrationPermit.documents.listOfDoc.li9')}</CustomLi>
             </ul>
-            <div className={classes.conclusion}>
-              <span className="highlightLight">Виняток:</span> пункти документів, зазначені у пунктах 6 та 7, не потрібні у разі оформлення дозволу на імміграцію за територіальним походженням та у разі укладення шлюбу з громадянином України та особами без громадянства.
-            </div>
-            <div className={classes.addDocs}>
-              Всі документи повинні бути подані виключно особисто заявником.
-            </div>
-            <div className={classes.term}>
-              Термін розгляду документів триває до 12 місяців, але на практиці може бути і швидше, може бути і 4 місяці, і 6 місяців
-            </div>
+            <div className={classes.conclusion}>{trans('practices.immigrationPermit.documents.listOfDoc.conclusion', 'light')}</div>
+            <div className={classes.addDocs}>{t('practices.immigrationPermit.documents.listOfDoc.addDocs')}</div>
+            <div className={classes.term}>{t('practices.immigrationPermit.documents.listOfDoc.term')}</div>
           </div>
         </Container>
       </div>
@@ -98,12 +72,11 @@ const Page = () => {
         <Container className={classes.wrapper}>
           <div className="MLblock">
             <div className={classes.text}>
-              <span className="highlightDark">Intermarium Law Firm</span> надає повний цикл супроводу іноземців, що
-              бажають отримати дозвіл на імміграцію.
+              {trans('practices.immigrationPermit.application.text', 'dark')}
             </div>
           </div>
           <div className={classes.button}>
-            <Button text="Залишити заявку"/>
+            <Button text={t('practices.immigrationPermit.application.button')}/>
           </div>
         </Container>
       </div>

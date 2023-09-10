@@ -2,7 +2,7 @@
   "header": {
     "lawBlog": "Legal Blog"
   },
-  "burgerMenu" : {
+  "burgerMenu": {
     "main": "Main page",
     "about": "About us",
     "practice": {
@@ -10,14 +10,19 @@
       "migrationLaw": "— migration law",
       "corporateLaw": "— corporate law",
       "visaSupport": "— visa support",
-      "dueDiligence": "— lawyer due-diligence",
-      "customerService": "— customer service"
+      "dueDiligence": "— legal due-diligence",
+      "customerService": "— legal business support"
     },
     "blog": "blog",
     "contacts": "contacts"
   },
-  "footer" : {
-    "rulesAndPrivacy":"Rules and privacy notices"
+  "footer": {
+    "rulesAndPrivacy": "Rules and privacy notices"
+  },
+  "partner": {
+    "taras": "Taras Horbatiuk",
+    "yurii": "Yurii Belokony",
+    "text": "Co-managing partner of intermarium law firm"
   },
   "homePage": {
     "mission": {
@@ -72,7 +77,7 @@
         "description": "Intermarium law company provides full support in opening a business in Ukraine and its subsequent introduction in matters related to the legal component"
       }
     },
-    "blog" : {
+    "blog": {
       "title": {
         "topText": "Our",
         "bottomText": "legal blog"
@@ -83,7 +88,167 @@
       "button": "View all articles"
     }
   },
+  "about": {
+    "about": {
+      "title": {
+        "topText": "ABOUT",
+        "bottomText": "us"
+      },
+      "description": "<span>Intermarium Law Firm</span> is a Ukrainian law firm with international ambitions, formed in 2023 as a result of the joint efforts of one of the best specialists in the field of international and migration law — <span>Taras Horbatiuk</span> and <span>Yurii Belokony.</span>",
+      "text": {
+        "becauseOf": "Thanks to the synergy of expert capabilities of the founders of the company, it became possible to combine joint efforts to <span>provide high-quality legal services in the fields of migration, and international and corporate law for foreigners</span> living in Ukraine, planning to migrate or start their own business in Ukraine.",
+        "support": {
+          "title": "The company provides multi-level legal support with:",
+          "li1": "Legalization of foreigners on the territory of Ukraine",
+          "li2": "Supporting the opening of businesses",
+          "li3": "Investment",
+          "li4": "Also provides legal advice to foreigners on various issues they face on the territory of Ukraine"
+        }
+      }
+    },
+    "mission": {
+      "title": {
+        "topText": "Our",
+        "bottomText": "mission"
+      },
+      "text": {
+        "t1": "<span>Intermarium Law Firm</span> is a Ukrainian company with an international orientation, which provides legal services not only at the all-Ukrainian level but also at the regional level. Intermarium - <span>space of countries in Central and Eastern Europe</span>, united by common political, economic, and business interests.",
+        "t2": "We stand <span>for the protection of the interests of foreigners and their businesses</span> in order to make <span>Ukraine</span> and <span>the entire Central European region</span> the most investment-attractive part of the world, so that millions of people from all over the world <span>invest</span>, <span>migrate</span> in search of career and business opportunities and <span>build a better life in the Intermarium countries</span>, which will become the largest accurate growth and prosperity in the world."
+      }
+    },
+    "team": {
+      "title": {
+        "topText": "Our",
+        "bottomText": "team"
+      },
+      "taras": {
+        "title": "Taras is the head of the corporate law practice and co-head of the migration law practice.",
+        "p1": "Taras has <span>many years of experience in the field of migration and corporate law</span> and specializes in solving complex cases, helps our clients prepare all the necessary documents for the legal stay of foreigners in the territory of Ukraine, and also helps foreigners with issues of registration of citizenship, investment in the economy of Ukraine, legal employment and advises foreigners on all issues related to immigration to Ukraine.",
+        "p2": "In the field of corporate law, Taras provides legal advice on the creation and registration of companies, the purchase and sale of businesses, the distribution of shares, and other issues related to corporate structures. <span>His expert experience at Intermarium Law Firm guarantees the comfort, legality, and legal protection of foreign investors</span> who see their future with Ukraine and the entire region between the Black, Baltic, and Adriatic seas."
+      },
+      "yurii": {
+        "title": "Yurii is an expert in migration, corporate law, and visa support, the ideological inspiration behind the creation of the Intermarium Law Firm.",
+        "p1": "Yurii, thanks to his experience in legal and migration issues and effective communication among foreigners in Ukraine and international business, can find optimal solutions for those who want to migrate or start a business in Ukraine and the entire Intermarium region.",
+        "p2": "Yuriy provides high-quality services for foreign citizens and selects optimal solutions for investors, focusing his work on legal norms and understanding the needs of clients. Yuriy is an expert in conducting <span>due diligence on an investment object</span> and is responsible for communication with corporate clients who enter into contracts with <span>Intermarium Law Firm.</span>"
+      }
+    }
+  },
+  "privacy": {
+    "intro": {
+      "title": "Privacy Policy and Notice",
+      "lastUpdate": "Last update 09/01/2023"
+    },
+    "contents": {
+      "title": "CONTENT",
+      "li1": "Terms of use",
+      "li2": "Use of the Website",
+      "li3": "Intellectual property rights",
+      "li4": "The content of the data and the purpose for which it is collected",
+      "li5": "The rights of persons about whom personal data is collected",
+      "li6": "Updating this message"
+    },
+    "list": {
+      "conditions": {
+        "title": {
+          "topText": "TERMS",
+          "bottomText": "OF USE"
+        },
+        "text": {
+          "p1": "Access and use of www.intermarium.legal (the \"Website\") is provided by  INTERMARIUM   LAW FIRM LLC under the conditions set forth below. By accessing and using the Website, you agree to be bound by these Terms.",
+          "p2": "Please note that these terms may change from time to time and should be checked regularly. Your continued use of this website will constitute your acceptance of the updated or modified terms."
+        }
+      },
+      "use": {
+        "title": {
+          "topText": "USE OF",
+          "bottomText": "WEBSITE"
+        },
+        "text": {
+          "p1": "Our website was created for the purpose of disseminating information about the content, volume, list of services provided by our company, as well as for the purpose of disseminating information about the company's activities to potential customers.",
+          "p2": "You agree that you will only use the Website for lawful purposes, for your personal or internal business use."
+        }
+      },
+      "rights": {
+        "title": {
+          "topText": "INTELLECTUAL VALUE",
+          "bottomText": "RIGHTS"
+        },
+        "text": {
+          "p1": "All copyrights, trademarks, design rights, patents and other intellectual property rights on this Website belong to INTERMARIM LAW FIRM LLC and are protected by the Law of Ukraine \"On Copyright and Related Rights\" and other laws of Ukraine, their use by third parties may be possible only with the consent of INTERMARIUM LAW FIRM LLC and/or with the consent of their participants.",
+          "p2": "This Website may not be modified, decompiled or reconstructed in any way. No part of the website may be reproduced without our express permission."
+        }
+      },
+      "dataContent": {
+        "title": {
+          "topText": "The content of the data and the purpose for which it",
+          "bottomText": "is collected"
+        },
+        "text": {
+          "p1": "On our website, visitors have the opportunity to leave a feedback request with us, which results in the collection, use and distribution of information, which is referred to as \"confidential information\", let you know for what purpose and what information we receive from you.",
+          "p2": {
+            "title": "The data we collect and process using the website, social networks, messengers are divided into categories:",
+            "li1": "data provided by visitors (name, email and information from a message you may leave us)."
+          },
+          "p3": {
+            "title": "We may transfer your personal data to our employees, contractors or partners for the performance of the contract. We also transfer your data for the following reasons:",
+            "li1": "to fulfill a state request, court order or relevant legislation;",
+            "li2": "to prevent illegal use of our website;",
+            "li3": "to protect against claims of third parties;",
+            "li4": "to prevent or to assist in the investigation of fraud."
+          },
+          "p4": "Also, we transfer your personal data to third parties based on a contract for processing on our behalf, which includes a list of appropriate technical and organizational measures to protect your personal data. We may transfer your data to specific companies, consultants, contractors who provide certain services on our behalf.",
+          "p5": "If data transfer is not part of the performance of the contract, we will ask for your consent."
+        }
+      },
+      "humanRights": {
+        "title": {
+          "topText": "The rights of persons about whom personal data",
+          "bottomText": "is collected"
+        },
+        "text": {
+          "p1": "As personal data owners, you have the following rights:",
+          "p2": {
+            "li1": "<span>The right to access information</span>: You can request an explanation of the processing of your personal data.",
+            "li2": "<span>The right to correct information</span>: You can change the information if it is inaccurate or incomplete.",
+            "li3": "<span>The right to restriction of processing</span>: You can partially or completely prohibit us from processing your personal data.",
+            "li4": "<span>The right to object to processing</span>: You can object to the processing of your personal data.",
+            "li5": "<span>Right to withdraw consent</span>: You can withdraw your consent at any time.",
+            "li6": "<span>The right to file a complaint</span>: If your request was not satisfied, you can file a complaint with the regulatory body."
+          },
+          "p3": "If your rights have been violated or if you have any questions about the text of this message, you can contact us by writing a letter to the e-mail address: <span>office@intermarium.legal</span>",
+          "p4": "Please note: the right to delete data is not absolute - we cannot delete your data that we are required to retain by law."
+        }
+      },
+      "update": {
+        "title": {
+          "topText": "UPDATE TO THIS",
+          "bottomText": "NOTICE"
+        },
+        "text": {
+          "p1": "This Notice and legal relations falling under its influence are regulated by the Law of Ukraine \"On Personal Data Protection\". Current laws and requirements for the processing of personal data may change. If the text of this message is updated, we will immediately publish it with the date of the update."
+        }
+      }
+    }
+  },
   "practices": {
+    "migrationLaw": {
+      "intro": {
+        "title": {
+          "topText": "Migration",
+          "bottomText": "law"
+        },
+        "text": {
+          "p1": "<span>Intermarium Law Firm</span> provides a full cycle of support for foreigners wishing to migrate to Ukraine or obtain Ukrainian citizenship.",
+          "p2": "We help clients <span>from dozens of different countries around the world</span> to obtain resident status and legally stay in Ukraine, as well as to receive professional advice <span>on any migration issues</span>."
+        }
+      },
+      "order": {
+        "title": {
+          "topText": "Order",
+          "bottomText": "a service"
+        }
+      }
+    },
     "acquisitionOfUkrainianCitizenship": {
       "intro": {
         "title": {
@@ -121,18 +286,907 @@
         },
         "changes": {
           "title": {
-            "topText": "внесення змін до",
-            "bottomText": "Законів України"
+            "topText": "Amendments to the",
+            "bottomText": "Laws of Ukraine"
           },
           "text": {
             "p1": "Also, recently the President of Ukraine Volodymyr Zelenskyi <span>signed the Law No. 7606 \"On Amendments to the Laws of Ukraine</span> \"On the Citizenship of Ukraine\" and \"On Ensuring the Functioning of the Ukrainian Language as the State Language\" Regarding the Conditions of Acceptance to the Citizenship of Ukraine\", which <span>provides for new rules for acquiring citizenship.</span>",
             "p2": "According to the document, now <span>in order to obtain Ukrainian citizenship, it will be necessary to pass exams</span> on knowledge of the Ukrainian language, history and the Constitution.",
             "p3": "<span>Foreigners or stateless persons who have outstanding merits for Ukraine</span>, whose admission to Ukrainian citizenship is in the state interest, or who, in accordance with the procedure established by law, perform military service under a contract in the Armed Forces, the State Special Service of Transport or the National Guard of Ukraine, persons who received a temporary permit residence, <span>within two years from the moment of acquiring citizenship, they must pass the relevant exams and submit documents about their passing.</span>",
-            "p4": "Невиконання зобов’язання про складання іспитів з основ Конституції України, історії України, та на рівень володіння державною мовою цими категоріями осіб <span>є підставою для втрати громадянства України.</span>",
-            "p5": "Складання іспитів має здійснюватися <span>в порядку, встановленому Кабміном.</span>"
+            "p4": "Non-fulfillment of the obligation to pass exams on the basics of the Constitution of Ukraine, the history of Ukraine, and the level of proficiency in the state language by these categories of persons <span>is grounds for loss of Ukrainian citizenship.</span>",
+            "p5": "Exams must be held in accordance <span>with the procedure established by the Cabinet of Ministers.</span>"
           }
         }
+      },
+      "application": {
+        "text": "The procedure for obtaining citizenship is quite complicated, and we do not recommend starting the process on your own without the help of a qualified lawyer, therefore, if you wish to obtain Ukrainian citizenship, <span>the immigration lawyers of the Intermarium law firm will help you</span> fill out and collect the necessary list of documents based on the individual situation of each client, submit them to state authorities and go through the entire procedure strictly on time and without refusals.",
+        "button": "Send request"
+      }
+    },
+    "appealOfMigrationServiceDecisions": {
+      "intro": {
+        "title": {
+          "topText": "Appeal of migration service",
+          "bottomText": "decisions"
+        },
+        "text": {
+          "p1": "Very often, foreigners face <span>problems in the State Migration Service</span>, which are related to the refusal of visas for residence in Ukraine, or employees do not want to accept documents for immigration permits without justifying their position, refuse to accept Ukrainian citizenship, etc.",
+          "p2": "Sometimes <span>it takes a lot of time and resources</span> to get the service or document you need.",
+          "p3": "If a person has received a refusal to issue or accept passport documents, do not be disappointed, because <span>any decision can be appealed</span>. The decision of the territorial body of the State Migration Service of Ukraine can be appealed as in the administrative procedure by submitting a complaint directly to the State Migration Service and to the court."
+        }
+      },
+      "appeal": {
+        "title": "Appealing the decision on refusal to obtain residence permit to the State Migration Service",
+        "text": {
+          "p1": "From the day of receiving the refusal decision, the person submits a complaint directly to the State Migration Service, such a complaint must be submitted within 30 days from the moment the person was informed of the refusal decision. In the complaint, it is necessary to state the circumstances with which one does not agree and provide evidence to confirm the specified circumstances. The complaint is considered within thirty calendar days from the day of its receipt. The term can be extended by fifteen calendar days if necessary. The person is notified of the extension of the term by an official letter.",
+          "p2": "After consideration of the complaint, the State Migration Service will provide an answer about the decision made. If the State Migration Service refuses to satisfy the complaint, you can apply to the court."
+        }
+      },
+      "application": {
+        "text": "We advise you to appeal the refusal of the State Immigration Service to issue residence permit, immigration permit or any other document <span>to contact a migration lawyer, who will provide professional assistance and save your time.</span>",
+        "button": "Send request"
+      }
+    },
+    "extensionOfStayInUkraine": {
+      "intro": {
+        "title": {
+          "topText": "The extension of stay",
+          "bottomText": "in Ukraine"
+        },
+        "text": {
+          "p1": "<span>The period of stay of foreigners</span> who are citizens of countries with a visa entry procedure, as well as stateless persons, <span>is limited by the period of validity of the visa</span>. That is, a foreigner or a stateless person <span>can temporarily stay on the territory of Ukraine during the period of stay allowed by the visa</span>, but not more than until the last day of the visa's validity.",
+          "p2": " Citizens of states with a visa-free entry procedure may temporarily stay on the territory of Ukraine <span>for no more than 90 days within 180 days</span>, unless another period is determined by international treaties of Ukraine.",
+          "p3": "<span>Extending the period of stay in Ukraine</span> is a legal way to extend the period of stay in the country after the visa expires or after the 90-day period of stay (for citizens of countries with a visa-free regime)."
+        }
+      },
+      "lists": {
+        "reasons": {
+          "title": {
+            "topText": "Grounds for extending the period of stay",
+            "bottomText": "in Ukraine"
+          },
+          "li1": "submission of an application for an immigration permit",
+          "li2": "submission of an application for the acquisition of Ukrainian citizenship",
+          "li3": "the presence of reasons that do not allow leaving Ukraine",
+          "li4": "other cases when it is necessary to extend the period of stay (treatment, pregnancy, care for a sick family member, registration of inheritance, performance of official duties by a foreign correspondent or a representative of a foreign mass media, etc.)."
+        },
+        "documents": {
+          "title": {
+            "topText": "Necessary",
+            "bottomText": "documents"
+          },
+          "li1": "application (formed in electronic form)",
+          "li2": "passport of a foreigner, as well as its notarized translation of the passport of the receiving party (for legal entities – the passport of the director; a copy of an extract from the register of legal entities; a copy of the protocol, order or order on the appointment of responsible persons)",
+          "li3": "a document confirming sufficient financial support",
+          "li4": "a document on the right of ownership of the home where the foreigner will live and the passport of the home owner",
+          "li5": "photo of a foreign citizen",
+          "li6": "receipt for payment of state duties"
+        },
+        "term": {
+          "title": {
+            "topText": "Application processing",
+            "bottomText": "deadline"
+          },
+          "text": {
+            "p1": "<span>No more than three working days</span>. If additional checks are necessary, this term <span>can be extended up to ten</span>.",
+            "p2": "<span>It is important</span> that applications for the extension of the period of stay on the territory of Ukraine are submitted by foreigners and stateless persons and by the host party no earlier than ten and no later than three working days before the end of such a period."
+          }
+        }
+      },
+      "application": {
+        "text": "<span>Intermarium Law Firm</span> provides a full range of legal support for foreigners wishing to extend their stay in Ukraine.",
+        "button": "Send request"
+      }
+    },
+    "foreignUkrainian": {
+      "intro": {
+        "title": {
+          "topText": "The procedure for obtaining the status of a foreign",
+          "bottomText": "Ukrainian"
+        },
+        "list": {
+          "one": {
+            "title": "Who is a Foreign Ukrainian?",
+            "p1": "<span>A Foreign Ukrainian</span> is a person who is a citizen of another state or a stateless person, and also has Ukrainian ethnic origin or is of Ukrainian origin."
+          },
+          "two": {
+            "title": "Advantages of the status of a Foreign Ukrainian",
+            "li1": " the possibility of studying in higher education institutions of Ukraine at the expense of the state budget within the limits of established quotas;",
+            "li2": "the right to work at enterprises, institutions and organizations or to carry out other labor activities without the appropriate permit for this (which is required for foreigners);",
+            "li3": "the right to obtain a free multiple-entry visa for visiting Ukraine without providing a corresponding invitation valid for 5 years (for citizens of countries with which Ukraine has a visa regime);",
+            "li4": "the opportunity to obtain an immigration permit free of charge and without quotas, on the basis of which to obtain a permanent residence permit;",
+            "li5": "acquisition of Ukrainian citizenship in accordance with the procedure established by the Law of Ukraine \"On Citizenship of Ukraine\"."
+          },
+          "three": {
+            "title": "How to get?",
+            "p1": "In order to obtain a certificate of a foreign Ukrainian, a person must apply in the territory of Ukraine to the Ministry of Foreign Affairs of Ukraine and abroad to the consulate of Ukraine with a statement to which the following must be added:",
+            "li1": "passport document or other identity document;",
+            "li2": "copies of documents certifying Ukrainian ethnic origin or origin from Ukraine (certificate or other birth documents of a person or his relatives, documents that confirm the fact of the person's residence on the territory of Ukraine, and other documents if necessary);",
+            "li3": "photo (30x40) - 2 pcs.;",
+            "li4": "a receipt for payment of services (the cost of services for obtaining a certificate of a foreign Ukrainian is the equivalent of 10 US dollars)."
+          },
+          "four": {
+            "title": "Who can receive?",
+            "p1": "The status of a foreign Ukrainian can be obtained by a person who meets the following criteria:",
+            "li1": "Ukrainian self-identification;",
+            "li2": "national ethnic origin or origin from Ukraine;",
+            "li3": "a written application regarding the desire to have the status of a Ukrainian abroad;",
+            "li4": "reaching the age of 16;",
+            "li5": "lack of Ukrainian citizenship."
+          },
+          "five": {
+            "title": "Terms",
+            "p1": "The application for granting the status of a foreign Ukrainian and other documents submitted to the representative office of the Ministry of Foreign Affairs on the territory of Ukraine, abroad - to the foreign diplomatic institution of Ukraine, not later than two months from the date of their receipt, they are sent to the National Commission by diplomatic mail or courier service.",
+            "p2": "The National Commission considers the application within 90 days from the date of its receipt and makes an appropriate decision."
+          }
+        }
+      },
+      "application": {
+        "text": "<span>Intermarium Law Firm</span> provides a full cycle of support for foreigners wishing to obtain the status of a foreign Ukrainian.",
+        "button": "Send request"
+      }
+    },
+    "immigrationPermit": {
+      "intro": {
+        "title": {
+          "topText": "Immigration",
+          "bottomText": "permit"
+        },
+        "text": {
+          "p1": "<span>An immigration permit</span> is a decision of a specially authorized central executive authority on immigration and its subordinate bodies, which grants foreigners and stateless persons the right to immigrate.",
+          "p2": {
+            "headline": "There are many reasons for which a foreigner can obtain an immigration permit, but we will talk only about the most common and those that are most often used by foreigners, namely:",
+            "li1": "territorial origin of the foreigner",
+            "li2": "family ties with citizens of Ukraine",
+            "li3": "highly qualified specialists",
+            "li4": "investments in the economy of Ukraine",
+            "li5": "persons who were previously citizens of Ukraine"
+          }
+        }
+      },
+      "documents": {
+        "permission": {
+          "p1": "<span>To obtain an immigration permit, a foreigner must</span> collect the necessary documents and write an application for obtaining an immigration permit (made out electronically when submitting documents) to the State Migration Service, a territorial body of the Migration Service or a territorial branch of the State Migration Service.",
+          "p2": "There are <span>14 grounds for obtaining an immigration permit:</span> quota and non-quota.",
+          "p3": "<span>A quota</span> is the maximum number of people who are eligible for an immigration permit. Such quotas are approved by the Government of Ukraine every year.",
+          "p4": "<span>Outside</span> the quota are, for example, territorial origin, marriage to a citizen of Ukraine, etc.",
+          "p5": "There is a general list of documents and additional ones. <span>The general list</span> is the same for all grounds for obtaining an immigration permit. And <span>additional documents</span> confirm your reason for applying for an immigration permit. For example, a marriage certificate, permission of the Ministry of Social Policy, birth certificate, etc."
+        },
+        "listOfDoc": {
+          "title": "List of documents:",
+          "li1": "Application (to be filled out and signed when submitting documents)",
+          "li2": "Original passport (or a copy of a temporary residence permit and a certificate from the place of registration)",
+          "li3": "Residential address in Ukraine (notarized application-consent of the lessor)",
+          "li4": "Passport of the home owner and ownership of this home",
+          "li5": "A document confirming the address of registration abroad (rights, certificate of registration), or a document confirming the absence of such a place of residence.",
+          "li6": "Certificate of criminal record",
+          "li7": "General medical certificate and act of narcological examination.",
+          "li8": "And other documents that will confirm the basis for obtaining an immigration permit",
+          "li9": "State duty payment receipt.",
+          "conclusion": "<span>Exception:</span> the items of documents specified in points 6 and 7 are not required in the case of issuing an immigration permit based on territorial origin and in the case of marriage with a citizen of Ukraine and stateless persons.",
+          "addDocs": "All documents must be submitted exclusively by the applicant.",
+          "term": "The term of consideration of documents lasts up to 12 months, but in practice it can be faster, it can be 4 months or 6 months"
+        }
+      },
+      "application": {
+        "text": "<span>Intermarium Law Firm</span> provides a full cycle of support for foreigners wishing to obtain an immigration permit.",
+        "button": "Send request"
+      }
+    },
+    "marriageRegistration": {
+      "intro": {
+        "title": {
+          "topText": "Legal support of marriage",
+          "bottomText": "in Ukraine"
+        },
+        "text": {
+          "p1": "<span>A marriage with a foreign element</span> is much more complicated and takes more time than a marriage between citizens of Ukraine, as <span>it requires additional approvals from state authorities.</span> Therefore, if you need legal assistance regarding the conclusion of a marriage in Ukraine, Intermarium Law Firm provides full legal support for the preparation of documents for the conclusion of a marriage with a foreign citizen both abroad and on the territory of Ukraine, as well as full legal support for the conclusion of a marriage contract."
+        }
+      },
+      "lists": {
+        "documents": {
+          "title": {
+            "topText": "List of required",
+            "bottomText": "documents"
+          },
+          "li1": "The original passport, and in the case of a foreigner, a residence permit in Ukraine",
+          "li2": "Translation of a foreigner's passport into Ukrainian",
+          "li3": "If one of the spouses was previously married - a document that confirms the termination of this previous marriage, namely: a certificate of dissolution of marriage, a court decision on dissolution of marriage (or on its recognition as invalid) - with a note that it has entered into legal force, the conclusion of the Civil Registration on annulment of previous deed record of marriage, death certificate.",
+          "p": "In order to apply for a spouse visa to one or another country after registering a marriage in Ukraine, it is important to meet all the requirements for this visa category by submitting a properly prepared package of documents to the relevant embassy. In most cases, the refusal to receive a visa for this visa category occurs due to the absence of any document that would be very easy to obtain, but which the Applicant did not know about, or due to simple unpreparedness for the interview with the consular officer at the embassy. And the further necessary appeal regarding this issue will lead to unnecessary considerable financial costs and loss of time."
+        },
+        "war": {
+          "title": {
+            "topText": "Marriage with a foreigner during",
+            "bottomText": "martial law"
+          },
+          "p1": "In connection with the threat to the life and health of persons, an accelerated marriage registration procedure is available during martial law without applying for the \"Marriage in a Day\" service.",
+          "p2": "What is needed for this?",
+          "li1": "Submission of an application for marriage registration to the Civil Registration department",
+          "li2": "Determining the date of marriage registration (in 2-3 days after submitting the application)",
+          "li3": "The Department of Civil Registration of Ukraine sends a request to the State Migration Service of Ukraine regarding the legality of a foreigner's stay on the territory of Ukraine and receives a conclusion",
+          "li4": "Marriage registration and obtaining a marriage certificate"
+        }
+      },
+      "application": {
+        "text": "Therefore, if you need legal assistance in getting married in Ukraine, <span>Intermarium Law Firm</span> provides full legal support in preparing documents for marriage with a foreign citizen both abroad and in Ukraine, as well as full legal support in concluding a marriage contract.",
+        "button": "Send request"
+      }
+    },
+    "permanentResidence": {
+      "intro": {
+        "title": {
+          "topText": "Permanent residence",
+          "bottomText": "permit"
+        },
+        "text": {
+          "p1": "<span>A permanent residence permit</span> is a document confirming the right of a foreigner or stateless person to permanent residence in the country. Usually, this is a document <span>that gives the right to freely leave and enter the country</span> during the entire period of validity of the permanent residence permit.",
+          "p2": "A permanent residence permit <span>is issued on the basis of an immigration permit</span>, therefore, after a positive decision on obtaining an immigration permit, a foreigner can apply for a permanent residence permit."
+        }
+      },
+      "lists": {
+        "advantages": {
+          "title": "Advantages of permanent residence:",
+          "li1": "The right to employment without an appropriate employment permit",
+          "li2": "Visit the country without restrictions on the number",
+          "li3": "No need to extend the validity of the certificate every year",
+          "li4": "A foreigner retains the citizenship of the country, but at the same time is a resident of Ukraine",
+          "p": "It is important to understand that <span>a foreigner is issued a copy of the immigration permit</span>, as <span>the original remains with the Migration Service.</span>"
+        },
+        "listOfDoc": {
+          "title": "The list of documents that must be submitted to the migration service to obtain a temporary residence permit:",
+          "li1": "Original passport",
+          "li2": "Notarized and translated passport of a foreigner",
+          "li3": "A copy of the immigration permit",
+          "li4": "State duty payment receipt",
+          "p": "If a foreigner <span>has not been on the territory of Ukraine and did not receive a temporary residence permit</span> during the review of immigration permits, he <span>will need to obtain a separate visa type D.</span>"
+        },
+        "term": "The term of consideration of documents is 15 working days",
+        "after": "After receiving a permanent residence permit, <span>you need to register your place of residence in Ukraine within 30 days from the date of issuance of the permanent residence permit.</span> Sometimes foreigners think that 30 days are counted from the moment of obtaining a permanent residence permit, but this is not the case, <span>30 days are counted from the date of issue, which is indicated on the permanent residence permit itself.</span>"
+      },
+      "application": {
+        "text": "In general, the procedure for obtaining a permanent residence permit does not seem difficult at first glance, but in practice the situation is completely different, there are many unclear details and the process requires close contact with the State Migration Service, therefore, in order <span>to avoid unnecessary mistakes, we recommend contacting our specialists.</span> For more detailed information, you can contact us in any convenient way available to you.",
+        "button": "Send request"
+      }
+    },
+    "policeClearance": {
+      "intro": {
+        "title": {
+          "topText": "Obtaining a certificate of no criminal record in Ukraine",
+          "bottomText": "for foreigners"
+        },
+        "text": {
+          "p1": "<span>A certificate of no criminal record</span> is a document that confirms that the individual in whose name the document is issued has not been criminally charged, has not been convicted and is not wanted on the territory of Ukraine."
+        }
+      },
+      "lists": {
+        "whatFor": {
+          "title": {
+            "topText": "What can police clearance certificate",
+            "bottomText": "be needed for"
+          },
+          "li1": "registration of Ukrainian citizenship",
+          "li2": "obtaining a temporary residence permit in Ukraine",
+          "li3": "obtaining a permanent residence permit in Ukraine",
+          "li4": "when applying to institutions of foreign countries",
+          "li5": "when registering adoption, custody",
+          "li6": "creating a foster family or a family-type orphanage",
+          "li7": "participation in the tender",
+          "li8": "to obtain a weapon permit",
+          "li9": "to issue a license to work with explosive substances",
+          "li10": "for a package of documents when issuing a visa for traveling abroad",
+          "li11": "when submitting documents to social security bodies",
+          "li12": "for obtaining a license to work with narcotic drugs, psychotropic substances",
+          "li13": "for registration or restoration of documents",
+          "li14": "at the request of military commissariats",
+          "li15": "to obtain a driver's license",
+          "li16": "for presentation at the place of demand"
+        },
+        "listOfDoc": {
+          "title": {
+            "topText": "List of documents for issuing",
+            "bottomText": "a certificate"
+          },
+          "li1": "A copy of a temporary/permanent residence permit and, in its absence, a notarized translation of your passport into Ukrainian",
+          "li2": "Complete address of birth of the foreigner",
+          "li3": "For what purpose is the certificate drawn up"
+        },
+        "term": "The certificate processing period is 10-14 working days."
+      },
+      "application": {
+        "text": "If you need to obtain a certificate of criminal record in Ukraine, the experts of Intermarium Law Firm will be able to quickly and efficiently help you with this, and after the certificate is ready, we will immediately send it to your address.",
+        "button": "Send request"
+      }
+    },
+    "registrationAsCitizenOfUkraine": {
+      "intro": {
+        "title": {
+          "topText": "Issuing a certificate of registration of a person ",
+          "bottomText": "as a citizen of Ukraine"
+        },
+        "text": {
+          "p1": "<span>Certificate of registration of a person as a citizen of Ukraine</span> is a document that confirms the fact of registration of a person as a citizen of Ukraine and is submitted by a person to receive documents confirming citizenship of Ukraine.",
+          "p2": "For this, a person who wishes to receive a certificate should <span>apply to the Department of Social Security</span> at the place of residence.",
+          "p3": "<span>The most important thing is to correctly prepare and submit a written application</span> with a request to provide this public service."
+        }
+      },
+      "list": {
+        "howToGet": {
+          "title": {
+            "topText": "How to get",
+            "bottomText": "a certificate"
+          },
+          "text": "It is necessary <span>to personally apply to the territorial body of the migration service</span>, but if a person has valid reasons for which he cannot personally receive a certificate, this document is issued to a legal representative (parents, guardians)."
+        },
+        "docs": {
+          "title": {
+            "topText": "Documents required to",
+            "bottomText": "receive the service"
+          },
+          "li1": "In order to receive the administrative service of issuing a certificate of registration of a person as a citizen of Ukraine, the recipient submits an application in which information about the applicant is indicated: surname, first name, patronymic, place of residence, telephone.",
+          "li2": "2 photos measuring 35 x 45 mm.",
+          "li3": "A payment document (receipt) with a note from the bank, post office, or transaction code for payment of the cost of this service.",
+          "li4": "A passport document or a document that replaces it and certifies the identity of the applicant.",
+          "li5": "a document on the applicant's residence on the territory of Ukraine or on his permanent residence abroad (certificate of registration of the place of residence).",
+          "term": "If necessary, a certified translation of the text of the document into Ukrainian is provided.",
+          "after": "Service provision period - after a decision has been made to acquire citizenship, a certificate is officially issued within ten days."
+        }
+      },
+      "application": {
+        "text": "By contacting <span>Intermarium Law Firm</span> for assistance in renewing or exchanging a residence permit in Ukraine, you are guaranteed to be able to obtain a new residence permit quickly. At the same time, the price will be the most favorable, and the professionalism and range of services will be the maximum.",
+        "button": "Send request"
+      }
+    },
+    "removalOfTheEntranceBan": {
+      "intro": {
+        "title": {
+          "topText": "Removal of the entry ban",
+          "bottomText": "into Ukraine"
+        },
+        "list": {
+          "one": {
+            "title": "General conditions for crossing the border by foreigners and stateless persons.",
+            "p1": "Authorized officials of the State Border Guard Service of Ukraine grant a foreigner, stateless person a permit to cross the state border upon entry into Ukraine, provided:",
+            "p2": {
+              "li1": "that he has a valid passport document;",
+              "li2": "the absence of a decision of the authorized state body of Ukraine to prohibit entry into Ukraine;v",
+              "li3": "if he has an entry visa, unless otherwise provided by the legislation of Ukraine;",
+              "li4": "confirmation of the purpose of the planned stay;",
+              "li5": "availability of sufficient financial support for the period of the planned stay and for return to the country of origin or transit to a third country or availability of sufficient financial support in a legal manner on the territory of Ukraine."
+            },
+            "p3": "An exception to these rules may be for a foreigner or a stateless person who asks for the opportunity to consider the issue of granting him asylum or recognizing him as a refugee or a person in need of additional protection in Ukraine in accordance with the procedure established by law."
+          },
+          "two": {
+            "title": "Grounds for refusal to cross the border to foreigners and stateless persons.",
+            "li1": "threat to national security or protection of public order;",
+            "li2": "for the purpose of protecting the health, rights and legitimate interests of the residents of Ukraine;",
+            "li3": "submission of false information or forged documents to passport control at the border;",
+            "li4": "presentation of a forged, damaged or non-compliant passport;",
+            "li5": "violation of the rules of crossing the state border of Ukraine, customs rules, sanitary norms or rules at the border crossing point of Ukraine or non-compliance with the requirements of the legislation specified by officials of the state border service, revenue and tax authorities and other bodies;",
+            "li6": "if during the previous stay on the territory of Ukraine, a foreigner or stateless person did not comply with court decisions or administrative fines or has other unfulfilled property obligations to the state, individuals or legal entities, including those related to previous deportation, in particular after the end the period of the ban on further entry into Ukraine;",
+            "li7": "entry to the temporarily occupied territory of Ukraine or to the area of anti-terrorist operation outside the entry-exit control points."
+          },
+          "three": {
+            "title": "Who decides on the ban on entry?",
+            "p": "The decision to prohibit entry into Ukraine for a period of three years is taken by the central executive body, which implements state policy in the field of migration (immigration and emigration), including combating illegal (illegal) migration, citizenship, registration of natural persons, refugees and others categories of migrants defined by the law, the Security Service of Ukraine or the state border protection body, or an authorized unit of the National Police of Ukraine. In case of failure to comply with the decision on the ban on entry to Ukraine, foreigners and stateless persons are prohibited from further entry to Ukraine for ten years, which is added to the part of the ban on entry to Ukraine that has not expired before the second decision on the ban is made in going to Ukraine."
+          },
+          "four": {
+            "title": "What to do if a decision was made to ban entry to Ukraine?",
+            "p1": "First of all, if you became aware of a ban on entry to Ukraine when you tried to pass passport control at the border of Ukraine, ask that you receive a decision on refusal to cross the border with a specific reason for the ban on entry.",
+            "p2": "In the future, this can speed up the resolution of the problem, so it will be clear who exactly made the decision on the ban on entry in order to appeal the ban on entry to Ukraine in the future.",
+            "p3": "The decision on the ban on entry can be appealed within 30 days from the day of familiarization with it."
+          },
+          "five": {
+            "title": "Where can I appeal an entry ban?",
+            "p1": "A foreigner who is prohibited from entering Ukraine by the state border guard has the right to appeal the relevant decision to the regional office of the State Border Service or to a court.",
+            "p2": "The decision of the head of the state border protection body of central subordination on this issue is appealed to the Administration of the State Border Service of Ukraine or to the court.",
+            "p3": "Appealing the said decision does not stop its effect.",
+            "p4": "The court, in order to secure an administrative claim, may, by a corresponding decision, suspend the effect of the decision of the subject of power or its individual provisions, which are contested. The resolution is immediately sent to the subject of authority that made the decision and is binding for implementation.",
+            "p5": "The lawyers of our company have considerable experience in appealing similar decisions, therefore they can ensure an effective appeal of the decision to ban entry to Ukraine - both in a higher authority and in a court of law. The choice of strategy for representing the client's interests in this case depends on the reason for the entry ban."
+          }
+        }
+      },
+      "application": {
+        "text": "<span>Intermarium Law Firm</span> provides a full cycle of support for foreigners wishing to obtain a work permit in Ukraine. We will help you save time and avoid significant costs in the future.",
+        "button": "Send request"
+      }
+    },
+    "renewalOfResidencePermitInCaseOfLossOrTheft": {
+      "intro": {
+        "title": {
+          "topText": "Renewal of residence permit in case of",
+          "bottomText": "loss/theft"
+        },
+        "text": {
+          "p1": "<span>A permanent/temporary residence permit</span> is a document certifying the identity of a foreigner or stateless person and confirming the legal grounds for residence in Ukraine.",
+          "p2": "In case <span>of reasons for exchanging a passport</span>, namely loss or damage of the document, the person is obliged to immediately contact the territorial division of the State Migration Service of Ukraine or the center for the provision of administrative services.",
+          "p3": "And <span>in case of abduction</span>, you will also need to notify the authorities of the Ministry of Internal Affairs of Ukraine."
+        }
+      },
+      "whatToDo": {
+        "title": {
+          "topText": "What to do if the residence permit is",
+          "bottomText": "lost/stolen"
+        },
+        "immediately": "You should immediately contact the territorial authorities of the State Migration Service and, in case of abduction, the police and provide the following package of documents:",
+        "li1": "Certificate subject to exchange (except in cases of loss and theft)",
+        "li2": "Passport document of a foreigner or a document certifying a stateless person",
+        "li3": "Translation into Ukrainian of a page of a foreigner's passport document or a document certifying a stateless person with personal data, certified in accordance with the procedure established by law",
+        "li4": "Documents confirming the circumstances in connection with which the permit is subject to exchange (except for cases of expiration of the permit and the unfitness of the permit for further use)",
+        "term": "The term of consideration of documents is 15 working days",
+        "after": "It is also important to understand that both the submission of documents and the subsequent receipt of a ready-made residence permit are carried out personally by the applicant himself or a legal representative, since the identity verification procedure (photo and fingerprints) takes place."
+      },
+      "application": {
+        "text": "By contacting <span>Intermarium law firm</span> for help in restoring or exchanging a residence permit in Ukraine, you are guaranteed to be able to get a new permit quickly. At the same time, the price will be the most favourable, and the professionalism and range of services will be the maximum.",
+        "button": "Send request"
+      }
+    },
+    "taxId": {
+      "intro": {
+        "title": {
+          "topText": "Tax number",
+          "bottomText": "for foreigners"
+        },
+        "text": {
+          "p1": "<span>An identification code (tax number)</span> is a document that is needed by almost every foreigner who plans to live in Ukraine.",
+          "p2": "<span>Without this document, a foreigner will not be able</span> to open a business, purchase real estate, open a bank account, buy a car, issue an inheritance, as well as when accruing and paying any income of a foreign citizen received in Ukraine. The procedure for obtaining this document for a foreigner differs from the procedure for obtaining it for a citizen of Ukraine. Therefore, I recommend that you seek help from a qualified lawyer who will help you quickly and easily obtain an identification code."
+        }
+      },
+      "lists": {
+        "listOfDoc": {
+          "title": {
+            "topText": "List of documents for obtaining",
+            "bottomText": "an identification code"
+          },
+          "li1": "Notarized and translated copy of the foreigner's passport",
+          "li2": "Address of residence of a foreigner abroad",
+          "li3": "The original power of attorney is certified by a notary in the name of the representative"
+        },
+        "nextDoc": {
+          "title": {
+            "topText": "To obtain a tax number for a foreign minor, the following documents must be",
+            "bottomText": "submitted"
+          },
+          "li1": "A copy of the birth certificate",
+          "li2": "The original translation is notarized",
+          "li3": "A copy of the passport of one of the parents",
+          "li4": "Original translation in Ukrainian, notarized",
+          "li5": "Temporary residence permit (if available)",
+          "li6": "The original power of attorney is notarized"
+        },
+        "procedure": {
+          "title": {
+            "topText": "The procedure for obtaining an",
+            "bottomText": "tax id"
+          },
+          "li1": "Preparation of documents (passport translation and notarization, preparation of an application for submission to the DPS, etc.).",
+          "li2": "Submit the necessary documents to the tax office.",
+          "li3": "Get a taxpayer identification number."
+        },
+        "term": "Delivery time is 5-7 working days"
+      },
+      "application": {
+        "text": "The procedure for obtaining this document for a foreigner differs from the procedure for obtaining it for a Ukrainian citizen. Therefore, we recommend that you <span>seek the assistance of a qualified lawyer who can help you obtain an identification code quickly and easily.</span>",
+        "button": "Send request"
+      }
+    },
+    "temporaryResidence": {
+      "intro": {
+        "title": {
+          "topText": "Temporary residence",
+          "bottomText": "permit"
+        },
+        "text": {
+          "p1": "<span>The temporary residence permit</span> is a document that identifies a foreigner or a stateless person and confirms the legal grounds for temporary residence in Ukraine.",
+          "p2": "<span>The temporary residence permit is issued for 1 year</span> (exception - employment certificate, in which case if a foreigner is issued a work permit for 3 years - a temporary residence permit is issued for 3 years, respectively). The certificate allows a foreigner to legally stay on the territory of Ukraine and acquires almost all rights as a citizen of Ukraine."
+        },
+        "advantages": {
+          "text": "Among the main advantages of a temporary residence permit for a foreigner:",
+          "li1": "the right to study",
+          "li2": "open bank accounts",
+          "li3": "open a business",
+          "li4": "the right to register as a private individual",
+          "li5": "the right to free import of a car",
+          "li6": "the right to obtain a temporary residence permit (spouse, children)"
+        }
+      },
+      "detail": {
+        "title": {
+          "topText": "Detailed information about",
+          "bottomText": "the service"
+        },
+        "one": {
+          "title": "The main grounds for obtaining a temporary residence permit",
+          "li1": "Employment",
+          "li2": "Volunteering",
+          "li3": "Marriage to a citizen of Ukraine",
+          "li4": "Training",
+          "li5": "Family reunification (spouse)"
+        },
+        "two": {
+          "title": "List of documents required to obtain a temporary residence permit",
+          "p1": {
+            "li1": "Application for a certificate (to be filled in directly when submitting documents on the spot).",
+            "li2": "Original passport (with visa stamp type D).",
+            "li3": "Copy of passport (notarized and translated).",
+            "li4": "Medical insurance policy (for the entire period of the certificate).",
+            "li5": "Notarized copy of the work permit and it's original (in the case of registration on the basis of employment).",
+            "li6": "Application (submission) from a volunteer organization (in case of registration on the basis of volunteering)"
+          },
+          "p2": "And other documents, depending on the basis of the TRP."
+        },
+        "three": {
+          "title": "Procedure for issuing a temporary residence permit",
+          "p1": {
+            "li1": "In order to obtain a temporary residence permit, you must first obtain a visa of the appropriate type, except for countries with a visa-free regime (Azerbaijan, Moldova, Belarus, Georgia, Armenia, Uzbekistan).",
+            "li2": "After you have received a visa, we collect another necessary package of documents and submit it to the LCA.",
+            "li3": "You will be photographed and fingerprinted at the filing point.",
+            "li4": "Your application for a TRP takes up to 15 days to process.",
+            "li5": "After your TRP is printed and sent to the appropriate authority where you applied, you can pick up your certificate (the TRP is stored for up to 6 months)."
+          },
+          "p2": "From the registration date, you need to register your residence within 30 days."
+        }
+      },
+      "application": {
+        "text": "<span>Intermarium Law Firm</span> provides a full cycle of legal support for foreigners wishing to obtain a temporary residence permit. We will help you save time and avoid significant costs in the future.",
+        "button": "Send request"
+      }
+    },
+    "workPermitInUkraine": {
+      "intro": {
+        "title": {
+          "topText": "Work permit",
+          "bottomText": "in Ukraine"
+        },
+        "text": {
+          "p1": "<span>The permit to use the labor of foreigners and stateless persons</span> is a document that gives the employer the right to temporarily use the labor of a foreigner or a stateless person, or voluntarily obtained by a resident of Diia City to conclude a gig-contract with a foreigner or a stateless person.",
+          "p2": "According to the legislation of Ukraine, foreigners and stateless persons cannot work without a work permit. In addition, <span>the work permit provides an opportunity to obtain an appropriate visa to Ukraine and a temporary residence permit.</span>",
+          "p3": "<span>After obtaining a work permit, a foreigner acquires the same rights as a citizen of Ukraine.</span>"
+        }
+      },
+      "detail": {
+        "title": {
+          "topText": "Detailed information about",
+          "bottomText": "the service"
+        },
+        "one": {
+          "title": "How to get a work permit?",
+          "p1": "It is important to understand that in order to obtain work permit, the employer must submit relevant documents to the employment center, indicating in the application the period for which the permit should be issued and the position.",
+          "p2": "The work of foreigners and stateless persons can be used in different positions at one or several (two or more) employers, provided that each employer obtains a permit to use the labor of foreigners and stateless persons, in case of a change of place of work or transfer to another position, another employment permit, but only in the event of a change of employer, The work of foreigners and stateless persons may be used without a permit in part-time positions at one employer, if the term of the employment contract in the part-time position does not exceed the term of the permit at the main place of work."
+        },
+        "two": {
+          "title": "Validity of the work permit.",
+          "p1": "Work permit is issued for the duration of the employment contract, but not more than 1 year.",
+          "p2": "Exception: for foreign highly paid professionals, founders and/or participants, and/or beneficiaries (controllers) of a legal entity established in Ukraine; graduates of universities included in the first hundred in the world rankings of universities, according to the list determined by the Cabinet of Ministers of Ukraine; foreign workers of creative professions; foreign IT professionals may be issued an employment permit for a period of up to 3 years."
+        },
+        "three": {
+          "title": "List of required documents.",
+          "p1": {
+            "li1": "The application is filled out and signed by the employer.",
+            "li2": "Notarized and translated copy of the foreigner's passport.",
+            "li3": "1 photo card size 3.5x4.5.",
+            "li4": "The draft employment contract is certified by the employer."
+          },
+          "p2": "Documents are submitted through the Center for the provision of administrative services by the employer or a person authorized to do so by power of attorney.",
+          "p3": "All documents issued abroad must be apostilled and translated into Ukrainian!!!"
+        },
+        "four": {
+          "title": "The cost of a permit to employ foreigners.",
+          "p1": {
+            "li1": "for a period of less than 6 months - is 3 subsistence minimums (7,524 UAH);",
+            "li2": "for a period from 6 months to one year - is 5 subsistence minimums (12,540 UAH);",
+            "li3": "for a period from one year to 3 years - is 10 subsistence minimums (25,280 UAH);"
+          },
+          "p2": "The deadline for considering documents is up to 7 working days, and for the extension of a work permit, 3 working days!!!"
+        },
+        "five": {
+          "title": "Responsibility for violations of Ukrainian legislation in the field of employment of foreigners and stateless persons.",
+          "p1": "Part five of Article 53 of the Law of Ukraine \"On Employment of the Population\" provides for the imposition of fines on the employer in case of violation of the procedure established by law for employment of foreigners and stateless persons.",
+          "p2": "So, if the employer uses the labor of foreigners or stateless persons:",
+          "p3": {
+            "li1": "under the terms of an employment or other contract without permission, a fine is charged for each person in the amount of twenty times the minimum wage established at the time of discovery of the violation; (130,000 UAH)",
+            "li2": "under conditions other than those stipulated by the permit or by another employer, a fine is charged for each person in the amount of ten times the minimum wage established at the time of discovery of the violation. (65,000 UAH).",
+            "li3": "на термін від одного року до 3 років - становить 10 прожиткових мінімумів (25 280 грн.);"
+          },
+          "p4": "Also, a fine is imposed on company officials (director) in the amount of 8,500 UAH to 17,000 UAH.",
+          "p5": "As we can see, the fines for violating employment legislation are quite large, so we recommend seeking qualified legal assistance, which will help you save time and avoid significant costs in the future."
+        }
+      },
+      "application": {
+        "text": "<span>Intermarium Law Firm</span> provides a full cycle of support for foreigners wishing to obtain a work permit in Ukraine. We will help you save time and avoid significant costs in the future.",
+        "button": "Send request"
+      }
+    },
+    "corporateLaw": {
+      "intro": {
+        "title": {
+          "topText": "Corporate",
+          "bottomText": "Law"
+        },
+        "text": {
+          "p1": "Sustainable development of the state and society is impossible without foreign investments, wide opportunities for doing business, and openness of the country to talented and enterprising people from all over the world who want to invest, do business, and build their lives in Ukraine.",
+          "p2": "<span>Intermarium Law Firm</span> experts provide professional support to foreigners at all stages of doing business in Ukraine, including registration, purchase, reorganization, liquidation of companies, as well as mergers and acquisitions."
+        }
+      },
+      "order": {
+        "title": {
+          "topText": "Order",
+          "bottomText": "a service"
+        },
+        "list": {
+          "one": {
+            "title": "Preparation of corporate documentation (founding articles, shareholder agreements, local regulations)",
+            "description": "Corporate disputes by their nature belong to the category of the most complex cases and are associated with significant expenses. Most often, the outcome of such a dispute directly depends on how the constituent documents are drawn up. Constituent documents regulate and define the most important, fundamental concepts and principles of business entity activity."
+          },
+          "two": {
+            "title": "We provide comprehensive representation in the process of buying a business, which includes due diligence",
+            "description": "During the purchase of any expensive asset, the natural desire of the buyer is to learn all the nuances regarding the object of the future transaction. The due diligence procedure is an effective and efficient mechanism that allows not only to get a true picture of potential assets but also to prevent \"unpleasant surprises\" after the deal is closed. Thus, due diligence is one of the most important stages of the agreement, which can make significant adjustments to the plans of the Parties, the structure and price of the agreement, or even stop the further implementation of such an agreement. Proper preparation for Due Diligence will significantly reduce the time and required amount of resources for its completion and significantly increase the chances of successful completion of the transaction."
+          },
+          "three": {
+            "title": "Creation and registration of business entities of various organizational and legal forms, as well as separate subdivisions of legal entities",
+            "description": "Intermarium Law Firm has considerable experience in registering all forms of business entities. We help in the creation and registration of limited liability companies, joint-stock companies, various types of cooperatives, political parties, public organizations, volunteer organizations, charitable funds, foreign representative offices, and subsidiaries in Ukraine and provide support at all stages of the process."
+          },
+          "four": {
+            "title": "Issuance of licenses and permits, registration with state authorities, and compliance with other regulatory requirements that arise both when creating a business and in the process of conducting economic activity",
+            "description": "In Ukraine, to run a legal business, it is enough to be registered in accordance with the procedure established by law and to conduct its activities without violating the current legislation. However, in some cases, it is not enough to be registered as a business entity (legal or natural person-entrepreneur) for legal business activity. The legislation of Ukraine establishes 33 types of activities, for the conduct of which it is necessary to obtain a permit - a license. Violation of licensing conditions may be detected by the licensing authority during the inspection of business entities. In such a case, the licensing authority issues an order to eliminate violations of license conditions. Within the terms specified in this order, the licensee must provide the licensing authority with information on the elimination of violations. Intermarium Law Firm offers a full range of services for businesses obtaining relevant licenses and their registration."
+          },
+          "five": {
+            "title": "We advise foreign clients on investment mechanisms in Ukraine",
+            "description": "Ukraine has always been interesting for foreign investors and remains so despite the war. The Ukrainian IT industry showed an incredible result in 2022, which grew by 5.8%. The agrarian sector, pharmaceuticals, energy, transport and infrastructure, construction, and FMCG remain attractive for investors, as well as growing interest in military tech, and the military/defense sector. Intermarium Law Firm is engaged in the study of foreign investments and provides consultations to foreigners on investment mechanisms, as well as advises on the protection of foreign investments in Ukraine."
+          }
+        }
+      },
+      "different": {
+        "title": "Our team supports in various business industries and sectors:",
+        "li1": "real estate industry",
+        "li2": "industry of transport and logistics",
+        "li3": "retail industry",
+        "li4": "tourist services",
+        "li5": "educational services",
+        "li6": "and many others",
+        "text": "One of the main goals of Intermarium Law Firm is maximum assistance to foreign clients in conducting business in Ukraine.",
+        "button": "Send request"
+      }
+    },
+    "dueDiligence": {
+      "intro": {
+        "title": {
+          "topText": "Legal",
+          "bottomText": "due diligence"
+        },
+        "text": {
+          "p1": "<span>Legal due diligence</span> is the process of collecting and analyzing various legal information about the Object: registration status and ownership of the main assets, terms of key contracts, legal proceedings, and encumbrances, compliance with the requirements of current legislation, etc.",
+          "p2": "Proper preparation for Due Diligence <span>will significantly reduce the time</span> and required amount of resources for its completion and <span>significantly increase the chances of successful completion of the transaction.</span>"
+        }
+      },
+      "check": {
+        "mainTitle": "INSPECTION OF REAL ESTATE OBJECTS BEFORE PURCHASE:",
+        "block1": {
+          "title": {
+            "topText": "PRIMARY",
+            "bottomText": "MARKET"
+          },
+          "text": "In the primary market, apartments are often sold even before construction is completed, which involves a number of risks for the buyer, so our lawyers conduct a legal review of each Object, the review consists of the following:",
+          "li1": "inspection of the developer and the construction object",
+          "li2": "analysis of registration documents of the developer and related companies",
+          "li3": "the presence of executive proceedings and any entries in the register of encumbrances",
+          "li4": "the presence of court cases, for example, with creditors or utilities",
+          "li5": "presence of arrests and encumbrances",
+          "li6": "analysis of construction legality",
+          "li7": "verification of building permits (availability of license, other necessary documents)",
+          "li8": "analysis of the purchase scheme proposed by the developer for compliance with the law",
+          "li9": "study of the developer's contracts (investment contract; preliminary contract, contract of purchase and sale of property rights"
+        },
+        "block2": {
+          "title": {
+            "topText": "SECONDARY",
+            "bottomText": "MARKET"
+          },
+          "li1": "checking the legality of the owner's property rights (purchase agreement, gift, inheritance, etc.)",
+          "li2": "checking for the presence of encumbrances, judicial or executive proceedings regarding the real estate object, checking of arrests, mortgages",
+          "li3": "owner verification",
+          "li4": "verification of the number of registered persons",
+          "li5": "analysis for the possibility of third-party claims",
+          "li6": "support for concluding agreements and agreeing the terms of the sales contract"
+        },
+        "checkList": {
+          "title": {
+            "topText": "INSPECTION OF THE FACILITY",
+            "bottomText": "INVESTMENT"
+          },
+          "li1": "full legal review of the Object, its history and the formation of an expert opinion on the risks of the purchase",
+          "li2": "audit of contracts, licenses, permits",
+          "li3": "verification of the owner of the Object, including previous owners, analysis of the results of agreements with residents and non-residents",
+          "li4": "review of founding documents, their legal status",
+          "li5": "review of documents on corporate governance, decisions of collegial governing bodies and main powers of attorney",
+          "li6": "analysis of agreements with shares (parts) of the company, information about shareholders, their property and non-property rights",
+          "li7": "analysis of the legality of the Company's activities - availability of necessary licenses, permits, certificates",
+          "li8": "analysis of labor relations"
+        }
+      },
+      "application": {
+        "text": "The Intermarium company conducts a legal review of both real estate objects for purchase and investment objects.",
+        "button": "Send request"
+      }
+    },
+    "legalBusinessSupport": {
+      "intro": {
+        "title": {
+          "topText": "LEGAL BUSINESS",
+          "bottomText": "support"
+        },
+        "text": {
+          "p1": "<span>Legal outsourcing is indispensable for Western companies</span>. As experience shows, the participation of a professional lawyer at the stage of opening a business significantly <span>reduces the risk of problems</span> in the future and, if they do occur, <span>provides an opportunity to solve them quickly.</span>",
+          "p2": "Any business entity that enters the Ukrainian market <span>needs comprehensive legal support.</span>",
+          "p3": "The Intermarium law firm provides <span>full support in opening a business in Ukraine and its subsequent introduction</span> in matters related to the legal component."
+        }
+      },
+      "receive": {
+        "title": {
+          "topText": "By signing up with our company and subscribing to legal services ",
+          "bottomText": "you will get:"
+        },
+        "one": "Legal audit of contracts with your counterparties and risk assessment, drawing up a protocol of disagreements, development of a standard contract, additional contract",
+        "two": "Full verification of your counterparty before concluding agreements",
+        "three": "Analysis of documents, drafting of claims, response to claims",
+        "four": "Representation of interests in state bodies",
+        "five": "Drafting of statements, complaints, and appeals to state bodies",
+        "six": "Legal registration of relations with your employees and full support in obtaining the necessary permits",
+        "seven": "Analysis of situations that need to be resolved, written and oral consultations on their resolution",
+        "eight": "Protection of the company's Trademark (TM) and intellectual property rights",
+        "nine": "Development of document templates (agreement, orders, etc.)"
+      },
+      "preferences": {
+        "title": "Advantages of the subscription service:",
+        "li1": "Legal support during registration, development, and promotion of your business on the market",
+        "li2": "Constant assistance from a team of professional lawyers, which is necessary for a successful business",
+        "li3": "24/7 online support",
+        "li4": "Saving money on maintaining a full-time legal department in the company",
+        "li5": "Guaranteed confidentiality of information",
+        "li6": "Constant monitoring of compliance with the legislation of Ukraine",
+        "li7": "Reliable legal protection at all stages of business development",
+        "li8": "Reliable legal protection at all stages of business development",
+        "text": {
+          "p1": "If you need <span>constant legal support, </span>but it is not financially beneficial for you to maintain a legal department, you want to <span>be aware of changes in business, and to be warned about risks</span>, choose <span>a subscription service.</span>",
+          "p2": "<span>The list of services</span> within the subscriber service is determined individually<span>, taking into account the specifics of your activity</span> and upon agreement with the Client."
+        },
+        "button": "Send request"
+      }
+    },
+    "visaSupport": {
+      "intro": {
+        "title": {
+          "topText": "Visa",
+          "bottomText": "Support"
+        },
+        "text": {
+          "p1": "Foreigners living in Ukraine are often faced with the need to <span>issue transit, tourist or work visas</span> to neighboring countries.",
+          "p2": "Depending on your situation and the reasons for which it is necessary to visit Moldova or EU countries, we will select for you <span>the most optimal visa, country, consulate and time for submitting documents.</span>"
+        }
+      },
+      "questions": {
+        "title": {
+          "topText": "Our company can provide visa support for",
+          "bottomText": "the following issues"
+        },
+        "one": "assistance in obtaining a transit and business visa to Moldova",
+        "two": "assistance in obtaining a transit or tourist visa to Poland, Romania, Hungary",
+        "three": "assistance in obtaining work invitations from Polish companies for seasonal work (for 9 months) or for construction workers (for 3 years), as well as assistance in obtaining work visas",
+        "four": "assistance with obtaining the e-resident status of Estonia and opening a company in Estonia for those who plan to scale their business and bring it to the pan-European level and enter into contracts with European partners/suppliers and contractors"
+      },
+      "help": {
+        "title": "Visa support includes a full cycle of assistance:",
+        "li1": "obtaining appointment slots at the consulate",
+        "li2": "receiving invitations",
+        "li3": "preparing all documentation for visa application",
+        "li4": "personal support when submitting documents",
+        "li5": "educational services",
+        "li6": "further sending your passport with a visa attached to your address",
+        "button": "Send request"
+      }
+    },
+    "moldova": {
+      "intro": {
+        "title": {
+          "topText": "Assistance in obtaining a transit and business visa",
+          "bottomText": "to Moldova"
+        },
+        "text": "Moldova is the most accessible transit option for citizens of Asian and African countries who want to leave Ukraine or enter the territory of Ukraine.",
+        "button": "Send request"
+      },
+      "home": {
+        "title": {
+          "topText": "For those who are in the territory of Ukraine and want to",
+          "bottomText": "return home"
+        },
+        "one": "It is necessary to book an appointment date at the Moldovan consulate in Kyiv, prepare the necessary documents confirming the intention to transit through the territory of Moldova, including booking plane and bus tickets, as well as prepare visa application form.",
+        "two": "When applying for a visa, it is necessary to provide the consulate with not only a passport, but also documents confirming the legality of stay in Ukraine and, if a person is requesting a multiple-entry visa, it is also necessary to provide evidence that a person can legally enter the territory of Ukraine.",
+        "three": "After submission at the consulate, the applicant must wait approximately one week for the visa to be confirmed, after which they can pick up the passport with the visa affixed, or their lawyer or representative can pick up the passport and then hand it to the person or send it by post.",
+        "four": "The cost of the consular fee is 40 euros, and after paying it, you must provide the relevant receipts to the consul of Moldova. Payment is made at the branch of JSC \"Ukreximbank\" in Kyiv at the address 03150, Kyiv, str. Niemetska, 5.",
+        "subtext": "The visa is issued for a period <span>from 2 days to 6 months</span>, depending on the documents provided, confirming the purpose of the trip."
+      },
+      "ukraine": {
+        "title": {
+          "topText": "For those who wishes to",
+          "bottomText": "come to Ukraine"
+        },
+        "text": "A similar process takes place in other consulates of Moldova, if a person wishes to come to Ukraine and applies for a visa in Baku, Abu Dhabi, Qatar and other locations where there are diplomatic missions of the Republic of Moldova."
+      },
+      "transit": {
+        "title": {
+          "topText": "For those who is a citizen of 9 countries that are prohibited from issuing",
+          "bottomText": "transit visas"
+        },
+        "text": "Also, if a transit traveler to Ukraine is a citizen of 9 countries that are <span>prohibited from issuing transit visas</span>, such a person can receive <span>a business invitation to open a business visa to Moldova</span> using the same procedure.",
+        "listOfCountries": "The list of countries for whose citizens the issuance of transit visas has been suspended is as follows:",
+        "li1": "Iraq",
+        "li2": "Iran",
+        "li3": "Nigeria",
+        "li4": "Nepal",
+        "li5": "Pakistan",
+        "li6": "Afghanistan",
+        "li7": "Vietnam",
+        "li8": "Syria",
+        "li9": "Lebanon"
+      },
+      "tourist": {
+        "title": {
+          "topText": "who can apply for an electronic",
+          "bottomText": "tourist visa"
+        },
+        "text": "Also, citizens of many countries, such as <span>China, Ethiopia, Kenya</span>, can apply for <span>an electronic tourist visa</span>, and for this it is necessary to provide documents confirming the availability of travel insurance, ticket and accommodation reservations, as well as other supporting documents."
+      }
+    },
+    "poland": {
+      "intro": {
+        "title": {
+          "topText": "Assistance in obtaining a transit or tourist visa to",
+          "bottomText": "Poland, Romania, Hungary"
+        },
+        "text": "<span>Foreigners living on the territory of Ukraine</span> may have a need or wish to visit neighbouring countries <span>for the purpose of transit or tourism</span>, or may already have an existing <span>business invitation.</span>",
+        "listTitle": "We can provide a full cycle of visa support services including:",
+        "li1": "preliminary consultation and clarification of the task before you and the type of visa that will best meet the set goal",
+        "li2": "booking the appointment date at the consulate, preparing the visa application form, booking transport and accommodation, obtaining an insurance policy and preparing other accompanying documents for reception at the consulate",
+        "li3": "consultation on possible questions that may be asked at the consulate",
+        "li4": "preparation of an appeal in case of a negative decision of the consulate",
+        "button": "Send request"
+      }
+    },
+    "workInvitationsFromPolishCompanies": {
+      "intro": {
+        "title": {
+          "topText": "Work invitations from",
+          "bottomText": "polish companies"
+        },
+        "text": "<span>Foreigners living in Ukraine</span>, as well as citizens of the countries of Africa, Asia, the Middle East and South America, who wish <span>to obtain employment in a Polish company and move to Poland</span>, can contact the Intermarium Law Firm for the following:",
+        "one": "Seasonal invitations for a period of up to 9 months, for those who wish to go for seasonal agricultural work. With this invitation, a person has the right to apply for a Polish national visa for up to 9 months.",
+        "two": "Voivodeship invitations from construction companies and industrial productions, for a period of 3 years, for which you can apply for a Schengen visa for a period of 1 year, and later apply again for the entire period of validity of the voivodeship invitation.",
+        "also": "Also: after obtaining a visa, a person has the right <span>to change employers</span> already on the territory of Poland and <span>without the need to obtain a new work visa.</span> Invitations can be sent to <span>any country in the world.</span>",
+        "button": "Send request"
+      }
+    },
+    "EResidency": {
+      "intro": {
+        "title": {
+          "topText": "E-residency and opening of a company",
+          "bottomText": "in Estonia"
+        },
+        "text": {
+          "p1": "Estonia <span>is an ideal tax and legal jurisdiction</span> for those who want <span>to do business in the EU</span> and <span>scale an existing business internationally.</span>.",
+          "p2": "<span>The presence of an Estonian company</span> will allow you to conduct business, conclude contracts and carry out economic activities with European clients and partners even <span>without the need for a physical presence on the territory of the EU.</span>",
+          "p3": "<span>Estonia ranks high in the ratings of ease of doing business</span>, and <span>any actions can be carried out online</span>, only with the help of an electronic signature, which a person receives when issuing an e-resident card of Estonia.",
+          "p4": "In addition, Estonia has <span>an extremely favourable tax system</span> for foreigners with the status of e-resident, and only the withdrawn capital is taxed."
+        },
+        "support": "Intermarium law firm provides support on the following issues:",
+        "li1": "obtaining the status of electronic resident",
+        "li2": "registration of a company on the territory of Estonia remotely",
+        "li3": "registration of a company on the territory of Estonia remotely",
+        "button": "Send request"
       }
     }
   }
 }
+
+
+
+
+

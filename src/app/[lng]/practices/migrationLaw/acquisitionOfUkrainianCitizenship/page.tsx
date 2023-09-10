@@ -6,21 +6,12 @@ import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 import Button from "@/components/Button/Button";
 import CustomLi from "@/components/CustomLi/CustomLi";
-import {Trans, useTranslation} from "react-i18next";
+import {useTranslation} from "react-i18next";
+import {trans} from "@/services";
 
 
 const Page = () => {
   const {t} = useTranslation()
-
-  const trans = (path: string, color: string) => {
-    return (
-      <Trans
-        i18nKey={t(path)}
-        tOptions={{interpolation: {escapeValue: true}}}
-        components={{span: <span className={color == 'dark' ? "highlightDark" : color == 'light' ? "highlightLight" : ""}/>}}
-      />
-    )
-  }
 
   return (
     <>
@@ -91,16 +82,10 @@ const Page = () => {
       <div className={classes.application}>
         <Container className={classes.wrapper}>
           <div className="MLblock">
-            <div className={classes.text}>
-              Процедура отримання громадянства доволі складна і ми не рекомендуємо розпочинати процес самостійно без
-              допомоги кваліфікованого юриста тому якщо ви виявили бажання отримати громадянство України <span
-              className="highlightDark">імміграційні юристи юридичної компанії Intermarium допоможуть вам</span> заповнити
-              і зібрати необхідний перелік документів виходячи з індивідуальної ситуації кожного клієнта, подати їх
-              до державних органів і пройти всю процедуру строго в строк і без відмов.
-            </div>
+            <div className={classes.text}>{trans('practices.acquisitionOfUkrainianCitizenship.application.text', 'dark')}</div>
           </div>
           <div className={classes.button}>
-            <Button text="Залишити заявку"/>
+            <Button text={t('practices.acquisitionOfUkrainianCitizenship.application.button')}/>
           </div>
         </Container>
       </div>

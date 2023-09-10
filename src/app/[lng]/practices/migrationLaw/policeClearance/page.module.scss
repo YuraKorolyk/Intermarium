@@ -1,60 +1,48 @@
 @import "src/styles/base/vars";
-
 .intro {
   padding: 30px 0 120px;
-
   .wrapper {
     .title {
       margin-bottom: 20px;
     }
-
     .text {
       font-size: 30px;
       font-weight: 400;
       line-height: normal;
-
       & p:not(:last-child) {
         margin-bottom: 50px;
       }
     }
   }
 }
-
 @media (max-width: $tabletBig) {
   .intro {
     padding: 30px 0 110px;
-
     .wrapper {
       display: block;
-
       .title {
         margin-bottom: 20px;
         .bottomText {
-          font-size: 83px;
+          font-size: 75px;
         }
       }
-
       .text {
         font-size: 25px;
       }
     }
   }
 }
-
 @media (max-width: $tablet) {
   .intro {
     padding: 30px 0 100px;
-
     .wrapper {
       .title {
         .bottomText {
-          font-size: 65px;
+          font-size: 43px;
         }
       }
-
       .text {
         font-size: 20px;
-
         & p:not(:last-child) {
           margin-bottom: 25px;
         }
@@ -62,21 +50,17 @@
     }
   }
 }
-
 @media (max-width: $mobile) {
   .intro {
     padding: 20px 0 40px;
-
     .wrapper {
       .title {
         .bottomText {
-          font-size: 35px;
+          font-size: 33px;
         }
       }
-
       .text {
         font-size: 14px;
-
         & p:not(:last-child) {
           margin-bottom: 20px;
         }
@@ -84,11 +68,9 @@
     }
   }
 }
-
 .lists {
   padding: 60px 0;
   background: $dark;
-
   .wrapper {
     .whatFor {
       padding-bottom: 100px;
@@ -123,7 +105,6 @@
     }
   }
 }
-
 @media (max-width: $tabletBig) {
   .lists {
     .wrapper {
@@ -137,6 +118,11 @@
       }
       .listOfDoc {
         margin-bottom: 90px;
+        .title {
+          .bottomText {
+            font-size: 86px;
+          }
+        }
       }
       .term {
         font-size: 32px;
@@ -144,7 +130,6 @@
     }
   }
 }
-
 @media (max-width: $tablet) {
   .lists {
     padding: 50px 0;
@@ -166,7 +151,7 @@
         .title {
           margin-bottom: 20px;
           .bottomText {
-            font-size: 76px;
+            font-size: 51px;
           }
         }
         ul {
@@ -179,7 +164,6 @@
     }
   }
 }
-
 @media (max-width: $mobile) {
   .lists {
     padding: 40px 0;
@@ -199,7 +183,7 @@
         margin-bottom: 30px;
         .title {
           .bottomText {
-            font-size: 55px;
+            font-size: 39px;
           }
         }
         ul {
@@ -208,15 +192,12 @@
       }
       .term {
         font-size: 16px;
-
       }
     }
   }
 }
-
 .application {
   padding: 60px 0 80px;
-
   .wrapper {
     .text {
       max-width: 80%;
@@ -226,18 +207,15 @@
       line-height: normal;
       margin-bottom: 30px;
     }
-
     .button {
       display: flex;
       justify-content: center;
     }
   }
 }
-
 @media (max-width: $tabletBig) {
   .application {
     .wrapper {
-
       .text {
         font-size: 25px;
         //margin-bottom: 30px;
@@ -245,12 +223,10 @@
     }
   }
 }
-
 @media (max-width: $tablet) {
   .application {
     padding: 50px 0 70px;
     .wrapper {
-
       .text {
         font-size: 20px;
         //margin-bottom: 30px;
@@ -258,11 +234,9 @@
     }
   }
 }
-
 @media (max-width: $mobile) {
   .application {
     padding: 40px 0 60px;
-
     .wrapper {
       .text {
         max-width: 100%;

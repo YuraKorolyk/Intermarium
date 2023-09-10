@@ -6,6 +6,7 @@ import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 import {useRouter} from "next/navigation";
 import {useTranslation} from "react-i18next";
+import {trans} from "@/services";
 
 
 const data = [
@@ -75,27 +76,25 @@ const Page = () => {
             <div className={classes.intro}>
                 <Container className={classes.wrapper}>
                    <div className={classes.title}>
-                       <TextWithLine topText="Міграційне" topColor="dark">
-                           <span className={`${classes.bottomText} bottomTextWithLine`}>Право</span>
+                       <TextWithLine topText={t('practices.migrationLaw.intro.title.topText')} topColor="dark">
+                           <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.migrationLaw.intro.title.bottomText')}</span>
                        </TextWithLine>
                    </div>
                     <div className={classes.text}>
                         <p>
-                            <span className="highlightDark">Intermarium Law Firm</span> надає повний цикл супроводу іноземців, що бажають мігрувати до України або отримати українське громадянство.
+                          {trans('practices.migrationLaw.intro.text.p1', 'dark')}
                         </p>
                         <p>
-                            Ми допомагаємо клієнтам <span className="highlightDark">з десятків різних країн світу</span> отримати статус резидента та легально перебувати
-                            в Україні, а також отримувати фахові консультації <span className="highlightDark">з будь-яких міграційних питань</span>.
+                          {trans('practices.migrationLaw.intro.text.p1', 'dark')}
                         </p>
-
                     </div>
                 </Container>
             </div>
             <div className={classes.order}>
                 <Container className={classes.wrapper}>
                     <div className={classes.title}>
-                        <TextWithLine topText="Замовити за напрямом" topColor="dark">
-                            <span className={`${classes.bottomText} bottomTextWithLine`}>Послугу</span>
+                        <TextWithLine topText={t('practices.migrationLaw.order.title.topText')} topColor="dark">
+                            <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.migrationLaw.order.title.bottomText')}</span>
                         </TextWithLine>
                     </div>
                   <div className={classes.list}>
@@ -106,12 +105,6 @@ const Page = () => {
                       >{item.label}</div>
                     ))}
                   </div>
-                    {/*<ul className={classes.favourList}>*/}
-                    {/*    <li>Lorem ipsum dolor sit</li>*/}
-                    {/*    <li>Lorem ipsum dolor sit</li>*/}
-                    {/*    <li>Lorem ipsum dolor sit</li>*/}
-                    {/*    <li>Lorem ipsum dolor sit</li>*/}
-                    {/*</ul>*/}
                 </Container>
             </div>
         </>

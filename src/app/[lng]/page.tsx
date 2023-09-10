@@ -50,7 +50,8 @@ export default function Home({params: {lng}}: HomeProps) {
           </div>
           <div className={classes.title}>
             <TextWithLine topText={t('homePage.mission.title.topText')} topColor="dark">
-              <span className={`${classes.bottomText} bottomTextWithLine`}>{t('homePage.mission.title.bottomText')}</span>
+              <span
+                className={`${classes.bottomText} bottomTextWithLine`}>{t('homePage.mission.title.bottomText')}</span>
             </TextWithLine>
           </div>
           <div className={classes.text}>
@@ -61,9 +62,6 @@ export default function Home({params: {lng}}: HomeProps) {
                 components={{span: <span className="highlightDark"/>}}
               />
             </div>
-
-            {/*<div className={classes.description} dangerouslySetInnerHTML={{ __html: t('homePage.mission.text') }} />*/}
-
             <div className={classes.buttonBox}>
               <Button text={t('homePage.mission.button')} onClick={() => router.push(`/${lng}/about`)}/>
             </div>
@@ -137,7 +135,8 @@ export default function Home({params: {lng}}: HomeProps) {
         <Container className={classes.wrapper}>
           <div className={classes.title}>
             <TextWithLine topText={t('homePage.practices.title.topText')} topColor="dark">
-              <span className={`${classes.bottomText} bottomTextWithLine`}>{t('homePage.practices.title.bottomText')}</span>
+              <span
+                className={`${classes.bottomText} bottomTextWithLine`}>{t('homePage.practices.title.bottomText')}</span>
             </TextWithLine>
           </div>
           <div className={classes.list}>
@@ -188,13 +187,19 @@ export default function Home({params: {lng}}: HomeProps) {
           </div>
           <div className={classes.list}>
             <Article author="Taras" date="16/06/2023"
-                     title={t('homePage.blog.firstArticle')}/>
+                     title={t('homePage.blog.firstArticle')}
+                     linkTo={'investingIntoUkraine'}
+            />
             <Article author="Taras" date="08/06/2023"
-                     title={t('homePage.blog.secondArticle')}/>
-            <Article author="Taras" date="02/06/2023" title={t('homePage.blog.thirdArticle')}/>
+                     title={t('homePage.blog.secondArticle')}
+                     linkTo={'investingIntoUkraine'}
+            />
+            <Article author="Taras" date="02/06/2023" title={t('homePage.blog.thirdArticle')}
+                     linkTo={'investingIntoUkraine'}
+            />
           </div>
           <div className={classes.buttonBox}>
-            <Button text={t('homePage.blog.button')}/>
+            <Button text={t('homePage.blog.button')} onClick={() => router.push(`/${lng}/blog`)}/>
           </div>
         </Container>
       </div>

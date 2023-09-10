@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import classes from './page.module.scss'
 import Container from "@/components/Layouts/Container/Container";
@@ -5,25 +6,25 @@ import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 import Button from "@/components/Button/Button";
 import CustomLi from "@/components/CustomLi/CustomLi";
+import {useTranslation} from "react-i18next";
+import {trans} from "@/services";
 
 
 const Page = () => {
+  const {t} = useTranslation();
   return (
     <>
       <HeaderBackground background="1"/>
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>
-            <TextWithLine topText="Супровід укладення шлюбу з громадянами" topColor="dark">
-              <span className={`${classes.bottomText} bottomTextWithLine`}>України</span>
+            <TextWithLine topText={t('practices.marriageRegistration.intro.title.topText')} topColor="dark">
+              <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.marriageRegistration.intro.title.bottomText')}</span>
             </TextWithLine>
           </div>
           <div className={classes.text}>
             <div className="MLblock">
-              <p>
-                <span className="highlightDark">Шлюб з іноземним елементом</span> є набагато складніший та триваліший
-                ніж шлюб між громадянами України, оскільки <span className="highlightDark">потребує додаткових погоджень від державних органів.</span>
-              </p>
+              <p>{trans('practices.marriageRegistration.intro.text.p1', 'dark')}</p>
             </div>
           </div>
         </Container>
@@ -32,51 +33,38 @@ const Page = () => {
         <Container className={classes.wrapper}>
           <div className={classes.documents}>
             <div className={classes.title}>
-              <TextWithLine topText="Перелік необхідних" topColor="light">
-                <span className={`${classes.bottomText} bottomTextWithLine`}>документів</span>
+              <TextWithLine topText={t('practices.marriageRegistration.lists.documents.title.topText')} topColor="light">
+                <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.marriageRegistration.lists.documents.title.bottomText')}</span>
               </TextWithLine>
             </div>
             <ul>
-              <CustomLi color="light">Оригінал паспорта, а у випадку іноземця то посвідка на проживання в
-                Україні</CustomLi>
-              <CustomLi color="light">Переклад паспорта іноземця на українську мову</CustomLi>
-              <CustomLi color="light">Якщо хтось із наречених раніше перебував у шлюбі – документ, який підтверджує
-                припинення цього попереднього шлюбу, а саме: свідоцтво про розірвання шлюбу, рішення суду про розірвання
-                шлюбу (або про визнання його недійсним) – з відміткою про набрання законної сили, висновок РАЦС про
-                анулювання попереднього актового запису про шлюб, свідоцтво про смерть.</CustomLi>
+              <CustomLi color="light">{t('practices.marriageRegistration.lists.documents.li1')}</CustomLi>
+              <CustomLi color="light">{t('practices.marriageRegistration.lists.documents.li2')}</CustomLi>
+              <CustomLi color="light">{t('practices.marriageRegistration.lists.documents.li3')}</CustomLi>
             </ul>
-            <p>
-              Для того, щоб після реєстрації шлюбу на території України, претендувати
-              на отримання візи чоловіка/дружини в ту чи іншу країну, важливо задовольняти всім вимогам до цієї
-              категорії візи, представивши у відповідне посольство правильно підготовлений пакет документів. В
-              більшості випадків, відмова в отриманні візи по цій категорії візи відбувається через відсутність
-              будь-якого документа, який було б дуже легко отримати, але про який Заявник не знав, або з причини
-              простої непідготовленості до інтерв&apos;ю з консульським офіцером в посольстві. А подальша необхідна апеляція
-              стосовно цього питання призведе до зайвих чималих фінансових витрат і втрати часу.
-            </p>
+            <p>{t('practices.marriageRegistration.lists.documents.p')}</p>
           </div>
           <div className={classes.war}>
             <div className={classes.title}>
-              <TextWithLine topText="ШЛЮБ З ІНОЗЕМЦЕМ ПІД ЧАС" topColor="light">
-                <span className={`${classes.bottomText} bottomTextWithLine`}>воєнного стану</span>
+              <TextWithLine topText={t('practices.marriageRegistration.lists.war.title.topText')} topColor="light">
+                <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.marriageRegistration.lists.war.title.bottomText')}</span>
               </TextWithLine>
             </div>
             <div>
               <p className={classes.because}>
-                У звʼязку із загрозою життю та здоровʼю осіб, під час воєнного стану доступна прискорена процедура реєстрації шлюбу без звернення за послугою «Шлюб за добу».
+                {t('practices.marriageRegistration.lists.war.p1')}
               </p>
               <p>
                 <div className={classes.subtitle}>
-                  Що для цього потрібно?
+                  {t('practices.marriageRegistration.lists.war.p2')}
                 </div>
                 <ul>
-                  <CustomLi color="light">Подання заяви на реєстрацію шлюбу до відділу РАЦС</CustomLi>
-                  <CustomLi color="light">Призначення дати реєстрації шлюбу (через 2-3 дні після подачі заяви)</CustomLi>
-                  <CustomLi color="light">Відділ РАЦС надсилає запит до Державної міграційної служби України щодо законності перебування іноземця на території України та отримує висновок</CustomLi>
-                  <CustomLi color="light">Реєстрація шлюбу та отримання свідоцтва про шлюб</CustomLi>
+                  <CustomLi color="light">{t('practices.marriageRegistration.lists.war.li1')}</CustomLi>
+                  <CustomLi color="light">{t('practices.marriageRegistration.lists.war.li2')}</CustomLi>
+                  <CustomLi color="light">{t('practices.marriageRegistration.lists.war.li3')}</CustomLi>
+                  <CustomLi color="light">{t('practices.marriageRegistration.lists.war.li4')}</CustomLi>
                 </ul>
               </p>
-
             </div>
           </div>
         </Container>
@@ -85,11 +73,11 @@ const Page = () => {
         <Container className={classes.wrapper}>
           <div className="MLblock">
             <div className={classes.text}>
-              Тому якщо вам необхідна юридична допомога з приводу укладення шлюбу в Україні <span className="highlightDark">Intermarium law firm надає повний юридичний супровід</span> по підготовці документів для укладення шлюбу з іноземним громадянином як за кордоном, так і на території України, а також повний юридичний супровід по укладенню шлюбного договору.
+              {trans('practices.marriageRegistration.application.text', 'dark')}
             </div>
           </div>
           <div className={classes.button}>
-            <Button text="Залишити заявку"/>
+            <Button text={t('practices.marriageRegistration.application.button')}/>
           </div>
         </Container>
       </div>

@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 import classes from './page.module.scss';
@@ -15,124 +16,116 @@ import Eight from "../../../../../public/assets/icons/Numbers/Eight";
 import Nine from "../../../../../public/assets/icons/Numbers/Nine";
 import Button from "@/components/Button/Button";
 import CustomLi from "@/components/CustomLi/CustomLi";
+import {useTranslation} from "react-i18next";
+import {trans} from "@/services";
 
 const Page = () => {
+  const {t} = useTranslation();
   return (
     <>
       <HeaderBackground background='5'/>
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>
-            <TextWithLine topText="абонентське" topColor="dark">
-              <span className={`${classes.bottomText} bottomTextWithLine`}>обслуговування</span>
+            <TextWithLine topText={t('practices.legalBusinessSupport.intro.title.topText')} topColor="dark">
+              <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.legalBusinessSupport.intro.title.bottomText')}</span>
             </TextWithLine>
           </div>
           <div className={classes.text}>
-            <p><span className="highlightDark">Юридичний аутсорсинг є незамінним для західних компаній</span>. Як
-              показує досвід, участь професійного юриста
-              саме на етапі відкриття бізнесу значно <span className="highlightDark">зменшує ризик виникнення проблем</span> в подальшому а у разі їх
-              виникнення <span className="highlightDark">надає можливість швидкому їх вирішенню</span>.</p>
-            <p>Будь-який Об&apos;єкт господарювання який заходить на український ринок <span className="highlightDark">потребує комплексної юридичної підтримки</span>.
-            </p>
-            <p>Юридична компанія Intermarium надає <span className="highlightDark">повний супровід у відкритті бізнесу в Україні та подальшому його введенні</span> з питань що стосуються юридичної складової.
-            </p>
+            <p>{trans('practices.legalBusinessSupport.intro.text.p1', 'dark')}</p>
+            <p>{trans('practices.legalBusinessSupport.intro.text.p2', 'dark')}</p>
+            <p>{trans('practices.legalBusinessSupport.intro.text.p3', 'dark')}</p>
           </div>
         </Container>
       </div>
       <div className={classes.receive}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>
-            <TextWithLine topText="Підписавши з нашою компанією абонентське юридичне обслуговування" topColor="light">
-              <span className={`${classes.bottomText} bottomTextWithLine`}>ви отримаєте:</span>
+            <TextWithLine topText={t('practices.legalBusinessSupport.receive.title.topText')} topColor="light">
+              <span className={`${classes.bottomText} bottomTextWithLine`}>{t('practices.legalBusinessSupport.receive.title.bottomText')}</span>
             </TextWithLine>
           </div>
           <div className={classes.list}>
             <LinkWithDropdown
               dropdown="none"
-              title="Юридичний аудит договорів з вашими контрагентами та оцінка ризиків, складання протоколу розбіжностей, розробка типового договору, додаткового договору"
+              title={t('practices.legalBusinessSupport.receive.one')}
             >
               <One/>
             </LinkWithDropdown>
             <LinkWithDropdown
               dropdown="none"
-              title="Повну перевірку вашого контрагента перед укладенням угод"
+              title={t('practices.legalBusinessSupport.receive.two')}
             >
               <Two/>
             </LinkWithDropdown>
             <LinkWithDropdown
               dropdown="none"
-              title="Аналіз документів, складання претензій, відповідь на претензії"
+              title={t('practices.legalBusinessSupport.receive.three')}
             >
               <Three/>
             </LinkWithDropdown>
             <LinkWithDropdown
               dropdown="none"
-              title="Представництво інтересів в державних органах"
+              title={t('practices.legalBusinessSupport.receive.four')}
             >
               <Four/>
             </LinkWithDropdown>
             <LinkWithDropdown
               dropdown="none"
-              title="Складання заяв, скарг, звернень до державних органів"
+              title={t('practices.legalBusinessSupport.receive.five')}
             >
               <Five/>
             </LinkWithDropdown>
             <LinkWithDropdown
               dropdown="none"
-              title="Юридичне оформлення відносин з вашими працівниками та повний супровід з отриманням необхідних дозволів"
+              title={t('practices.legalBusinessSupport.receive.six')}
             >
               <Six/>
             </LinkWithDropdown>
             <LinkWithDropdown
               dropdown="none"
-              title="Аналіз ситуацій які потребують вирішення, письмові та усні консультації щодо їх вирішення"
+              title={t('practices.legalBusinessSupport.receive.seven')}
             >
               <Seven/>
             </LinkWithDropdown>
             <LinkWithDropdown
               dropdown="none"
-              title="Захист Торгової марки (ТМ) та прав інтелектуальної власності компанії"
+              title={t('practices.legalBusinessSupport.receive.eight')}
             >
               <Eight/>
             </LinkWithDropdown>
             <LinkWithDropdown
               dropdown="none"
-              title="Розробку шаблонів документів (договір, наказів та ін.)"
+              title={t('practices.legalBusinessSupport.receive.nine')}
             >
               <Nine/>
             </LinkWithDropdown>
-
           </div>
         </Container>
       </div>
       <div className={classes.preferences}>
         <Container className={classes.wrapper}>
-          <div className={classes.title}>
-            Переваги абонентського обслуговування:
-          </div>
+          <div className={classes.title}>{t('practices.legalBusinessSupport.preferences.title')}</div>
           <ul>
-            <CustomLi>юридичний супровід при реєстрації, розвитку і просуванні Вашого бізнесу на ринку</CustomLi>
-            <CustomLi>постійна допомога з боку команди юристів-професіоналів, яка потрібна для успішного ведення бізнесу</CustomLi>
-            <CustomLi>постійна підтримка онлайн без вихідних</CustomLi>
-            <CustomLi>економія грошей на утримання штатного юридичного відділу в компанії</CustomLi>
-            <CustomLi>гарантована конфіденційність інформації</CustomLi>
-            <CustomLi>постійний контроль за дотриманням законодавства України</CustomLi>
-            <CustomLi>надійний правовий захист на всіх етапах розвитку бізнесу</CustomLi>
-            <CustomLi>надійний правовий захист на всіх етапах розвитку бізнесу</CustomLi>
+            <CustomLi>{t('practices.legalBusinessSupport.preferences.li1')}</CustomLi>
+            <CustomLi>{t('practices.legalBusinessSupport.preferences.li2')}</CustomLi>
+            <CustomLi>{t('practices.legalBusinessSupport.preferences.li3')}</CustomLi>
+            <CustomLi>{t('practices.legalBusinessSupport.preferences.li4')}</CustomLi>
+            <CustomLi>{t('practices.legalBusinessSupport.preferences.li5')}</CustomLi>
+            <CustomLi>{t('practices.legalBusinessSupport.preferences.li6')}</CustomLi>
+            <CustomLi>{t('practices.legalBusinessSupport.preferences.li7')}</CustomLi>
+            <CustomLi>{t('practices.legalBusinessSupport.preferences.li8')}</CustomLi>
           </ul>
           <div className={classes.text}>
-            <p>Якщо вам необхідна <span className="highlightDark">постійна юридична підтримка</span> але вам фінансово не вигідно утримувати юридичний відділ, хочете <span className="highlightDark">бути в курсі змін у бізнесі та щоб вас попереджали про ризики</span>, обирайте <span className="highlightDark">абонентське обслуговування</span>.</p>
-            <p>
-              <span className="highlightDark">Перелік послуг</span> в межах абонентського обслуговування визначається <span className="highlightDark">індивідуально з урахуванням специфіки вашої діяльності</span> та за погодженням з Клієнтом.
-            </p>
+            <p>{trans('practices.legalBusinessSupport.preferences.text.p1', 'dark')}</p>
+            <p>{trans('practices.legalBusinessSupport.preferences.text.p2', 'dark')}</p>
           </div>
           <div className={classes.button}>
-            <Button text="залишити заявку"/>
+            <Button text={t('practices.legalBusinessSupport.preferences.button')}/>
           </div>
         </Container>
       </div>
     </>
-
   );
 };
 
