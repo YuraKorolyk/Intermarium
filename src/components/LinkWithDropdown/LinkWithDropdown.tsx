@@ -1,5 +1,5 @@
 'use client';
-import React, {FC, ReactNode, useState} from 'react';
+import React, {FC, ReactNode, useEffect, useState} from 'react';
 import classes from "./LinkWithDropdown.module.scss";
 import Arrow from "../../../public/assets/icons/Arrow";
 import {useRouter} from "next/navigation";
@@ -22,6 +22,13 @@ const LinkWithDropdown: FC<IProps> = ({title, description, children, dropdown, l
   const arrowLinkHandler = () => {
     router.push(`/practices/visaSupport/${linkTo}`)
   }
+
+  useEffect(() => {
+    if (dropdown === "opened") {
+      (setDescriptionOpened(true))
+    }
+  }, []);
+
   return (
     <div className={classes.list}>
       <div className={classes.numbers}>

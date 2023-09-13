@@ -12,6 +12,7 @@ import Button from "@/components/Button/Button";
 import React from "react";
 import {useRouter} from "next/navigation";
 import {Trans, useTranslation} from "react-i18next";
+import Form from "@/components/Form/Form";
 
 // import {useTranslation} from "@/app/i18n/client";
 interface HomeProps {
@@ -205,8 +206,10 @@ export default function Home({params: {lng}}: HomeProps) {
       </div>
       <div className={classes.application}>
         <Container className={classes.wrapper}>
+          <Form></Form>
         </Container>
       </div>
+
     </>
   )
 }

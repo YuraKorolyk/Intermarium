@@ -18,7 +18,7 @@ const Footer:FC<IProps> = ({lng}) => {
     const { t } = useTranslation()
     const currentYear = new Date().getFullYear();
     return (
-        <footer className={classes.footer}>
+        <footer className={classes.footer} id="contacts">
             <Container className={classes.wrapper}>
                 <div className={classes.logoBlock}>
                     <div className={classes.logoBox} onClick={()=> router.push(`/${lng}`)}>
@@ -37,10 +37,11 @@ const Footer:FC<IProps> = ({lng}) => {
                     </span>
                 </div>
                 <div className={classes.info}>
-                    <a className={classes.number} href="tel:+380993339933">+38 (099) 333 99 33</a>
+                    <a className={classes.number} href="tel:+380683872296">+38 (068) 387 22 96</a>
+                    <a className={classes.number} href="tel:+380976634347">+38 (097) 663 43 47</a>
                     <div className={classes.mail} onClick={(e) => {window.location.href ='mailto:office@intermarium.legal';}}>office@intermarium.legal</div>
                     <div className={classes.adress}>Україна, м. Київ,<br/>
-                        вул. Хрещатик, 19-А, офіс 444
+                        вул. Борисоглібська, 16А, офіс 4
                     </div>
                 </div>
             </Container>

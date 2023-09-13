@@ -14,8 +14,14 @@
   transition: .2s;
 
 }
+//@media (hover: hover) {
+//  .button:hover { background: $dark; }
+//}
 @media (hover: hover) {
-  .button:hover { background: $dark; }
+  .button:hover {
+    background: $light;
+    color: $dark;
+  }
 }
 @media (max-width: $mobile) {
   .button {

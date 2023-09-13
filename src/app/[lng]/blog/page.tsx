@@ -20,40 +20,48 @@ const articles: IArticle[] = [
     title: "Закон України для громадян Республіки Польща, які перебувають на території України",
     author: "Taras",
     date: "14/06/2023",
-    type: "article",
-    linkTo: "investingIntoUkraine"
+    type: "legislative changes",
+    linkTo: "lawForPoles"
   },
   {
     id: 2,
     title: "Законопроєкт 5795 щодо змін у сфері працевлаштування іноземців",
     author: "Taras",
     date: "08/06/2023",
-    type: "article",
-    linkTo: "investingIntoUkraine"
+    type: "legislative changes",
+    linkTo: "draftLaw5795"
   },
   {
     id: 3,
     title: "Є-резиденство для іноземців",
     author: "Taras",
     date: "02/06/2023",
+    type: "legislative changes",
+    linkTo: "e-residency"
+  },
+  {
+    id: 4,
+    title: "Нова підстава отримання дозволу на імміграцію",
+    author: "Taras",
+    date: "02/06/2023",
+    type: "legislative changes",
+    linkTo: "law3180"
+  },
+  {
+    id: 5,
+    title: 'Можливості та переваги інвестування в Україну',
+    author: "Yurii",
+    date: "13/07/2023",
     type: "article",
     linkTo: "investingIntoUkraine"
   },
   {
-    id: 4,
-    title: 'Можливості та переваги інвестування в Україну',
-    author: "Yurii",
-    date: "13/07/2023",
-    type: "legislative changes",
-    linkTo: "investingIntoUkraine"
-  },
-  {
-    id: 5,
+    id: 6,
     title: 'Чому слід звернутися до міграційних юристів?',
     author: "Yurii",
     date: "15/07/2023",
-    type: "legislative changes",
-    linkTo: "investingIntoUkraine"
+    type: "article",
+    linkTo: "turnToMigrationLawyers"
   }
 ]
 

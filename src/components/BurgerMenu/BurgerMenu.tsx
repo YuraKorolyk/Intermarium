@@ -27,6 +27,21 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger, lng}) => {
     const practiceClickHandler = () => {
         setIsPracticeOpen((prevState) => !prevState);
     }
+
+    const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        onCloseBurger();
+        event.preventDefault();
+        const target = document.getElementById('contacts');
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        }
+    };
+
+
+
     return (
         <div className={classes.burgerMenu} style={{opacity: isOpen ? "1" : "0" , visibility: isOpen ? "visible" : "hidden"}}>
             <Container className={isPracticeOpen ? `${classes.wrapper} ${classes.practiceOpened}` : classes.wrapper}>
@@ -99,8 +114,8 @@ const BurgerMenu:FC<IProps> = ({isOpen, onCloseBurger, lng}) => {
                 </Link>
                 <Link
                     className={pathname === `/${lng}/contacts` ? classes.active : ''}
-                    onClick={onCloseBurger}
-                    href={`/${lng}/contacts`}
+                    onClick={handleClick}
+                    href={`/${lng}`}
                 >
                     {t('burgerMenu.contacts')}
                 </Link>
