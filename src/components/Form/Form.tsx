@@ -1,5 +1,5 @@
 // components/ContactForm.js
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -7,7 +7,7 @@ const Form = () => {
     email: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -15,7 +15,7 @@ const Form = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     // You can perform form validation and submission logic here.
     console.log(formData);
