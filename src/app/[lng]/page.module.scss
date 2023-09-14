@@ -489,10 +489,18 @@
   display: none;
 }
 @media (max-width: $tablet) {
+  .application {
+    height: 400px;
+  }
   .formBig {
     display: none;
   }
   .formSmall {
     display: block;
+  }
+}
+@media (max-width: $mobile) {
+  .application {
+    height: 280px;
   }
 }
