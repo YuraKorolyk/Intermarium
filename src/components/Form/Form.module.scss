@@ -1,0 +1,107 @@
+@import "src/styles/base/vars";
+
+.formContainer {
+  padding: 27px 70px 27px 120px;
+  background: $light;
+  display: inline-block;
+  .title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 108.688%; /* 52.17px */
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .name, .email, .country, textarea {
+    border: 1.5px solid #286E8D;
+    margin-bottom: 15px;
+    padding: 10px 0 5px 10px;
+    width: 100%;
+  }
+  .request {
+    resize: none;
+    padding-bottom: 50px;
+  }
+  .familiar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    input {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+    label {
+      margin-left: 15px;
+      font-size: 15px;
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    button {
+      transition: .2s;
+    background: $dark;
+      padding: 10px 30px;
+      color: $light;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 108.688%; /* 19.564px */
+      text-transform: uppercase;
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .formContainer {
+    padding: 40px 35px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .title {
+      font-size: 30px;
+    }
+    .request {
+      padding-bottom: 20px;
+    }
+    .familiar {
+      label {
+        font-size: 14px;
+      }
+    }
+    .button {
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .formContainer {
+    padding: 30px 20px 40px;
+    .title {
+      font-size: 20px;
+    }
+    .name, .email, .country, textarea {
+      margin-bottom: 15px;
+      padding: 7px 0 3px 7px;
+    }
+    .request {
+      padding-bottom: 20px;
+    }
+    .familiar {
+      label {
+        font-size: 12px;
+      }
+    }
+    .button {
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (hover: hover) {
+  .button button:hover {
+    background: $accent;
+  }
+}

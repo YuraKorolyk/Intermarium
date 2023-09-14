@@ -84,9 +84,11 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 100%; /* 16px */
-
-        &:hover {
-          background: $dark;
+        transition: .2s;
+        @media (hover: hover) {
+          &:hover {
+            background: $dark;
+          }
         }
       }
     }

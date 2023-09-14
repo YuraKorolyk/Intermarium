@@ -17,7 +17,9 @@
     "contacts": "contacts"
   },
   "footer": {
-    "rulesAndPrivacy": "Rules and privacy notices"
+    "rulesAndPrivacy": "Rules and privacy notices",
+    "address1": "Ukraine, Kyiv,",
+    "address2": "St.  Borysoglibska, 16A, office 4"
   },
   "partner": {
     "taras": "Taras Horbatiuk",
@@ -247,6 +249,22 @@
           "topText": "Order",
           "bottomText": "a service"
         }
+      },
+      "data": {
+        "d1": "Temporary residence permit",
+        "d2": "Permanent residence permit",
+        "d3": "Immigration permit",
+        "d4": "Renewal of a lost/theft residence permit",
+        "d5": "Legal support of marriage in ukraine",
+        "d6": "The extension of stay in Ukraine",
+        "d7": "Acquisition of ukrainian citizenship",
+        "d8": "Work permit in Ukraine",
+        "d9": "Removal of the entry ban into ukraine",
+        "d10": "Appeal of migration service decisions",
+        "d11": "Obtaining a certificate of no criminal record in ukraine",
+        "d12": "Obtaining a tax number for foreigners",
+        "d13": "Obtaining the status of a foreign ukrainian",
+        "d14": "Issuing a certificate of registration of a person as a citizen of ukraine"
       }
     },
     "acquisitionOfUkrainianCitizenship": {
@@ -1183,6 +1201,238 @@
         "button": "Send request"
       }
     }
+  },
+  "blog": {
+    "intro": {
+      "title": {
+        "topText": "Our",
+        "bottomText": "legal blog"
+      },
+      "filter": {
+        "all": "All",
+        "articles": "articles",
+        "legalChanges": "legal changes"
+      }
+    },
+    "articles": {
+      "a1": "The law of Ukraine for citizens of the Republic of Poland staying on the territory of Ukraine",
+      "a2": "Draft law 5795 on changes to the employment of foreigners",
+      "a3": "E-residence for foreigners",
+      "a4": "New grounds for obtaining an immigration permit",
+      "a5": "Opportunities and benefits of investing into ukraine",
+      "a6": "Why should you turn to migration lawyers?"
+    }
+  },
+  "lawForPoles": {
+    "intro": {
+      "title": "Law of Ukraine",
+      "subtitle": "On the establishment of additional legal and social guarantees for citizens of the Republic of Poland who are in the territory of Ukraine",
+      "text": {
+        "p1": "On July 7, 2022, the Law of Ukraine <span>\"On establishing additional legal and social guarantees for citizens of the Republic of Poland residing in Ukraine\"</span> was adopted, which entered into force on September 16, 2022.",
+        "p2": "This Law was adopted as a sign of Poland's gratitude for Ukraine's assistance and the adoption of the Law of the Republic of Poland dated March 12, 2022 \"On assistance to citizens of Ukraine in connection with the armed conflict on the territory of that state\", which has been in effect since February 24, 2022."
+      }
+    },
+    "for": {
+      "title": {
+        "topText": "What does this Law give to Polish",
+        "bottomText": "citizens"
+      },
+      "li1": "Staying in the territory of Ukraine for 18 months without issuing additional documents, as well as their spouses and children (regardless of their citizenship) with the right to extend their stay by issuing appropriate documents, for example, on the basis of education or employment;",
+      "li2": "Employment without a work permit of foreigners and stateless persons;",
+      "li3": "State registration as a taxpayer and obtaining the registration number of the taxpayer's registration card in accordance with the legislation of Ukraine. An application for obtaining a registration number of a taxpayer's account card is submitted on behalf of minors/minor children by their parents and other legal representatives;",
+      "li4": "Conducting business activities on the same terms as citizens of Ukraine;",
+      "li5": "Obtaining education on the same terms as citizens of Ukraine, including at the expense of state or local budget funds;",
+      "li6": "Free medical care in state and communal health care facilities on the same terms as citizens of Ukraine and other conditions stipulated by the Law."
+    },
+    "also": {
+      "title": "Also, citizens of Poland who have expressed a desire to stay in Ukraine for longer than 18 months for the purpose of employment can issue a temporary residence permit without obtaining a long-term visa, it is enough to submit the relevant documents to the migration service, namely:",
+      "li1": "Application (made in electronic form when submitting documents);",
+      "li2": "Employment contract or gig contract;",
+      "li3": "The employer's obligation to notify the central executive body that implements state policy in the field of migration (immigration and emigration), including combating illegal (illegal) migration, citizenship, registration of natural persons, refugees and other categories of migrants defined by the legislation of Ukraine, about early termination or termination of the employment contract (contract);",
+      "li4": "Original passport;",
+      "li5": "Notarized translation of the passport into Ukrainian;",
+      "li6": "A document confirming the payment of the state duty and administrative fee for issuing a temporary residence permit (also paid when submitting the documents).",
+      "p": "The temporary residence permit is issued for the term of the employment contract, but not more than 3 years."
+    }
+  },
+  "draftLaw5796": {
+    "intro": {
+      "title": "Draft law 5795",
+      "september": {
+        "headline": "In September 2022, the Law on Amendments to the Law of Ukraine \"On Employment of the Population\" was adopted and many new things were introduced in terms of foreigners obtaining employment permits, namely:",
+        "li1": "the procedure for submitting documents and issuing permits for the employment of foreigners and stateless persons was improved (previously it was possible only through TsNAP, and now the employer can personally submit documents to the employment center, send them by mail, or electronically);",
+        "li2": "equal pay conditions were improved for both Ukrainian citizens and foreigners (previously, the minimum wage for foreigners was 10 times higher than for Ukrainian citizens, with some exceptions);",
+        "li3": "now foreigners can work in different positions at different employers at the same time, provided they obtain an employment permit for each employer;",
+        "li4": "foreigners will be able to work part-time for one employer without an employment permit (previously this applied only to highly qualified specialists);",
+        "li5": "employment of foreign students in Ukraine will be allowed and after graduation without re-entry to Ukraine on a work visa, no fee will be charged for it);",
+        "li6": "the provisions regarding the list of documents submitted by employers to obtain or extend the validity period of the employment permit for certain categories of foreign workers will be improved and access to the specified administrative service will be simplified.",
+        "also": "Also, the procedure for paying the administrative fee for an employment permit has been changed, previously the payment was made within 10 days of the issuance of such a permit, now it will be necessary to pay before submitting the documents and attach the payment receipt to the documents (in case of refusal to issue the permit, the fee for it will be returned to the employer )."
+      },
+      "troubles": {
+        "headline": "Failure to pay taxes will lead to serious problems.",
+        "text": "Among other amendments, it is very important to pay attention to the fact that the authorities will refuse to extend the work permit if it is established that the employer did not pay taxes for the foreign worker during the previous period of work."
+      },
+      "fee": {
+        "headline": "The fee for a work permit in Ukraine has increased.",
+        "text": "The law provides for higher rates for issuing and extending work permits compared to those previously.",
+        "li1": "For a permit for 1-3 years — ten subsistence minimums (25,080 hryvnias), there were six (15,048 hryvnias);",
+        "li2": "For a permit for 6 months - 1 year - five subsistence minimums (12,540 hryvnias), there were four (10,032 hryvnias);",
+        "li3": "For a permit of up to 6 months — three subsistence minimums (7,524 hryvnias) were two (5,016 hryvnias)."
+      },
+      "employees": {
+        "headline": "!!! Hired foreign workers who want to work in Ukraine will not be able to issue a permit for 3 years as it was before, this term has been reduced to 1 year. (for 3 years, only seconded foreign workers and foreigners who were transferred to work in Ukraine in intra-corporate assignees will be able to get a work permit).",
+        "text": {
+          "p1": "Also, employers will be required to report the loss or damage of a work permit. In case of loss of the permit, the employer shall notify the territorial bodies of the employment center, the State Border Service of Ukraine and the State Migration Service of Ukraine.",
+          "p2": "Previously, in case of loss or damage of the employment permit, the legislation did not provide for the issuance of Duplicates, which caused many problems in the event of its loss, and this happened often, and in this case it was necessary to submit documents all over again, pay an administrative fee, etc.",
+          "p3": "This deficiency will be corrected and to obtain a Duplicate it is enough for the employer to submit an application in an arbitrary form and within 7 working days the employment center must issue a Duplicate."
+        }
+      },
+      "hope": "I hope the information was useful for you, for details you can contact in private messages or write to e-mail."
+    }
+  },
+  "e-residency": {
+    "intro": {
+      "titleMain": "E-RESIDENCE FOR FOREIGNERS",
+      "subtitle": "Recently the President of Ukraine Zelensky Law No. 2654-IX was signed.",
+      "what": {
+        "title": {
+          "topText": "What does this LAW",
+          "bottomText": "give"
+        },
+        "text": {
+          "p1": "In short, it provides an opportunity for foreigners to conduct their business activities on the territory of Ukraine without being physically in Ukraine.",
+          "p2": "E-Resident is a foreigner who has reached the age of 18, is not a tax resident of Ukraine, has received an electronic digital signature and information about which is entered in the \"E-RESIDENT\" information system."
+        }
+      },
+      "how": {
+        "title": {
+          "topText": "How to become an",
+          "bottomText": "E-RESIDENT?"
+        },
+        "headline": "In order to become an E-RESIDENT, it is enough to make only a few clicks:",
+        "li1": "Register on the \"Diya\" web portal or through the mobile application and submit an application for verification and obtaining the e-resident status.",
+        "li2": "If, as a result of the verification, your application is approved, you actually become an electronic resident.",
+        "li3": "You receive an electronic signature and a tax number.",
+        "li4": "Register for the simplified taxation system of the 3rd group.",
+        "li5": "Open an account in a Ukrainian bank.",
+        "text": {
+          "p1": "A foreigner can conduct business activities by paying a tax of 5% of income within the limit of the FOP (Individual entrepreneur) of the 3rd group. More than the limit - 15%.",
+          "p2": "All documents are in electronic form, all correspondence with the DPS (tax service) is online, all payments are cashless."
+        }
+      },
+      "who": {
+        "title": {
+          "topText": "Who CANNOT be an",
+          "bottomText": "E-RESIDENT?"
+        },
+        "li1": "citizens of the aggressor country of the Russian Federation;",
+        "li2": "included in the \"black list\" of the FATF (International Anti-Money Laundering Group);",
+        "li3": "persons who have income in Ukraine (except passive income).",
+        "li4": "foreigners who have the right to permanent residence in Ukraine or are tax residents of Ukraine;"
+      },
+      "ticket": {
+        "title": {
+          "topText": "WHAT ARE THE PENALTIES FOR VIOLATING THE TAX",
+          "bottomText": "law"
+        },
+        "li1": "For non-payment of taxes or payment of taxes not in full, the foreigner will have to pay a fine of 10% of the amount of tax payable.",
+        "li2": "If a foreigner deliberately evades paying taxes - a fine of 25% of the total amount of tax to be paid.",
+        "li3": "If the actions are committed repeatedly within 1095 days, the fine is 50% of the amount of tax payable to the budget.",
+        "li4": "More than 3 times or more - a fine of 75% of the tax amount.",
+        "text": "The tax address of a taxpayer - electronic resident (e-resident) is recognized as the electronic address specified by such a person in the application for acquiring the status of electronic resident (e-resident)."
+      }
+    }
+  },
+  "investingIntoUkraine": {
+    "intro": {
+      "title": "Opportunities and benefits of investing into Ukraine",
+      "text": {
+        "p1": "Ukraine and the entire Intermarium region is an attractive area for investors due to the availability of natural and labor resources, an educated and economically active population, high-quality infrastructure and presence of the economic niches with low level of competition.",
+        "p2": "Foreign investment in Ukraine is not only a mechanism for attracting new funds to the Ukrainian economy and post-war reconstruction of the country, but also one of the best methods of legalization in Ukraine and obtaining a permanent residence permit."
+      }
+    },
+    "for": {
+      "title": "For a foreign citizen investing an amount of 100,000 euros or more, the following opportunities are open:",
+      "li1": "obtaining a permanent residence permit, which gives all the same rights that citizens of Ukraine have, except for participation in elections, voting and holding public positions;",
+      "li2": "the presence of a company registered in accordance with Ukrainian legislation, and, accordingly, the possibility of conducting business, concluding contracts with counterparties and expanding into the Ukrainian market;",
+      "li3": "the possibility of receiving regular income from the investment object, for example, if it is a commercial, residential or warehouse property for rent.",
+      "text": {
+        "p1": "If a foreign citizen belongs to the migration risk countries, then in addition to the above-mentioned advantages of investing and doing business in the Ukrainian jurisdiction, it is also an easy opportunity to obtain Schengen visas and visas to the USA, Great Britain, and Canada thanks to the presence of a Ukrainian permanent residence permit, since citizens of African and Asian countries, it will be much easier to get a Schengen visa with such a document than, for example, in the case of living in Ukraine as a student.",
+        "p2": "Despite of all the risks and hostilities that are still going on in the East and South of Ukraine, now is the best time to invest, due to the relatively low entry threshold, falling prices for real estate and other investment objects, and lower competition. Immediately after the end of martial law, the prices for the same real estate will not only reach the pre-war level, although this is already relevant for regional centres in the West of Ukraine, but will also increase by at least 20% only in the first post-war year due to the return of a large number of Ukrainian refugees and temporary asylum seekers , as well as an influx of investors who will intensively buy assets in anticipation of rapid economic growth and the possibility of further income generation. Accordingly, there will be a steadily growing demand among buyers for hundreds of thousands of square meters of real estate and millions of hectares of land in the center of Europe.",
+        "p3": "In the context of buying land, it is now the easiest and most relevant to buy land for development, since in the period of post-war reconstruction there will be a stable demand for land for houses, residential complexes, warehouses, logistics and industrial complexes, especially in large cities and surrounding villages, united with them in economic and logistic agglomerations.",
+        "p4": "There is an increased interest of foreigners in agricultural land, but now in Ukraine there is a moratorium on the purchase of agricultural land by foreigners, and in order to make such a purchase, it is necessary to register a company where one of the co-owners will be a citizen of Ukraine - a partner or trustee. At the same time, if such restrictions are lifted, foreigners will have a full opportunity to independently invest in agricultural land and access to the world's best soils, which, in the conditions of constant growth of the global population and the need for agro-industrial products, guarantees a quick return on investment and stable profits.",
+        "p5": "Subject to professional legal and financial support of investors, foreigners can receive the benefits of resident status in Ukraine and obtain a stable economic basis for living and doing business in Ukraine."
+      }
+    }
+  },
+  "turnToMigrationLawyers": {
+    "intro": {
+      "titleMain": "Why should you turn to migration lawyers when solving migration issues?",
+      "subtitle": "Foreigners coming to Ukraine or planning to move are rarely familiar with the specifics of Ukrainian migration legislation. In an effort to figure out how to move, how to open a visa, how to get a residence permit, foreigners often turn to dubious sources of information and knowledge:"
+    },
+    "list": {
+      "one": {
+        "title": "Self-searching on the Internet.",
+        "text": {
+          "p1": "Many clients, especially from Europe, the USA and the countries of the Caucasus and Central Asia, independently search for information on the Internet, trying to understand their questions, and therefore often make mistakes.",
+          "p2": "For example, citizens with the right to a visa-free stay of up to 90 days often think that they can issue a permit upon arrival, without opening a D visa, or they are looking for options for opening a visa already in Ukraine, which is impossible."
+        }
+      },
+      "two": {
+        "title": "Consultations with representatives of national diasporas.",
+        "text": {
+          "p1": "Consultations with representatives of national diasporas. Turning to their compatriots who previously moved to Ukraine for help, foreigners receive only general advice based only on the experience of a specific person, and often do not correspond to current changes in legislation. Each migration case is individual, and the experience of a person who moved to Ukraine due to marriage 10 years ago is not relevant for a person who wants to migrate to start a business.",
+          "p2": "Також враховуючи зміни в законодавстві України в тому числі у законодавстві, що стосується імміграції іноземців в Україну, порядок їх легалізації та ін., тому інформацію яку іноземець може отримати через декілька днів може бути не актуальною, для прикладу приведу вам реальний кейс, де наша команда допомагала іноземцям (громадянам Канади) з оформлення дозволу на імміграцію на підставі шлюбу з громадянином України та для їх дітей, всі документи, які видані в іноземній державі повинні бути перекладені на українську мову, вони це зробили самостійно оскільки з їх слів «так їм порадили зробити щоб зекономити час» але на момент звернення до нас були внесені зміни до вимог документів що стосуються оформлення дозволу на імміграцію та громадянства України та повинні були бути перекладені з усіх мов, враховуючи що це були громадяни Канади де в усіх документа окрім англійської мови є ще і французька та їм довелось переробляти всі документи що насправді обійшлось не дуже дешево оскільки документів було чимало."
+        }
+      },
+      "three": {
+        "title": "Contacting the so-called migration agents in the countries of origin.",
+        "text": {
+          "p1": "This is a rather significant problem in the countries of Asia and Africa, especially in India and Pakistan, Kyrgyzstan, where there are entire agencies that offer relocation to Ukraine with a \"one hundred percent guarantee\". ",
+          "p2": "These agents are in many cases fraudsters, and those who really help with the move often do so at unreasonably high prices, promising clients a guaranteed positive result and boasting of extensive corrupt connections in government bodies and consular institutions, thanks to which they seem to \"solve\" all questions''. Often, the prices for such services reach 5,000-8,000 dollars just for opening a visa, and further legalization can be carried out through dubious and illegal schemes, such as contract marriages.",
+          "p3": "Also, such persons immediately spoil the reputation of Ukraine among their clients, describing it as a 100% corrupt country, where for a few thousand dollars you can negotiate with anyone and solve any issue."
+        }
+      },
+      "four": {
+        "title": "Addressing Ukrainian agents, \"fixers\" and other persons who use corrupt leverage or illegal schemes to legalize foreigners.",
+        "text": {
+          "p1": "Similar to foreign agents who provide their services in the field of migration, there are also a large number of Ukrainian citizens who also offer to obtain documents by corrupt methods, through the same fictitious marriages, including with foreign citizens who have a permanent residence permit, in order to obtain an immigration permit as quickly as possible. There are also rare cases when citizens of Ukraine massively sell private and business invitations to everyone."
+        }
+      }
+    },
+    "bottomText": {
+      "p1": "In all these cases, even if someone promises foreigners a \"100% guarantee\", such guarantees do not actually exist, and in the event that something does not go according to plan, no one will be able to protect the interests of the foreigner, appeal the refusal to issue a visa or residence permit , lift the entry ban and perform other actions that require professional legal knowledge in migration law. ",
+      "p2": "Only working with professional lawyers will be able to protect foreigners from fraud, errors in the preparation of documents, as well as from falling into corruption scandals and problems with law enforcement agencies."
+    }
+  },
+  "law3180": {
+    "intro": {
+      "titleMain": "LAW №3180 IX NEW GROUNDS FOR OBTAINING AN IMMIGRATION PERMIT"
+    },
+    "textBlock": {
+      "p1": "Very often foreigners who contacted Intermarium law firm asked about the possibility of obtaining a permanent residence permit on the basis of continuous residence in the territory of Ukraine for 5 years, but unfortunately, such a basis was not provided for by the legislation of Ukraine, having lived in the territory of Ukraine for 5 years or more, foreigners had the right only to submit documents for the adoption of Ukrainian citizenship, which was not very pleasing to foreigners, since the principle of single citizenship of Ukraine applies in Ukraine and it would be necessary to renounce one's primary citizenship.",
+      "p2": "On June 29, 2023, the Law of Ukraine on Amendments to the Basic Law of Ukraine \"On Immigration\" was adopted and the list of grounds for obtaining a permit for immigration to Ukraine was expanded, namely, foreigners will be able to obtain a permit for immigration on the condition of continuous residence in the territory of Ukraine on the basis of a temporary residence permit for the last five years in Ukraine, and accordingly, after obtaining an immigration permit, a foreigner will be able to submit documents for a permanent residence permit (10 years ).",
+      "p3": "In addition, the Law also introduced changes aimed at identifying circumstances that cannot be considered such that being married to a citizen of Ukraine or an immigrant is not recognized as a basis for granting an immigration permit, namely:",
+      "li1": "one of the spouses received material compensation in exchange for giving free consent to marry, if this is not mandatory when marrying outside of Ukraine in accordance with the law of a foreign state",
+      "li2": "spouses do not live together and are not connected by common life",
+      "li3": "the spouses did not meet or communicate before the marriage",
+      "li4": "spouses do not communicate in a language that is understandable to both",
+      "li5": "one of the spouses was previously married to a citizen of Ukraine or an immigrant, which was not recognized as a reason for granting an immigration permit",
+      "li6": "each of the spouses does not have information about the personal data of the other spouse (date and place of birth, place of residence, education, place of work, profession, religion, presence of close relatives, peculiarities of life and preferences)",
+      "li7": "a person's refusal of the personal presence of his or her husband or wife when submitting an application for an immigration permit",
+      "li8": "refusal of each of the spouses to give written consent to an interview and written tests to verify the circumstances specified in this article",
+      "p4": "One of the important changes is the shortening of the period for consideration of immigration permit documents from 12 months to 6 months, which will speed up the process of obtaining a permanent residence permit for foreigners.",
+      "p5": "THE CHANGES DESCRIBED ABOVE WILL BE EFFECTIVE FROM OCTOBER 20, 2023"
+    }
+  },
+  "form": {
+    "title": "leave us a request",
+    "name": "Name:",
+    "email": "Email:",
+    "country": "Country of citizenship:",
+    "request": "Describe your request:",
+    "familiar": "I am familiar with the Terms and Privacy Notice",
+    "button": "Send request"
   }
 }
 

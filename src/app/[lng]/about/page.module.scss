@@ -322,3 +322,24 @@
     }
   }
 }
+.application {
+  height: 900px;
+  background-image: url("/assets/images/bothHorizontal2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.formSmall {
+  display: none;
+}
+@media (max-width: $tablet) {
+  .formBig {
+    display: none;
+  }
+  .formSmall {
+    display: block;
+  }
+}

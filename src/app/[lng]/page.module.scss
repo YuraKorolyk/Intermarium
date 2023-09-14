@@ -151,7 +151,7 @@
   .mission {
     padding: 50px 0 30px;
     .wrapper {
-      .imageBox{
+      .imageBox {
         min-width: 272px;
         //max-width: 272px;
         min-height: 389px;
@@ -162,9 +162,9 @@
       }
       .title {
         margin-bottom: 0;
-        //.bottomText {
-        //  font-size: 90px;
-        //}
+        .bottomText {
+          font-size: 66px;
+        }
       }
       .text {
         .description {
@@ -183,11 +183,11 @@
     'title'
     'imageBox'
     'text';
-      //place-items: center;
       grid-column-gap: 0;
       grid-row-gap: 20px;
       grid-template-rows: auto auto auto;
-      .imageBox{
+
+      .imageBox {
         min-width: 100%;
         margin-left: 0;
         min-height: auto;
@@ -366,7 +366,6 @@
   }
 }
 
-
 .practices {
   padding: 60px 0 10px;
   .wrapper {
@@ -477,12 +476,23 @@
 }
 
 .application {
-  height: 800px;
+  height: 900px;
   background-image: url("/assets/images/bothHorizontal2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 65% 50%;
-  .wrapper {
-
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.formSmall {
+  display: none;
+}
+@media (max-width: $tablet) {
+  .formBig {
+    display: none;
+  }
+  .formSmall {
+    display: block;
   }
 }

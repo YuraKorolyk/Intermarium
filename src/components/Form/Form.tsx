@@ -1,6 +1,7 @@
-// components/ContactForm.js
+'use client';
 import React, { useState } from 'react';
-
+import classes from './Form.module.scss';
+import {useTranslation} from "react-i18next";
 const Form = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -17,38 +18,73 @@ const Form = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    // You can perform form validation and submission logic here.
     console.log(formData);
   };
-
+  const {t} = useTranslation();
   return (
+    <div className={classes.formContainer}>
+      <div className={classes.title}>
+
+      </div>
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="name">Name:</label>
         <input
           type="text"
           id="name"
+          className={classes.name}
           name="name"
-          value={formData.name}
-          onChange={handleChange}
+          placeholder={t('form.name')}
+          // value={formData.name}
+          // onChange={handleChange}
           required
         />
       </div>
       <div>
-        <label htmlFor="email">Email:</label>
         <input
           type="email"
           id="email"
+          className={classes.email}
           name="email"
-          value={formData.email}
-          onChange={handleChange}
+          placeholder={t('form.email')}
+          // value={formData.email}
+          // onChange={handleChange}
           required
         />
       </div>
       <div>
-        <button type="submit">Submit</button>
+        <input
+          type="text"
+          id="country"
+          className={classes.country}
+          name="country"
+          placeholder={t('form.country')}
+          // value={formData.name}
+          // onChange={handleChange}
+          required
+        />
+      </div>
+      <div>
+        <textarea
+          // type="text"
+          id="request"
+          name="request"
+          className={classes.request}
+          placeholder={t('form.request')}
+          // value={formData.name}
+          // onChange={handleChange}
+          required
+        />
+      </div>
+      <div className={classes.familiar}>
+        <input name="familiar" type='checkbox'/>
+        <label htmlFor="familiar">{t('form.familiar')}</label>
+      </div>
+
+      <div className={classes.button}>
+        <button type="submit">{t('form.button')}</button>
       </div>
     </form>
+    </div>
   );
 };
 

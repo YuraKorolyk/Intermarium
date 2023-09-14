@@ -1,15 +1,19 @@
+'use client';
 import React from 'react';
 import classes from './page.module.scss';
 import Container from "@/components/Layouts/Container/Container";
 import ArticleAuthor from "@/components/ArticleAuthor/ArticleAuthor";
 import Calendar from "../../../../../public/assets/icons/Calendar";
 import CustomLi from "@/components/CustomLi/CustomLi";
+import {useTranslation} from "react-i18next";
+
 const Page = () => {
+  const {t} = useTranslation();
   return (
     <>
       <div className={classes.topBar}>
         <Container className={classes.wrapper}>
-          <ArticleAuthor author='Taras' />
+          <ArticleAuthor author='Taras'/>
           <div className={classes.date}>
             <Calendar fill={"#013043"}/>
             <span>{'13/07/2023'}</span>
@@ -19,58 +23,58 @@ const Page = () => {
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>
-            Законопроєкт 5795
+            {t('draftLaw5796.intro.title')}
           </div>
           <div className={classes.content}>
             <div className={classes.september}>
               <div className={classes.headline}>
-                У вересні 2022 року було ухвалено Закон про внесення змін до Закону України “Про зайнятість населення” та було багато нововведень в частині отримання іноземцями дозволу на працеваштування а саме:
+                {t('draftLaw5796.intro.september.headline')}
               </div>
               <ul>
-                <CustomLi fontSize={20}>вдосконалено процедуру подачі документів та видачі дозволів на застосування праці іноземців та осіб без громадянства (раніше можна було лише через ЦНАП, а тепер роботодавець може особисто подати документи в центр зайнятості, відправити поштою, або в електронному вигляді);</CustomLi>
-                <CustomLi fontSize={20}>вдосконалено рівні умови оплати праці як для громадян України, так і для іноземців (раніше мінімальна зарплата для іноземців була в 10 разів більша, ніж для громадян України, за деякими винятками);</CustomLi>
-                <CustomLi fontSize={20}>тепер іноземці зможуть працювати на різних посадах в різних роботодавців одночасно за умови отримання на дозволу на працевлаштування для кожного роботодавця;</CustomLi>
-                <CustomLi fontSize={20}>іноземці зможуть працювати в одного роботодавця за сумісництвом без дозволу на працевлаштування (раніше це відносилось лише до висококваліфікованих спеціалістів);</CustomLi>
-                <CustomLi fontSize={20}>буде дозволено працевлаштування іноземних студентів в Україні та після закінчення навчання без повторного в’їзду в Україну за робочою візою (якщо іноземний студент за 30 днів до закінчення навчання уклав трудовий договір йому не потрібно отримувати візу, а також за отримання дозволу на працевлаштування в цьому випадку не буде стягуватися плата за нього);</CustomLi>
-                <CustomLi fontSize={20}>буде удосконалено положення щодо переліку документів, які роботодавці подають для отримання або продовження строку дії дозволу на працевлаштування окремих категорій іноземних працівників та спрощено доступ до зазначеної адміністративної послуги.</CustomLi>
+                <CustomLi fontSize={20}>{t('draftLaw5796.intro.september.li1')}</CustomLi>
+                <CustomLi fontSize={20}>{t('draftLaw5796.intro.september.li2')}</CustomLi>
+                <CustomLi fontSize={20}>{t('draftLaw5796.intro.september.li3')}</CustomLi>
+                <CustomLi fontSize={20}>{t('draftLaw5796.intro.september.li4')}</CustomLi>
+                <CustomLi fontSize={20}>{t('draftLaw5796.intro.september.li5')}</CustomLi>
+                <CustomLi fontSize={20}>{t('draftLaw5796.intro.september.li6')}</CustomLi>
               </ul>
               <div className={classes.also}>
-                Також, змінено порядок оплати адміністративного збору за дозвіл на працевлаштування, раніше оплата проводилась протягом 10 днів з моменту видачі такого дозволу, тепер оплачувати потрібно буде перед подачею документів та квитанцію про оплата додавати до документів (у випадку відмови у видачі дозволу плата за нього повертається роботодавцю).
+                {t('draftLaw5796.intro.september.also')}
               </div>
             </div>
             <div className={classes.troubles}>
               <div className={classes.headline}>
-                Несплата податків призведе до серйозних проблем.
+                {t('draftLaw5796.intro.troubles.headline')}
               </div>
               <div className={classes.text}>
-                Серед інших поправок дуже важливо звернути увагу на те, що влада буде відмовляти у продовженні дозволу на роботу, якщо буде встановлено, що роботодавець не сплачував податки за іноземного працівника протягом попереднього періоду роботи.
+                {t('draftLaw5796.intro.troubles.text')}
               </div>
             </div>
             <div className={classes.fee}>
               <div className={classes.headline}>
-                Зросте плата за дозвіл на роботу в Україні.
+                {t('draftLaw5796.intro.fee.headline')}
               </div>
               <div className={classes.text}>
-                Закон передбачає вищі ставки за видачу та продовження дозволів на роботу порівняно з тими які були раніше.
+                {t('draftLaw5796.intro.fee.text')}
               </div>
               <ul>
-                <CustomLi fontSize={20}>За дозвіл на 1-3 роки — десять прожиткових мінімумів (25 080 гривень), було шість (15 048 гривень);</CustomLi>
-                <CustomLi fontSize={20}>За дозвіл на 6 місяців – 1 рік — п’ять прожиткових мінімумів (12 540 гривень), було чотири (10 032 гривень);</CustomLi>
-                <CustomLi fontSize={20}>За дозвіл до 6 місяців — три прожиткових мінімуми (7 524 гривень) було два (5 016 гривень).</CustomLi>
+                <CustomLi fontSize={20}>{t('draftLaw5796.intro.fee.li1')}</CustomLi>
+                <CustomLi fontSize={20}>{t('draftLaw5796.intro.fee.li2')}</CustomLi>
+                <CustomLi fontSize={20}>{t('draftLaw5796.intro.fee.li3')}</CustomLi>
               </ul>
             </div>
             <div className={classes.employees}>
               <div className={classes.headline}>
-                !!! Наймані іноземні працівники, які хочуть працювати в Україні не зможуть оформити дозвіл на 3 роки як це було раніше, цей строк зменшили до 1 року. (на 3 роки дозвіл на працевлаштування зможуть отримати лише відрядженні іноземні працівники та іноземці які були переведені на роботу в України в внутрішньокорпоративні цесіонарії).
+                {t('draftLaw5796.intro.employees.headline')}
               </div>
               <div className={classes.text}>
-                <p>Також, роботодавці зобов’язані будуть повідомляти про втрату або пошкодження дозволу на роботу. У разі втрати дозволу роботодавець повідомляє про це територіальні органи центру зайнятості, Державної прикордонної служби України та Державної міграційної служби України.</p>
-                <p>Раніше у випадку втрати чи пошкодження дозволу на працевлаштування законодавством не було передбачено видачі Дублікатів, що спричиняло багато проблем у випадку його втрати, а таке ставалося часто і в такому разі потрібно було подавати документи всі спочатку, оплачувати адміністративний збір і т.д.</p>
-                <p>Цей недолік буде виправлено і для отримання Дубліката достатньо лише подати роботодавцем в довільній формі заяву і протягом 7 робочих днів центр зайнятості повинен видати Дублікат.</p>
+                <p>{t('draftLaw5796.intro.employees.text.p1')}</p>
+                <p>{t('draftLaw5796.intro.employees.text.p2')}</p>
+                <p>{t('draftLaw5796.intro.employees.text.p3')}</p>
               </div>
             </div>
             <div className={classes.hope}>
-              Сподіваюсь інформація була корисною для Вас, за деталями можете звертатися у приватні повідомлення або писати на електронну пошту.
+              {t('draftLaw5796.intro.hope')}
             </div>
           </div>
         </Container>

@@ -8,68 +8,69 @@ import {useRouter} from "next/navigation";
 import {useTranslation} from "react-i18next";
 import {trans} from "@/services";
 
-
-const data = [
-  {
-    "label": "Посвідка на тимчасове проживання",
-    "link": "temporaryResidence"
-  },
-  {
-    "label": "Посвідка на постійне проживання",
-    "link": "permanentResidence"
-  },
-  {
-    "label": "Дозвіл на імміграцію",
-    "link": "immigrationPermit"
-  },
-  {
-    "label": "Відновлення втраченої/викраденої посвідки на проживання",
-    "link": "renewalOfResidencePermitInCaseOfLossOrTheft"
-  },
-  {
-    "label": "Супровід в оформленні шлюбу з резидентами України",
-    "link": "marriageRegistration"
-  },
-  {
-    "label": "Продовження терміну перебування в Україні",
-    "link": "extensionOfStayInUkraine"
-  },
-  {
-    "label": "Оформлення громадянства України",
-    "link": "acquisitionOfUkrainianCitizenship"
-  },
-  {
-    "label": "Дозвіл на працевлаштування в Україні",
-    "link": "workPermitInUkraine"
-  },
-  {
-    "label": "Зняття заборони на в‘їзд в Україну",
-    "link": "removalOfTheEntranceBan"
-  },
-  {
-    "label": "Оскарження рішень Державної міграційної служби",
-    "link": "appealOfMigrationServiceDecisions"
-  },
-  {
-    "label": "Оформлення довідки про несудимість в Україні",
-    "link": "policeClearance"
-  },
-  {
-    "label": "Оформлення податкового номеру для іноземців",
-    "link": "taxId"
-  },
-  {
-    "label": "Отримання статусу закордонного українця",
-    "link": "foreignUkrainian"
-  },
-  {
-    "label": "Оформлення довідки громадянина України",
-    "link": "registrationAsCitizenOfUkraine"
-  }
-]
 const Page = () => {
   const router = useRouter();
   const {t, i18n} = useTranslation()
+
+  const data = [
+    {
+      "label": t('practices.migrationLaw.data.d1'),
+      "link": "temporaryResidence"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d2'),
+      "link": "permanentResidence"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d3'),
+      "link": "immigrationPermit"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d4'),
+      "link": "renewalOfResidencePermitInCaseOfLossOrTheft"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d5'),
+      "link": "marriageRegistration"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d6'),
+      "link": "extensionOfStayInUkraine"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d7'),
+      "link": "acquisitionOfUkrainianCitizenship"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d8'),
+      "link": "workPermitInUkraine"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d9'),
+      "link": "removalOfTheEntranceBan"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d10'),
+      "link": "appealOfMigrationServiceDecisions"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d11'),
+      "link": "policeClearance"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d12'),
+      "link": "taxId"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d13'),
+      "link": "foreignUkrainian"
+    },
+    {
+      "label": t('practices.migrationLaw.data.d14'),
+      "link": "registrationAsCitizenOfUkraine"
+    }
+  ]
+
     return (
         <>
             <HeaderBackground background="1"/>

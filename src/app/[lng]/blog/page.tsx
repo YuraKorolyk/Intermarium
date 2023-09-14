@@ -4,6 +4,7 @@ import Container from "@/components/Layouts/Container/Container";
 import classes from './page.module.scss';
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import Article from "@/components/Article/Article";
+import {useTranslation} from "react-i18next";
 
 interface IArticle {
   id: number;
@@ -14,60 +15,65 @@ interface IArticle {
   linkTo: string;
 }
 
-const articles: IArticle[] = [
-  {
-    id: 1,
-    title: "Закон України для громадян Республіки Польща, які перебувають на території України",
-    author: "Taras",
-    date: "14/06/2023",
-    type: "legislative changes",
-    linkTo: "lawForPoles"
-  },
-  {
-    id: 2,
-    title: "Законопроєкт 5795 щодо змін у сфері працевлаштування іноземців",
-    author: "Taras",
-    date: "08/06/2023",
-    type: "legislative changes",
-    linkTo: "draftLaw5795"
-  },
-  {
-    id: 3,
-    title: "Є-резиденство для іноземців",
-    author: "Taras",
-    date: "02/06/2023",
-    type: "legislative changes",
-    linkTo: "e-residency"
-  },
-  {
-    id: 4,
-    title: "Нова підстава отримання дозволу на імміграцію",
-    author: "Taras",
-    date: "02/06/2023",
-    type: "legislative changes",
-    linkTo: "law3180"
-  },
-  {
-    id: 5,
-    title: 'Можливості та переваги інвестування в Україну',
-    author: "Yurii",
-    date: "13/07/2023",
-    type: "article",
-    linkTo: "investingIntoUkraine"
-  },
-  {
-    id: 6,
-    title: 'Чому слід звернутися до міграційних юристів?',
-    author: "Yurii",
-    date: "15/07/2023",
-    type: "article",
-    linkTo: "turnToMigrationLawyers"
-  }
-]
+
 
 
 const Page = () => {
+  const {t} = useTranslation();
+
   const [filter, setFilter] = useState("all")
+
+
+  const articles: IArticle[] = [
+    {
+      id: 1,
+      title: t('blog.articles.a1'),
+      author: "Taras",
+      date: "14/06/2023",
+      type: "legislative changes",
+      linkTo: "lawForPoles"
+    },
+    {
+      id: 2,
+      title: t('blog.articles.a2'),
+      author: "Taras",
+      date: "08/06/2023",
+      type: "legislative changes",
+      linkTo: "draftLaw5795"
+    },
+    {
+      id: 3,
+      title: t('blog.articles.a3'),
+      author: "Taras",
+      date: "02/06/2023",
+      type: "legislative changes",
+      linkTo: "e-residency"
+    },
+    {
+      id: 4,
+      title: t('blog.articles.a4'),
+      author: "Taras",
+      date: "02/06/2023",
+      type: "legislative changes",
+      linkTo: "law3180"
+    },
+    {
+      id: 5,
+      title: t('blog.articles.a5'),
+      author: "Yurii",
+      date: "13/07/2023",
+      type: "article",
+      linkTo: "investingIntoUkraine"
+    },
+    {
+      id: 6,
+      title: t('blog.articles.a6'),
+      author: "Yurii",
+      date: "15/07/2023",
+      type: "article",
+      linkTo: "turnToMigrationLawyers"
+    }
+  ]
 
   const filteredArticles = articles.filter((article) => {
     if (filter === "all") {
@@ -81,8 +87,8 @@ const Page = () => {
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>
-            <TextWithLine topText="Наш" topColor="dark">
-              <span className={`${classes.bottomText} bottomTextWithLine`}>юридичний блог</span>
+            <TextWithLine topText={t('blog.intro.title.topText')} topColor="dark">
+              <span className={`${classes.bottomText} bottomTextWithLine`}>{t('blog.intro.title.bottomText')}</span>
             </TextWithLine>
           </div>
           <div className={classes.nav}>
@@ -90,19 +96,19 @@ const Page = () => {
               onClick={() => setFilter("all")}
               className={filter === "all" ? classes.activeFilter : ""}
             >
-              Всі
+              {t('blog.intro.filter.all')}
             </div>
             <div
               onClick={() => setFilter("article")}
               className={filter === "article" ? classes.activeFilter : ""}
             >
-              Статті
+              {t('blog.intro.filter.articles')}
             </div>
             <div
               onClick={() => setFilter("legislative changes")}
               className={filter === "legislative changes" ? classes.activeFilter : ""}
             >
-              зміни законодавства
+              {t('blog.intro.filter.legalChanges')}
             </div>
           </div>
           <div className={classes.list}>

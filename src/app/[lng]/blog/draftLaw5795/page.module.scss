@@ -60,6 +60,7 @@
       .september {
         .also {
           margin-top: 30px;
+          font-size: 20px;
         }
       }
       .employees {
@@ -98,6 +99,11 @@
         .text {
           font-size: 18px;
         }
+        .september {
+          .also {
+            font-size: 18px;
+          }
+        }
         .hope {
           font-size: 25px;
         }
@@ -124,7 +130,11 @@
         .text {
           font-size: 16px;
         }
-
+        .september {
+          .also {
+            font-size: 16px;
+          }
+        }
         .hope {
           font-size: 20px;
         }
@@ -152,6 +162,11 @@
         }
         .text {
           font-size: 12px;
+        }
+        .september {
+          .also {
+            font-size: 12px;
+          }
         }
         .employees {
           & p:not(:last-child) {

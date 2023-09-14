@@ -189,27 +189,29 @@ export default function Home({params: {lng}}: HomeProps) {
           <div className={classes.list}>
             <Article author="Taras" date="16/06/2023"
                      title={t('homePage.blog.firstArticle')}
-                     linkTo={'investingIntoUkraine'}
+                     linkTo={'lawForPoles'}
             />
             <Article author="Taras" date="08/06/2023"
                      title={t('homePage.blog.secondArticle')}
-                     linkTo={'investingIntoUkraine'}
+                     linkTo={'draftLaw5795'}
             />
             <Article author="Taras" date="02/06/2023" title={t('homePage.blog.thirdArticle')}
-                     linkTo={'investingIntoUkraine'}
+                     linkTo={'e-residency'}
             />
           </div>
           <div className={classes.buttonBox}>
-            <Button text={t('homePage.blog.button')} onClick={() => router.push(`/${lng}/blog`)}/>
+            <Button hoverColor='white' text={t('homePage.blog.button')} onClick={() => router.push(`/${lng}/blog`)}/>
           </div>
         </Container>
       </div>
       <div className={classes.application}>
-        <Container className={classes.wrapper}>
-          <Form></Form>
-        </Container>
+          <div className={classes.formBig}>
+            <Form/>
+          </div>
       </div>
-
+      <div className={classes.formSmall}>
+        <Form/>
+      </div>
     </>
   )
 }

@@ -75,5 +75,8 @@
 @media (max-width: $mobile) {
   .f20 {
     font-size: 12px;
+    &:before {
+      top: 6px;
+    }
   }
 }

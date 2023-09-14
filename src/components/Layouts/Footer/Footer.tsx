@@ -28,9 +28,15 @@ const Footer:FC<IProps> = ({lng}) => {
                 </div>
                 <div className={classes.networks}>
                     <div className={classes.icons}>
-                        <Instagram/>
-                        <Facebook/>
-                        <Mail/>
+                        <a target="_blank" href="https://www.instagram.com/intermarium_law_firm/" rel="noopener noreferrer">
+                            <Instagram/>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100088427992864" rel="noopener noreferrer">
+                            <Facebook/>
+                        </a>
+                        <a target="_blank" href="office@intermarium.legal" rel="noopener noreferrer">
+                            <Mail/>
+                        </a>
                     </div>
                     <span onClick={()=> router.push(`/${lng}/privacy`)}>
                         {t('footer.rulesAndPrivacy')}
@@ -40,8 +46,8 @@ const Footer:FC<IProps> = ({lng}) => {
                     <a className={classes.number} href="tel:+380683872296">+38 (068) 387 22 96</a>
                     <a className={classes.number} href="tel:+380976634347">+38 (097) 663 43 47</a>
                     <div className={classes.mail} onClick={(e) => {window.location.href ='mailto:office@intermarium.legal';}}>office@intermarium.legal</div>
-                    <div className={classes.adress}>Україна, м. Київ,<br/>
-                        вул. Борисоглібська, 16А, офіс 4
+                    <div className={classes.adress}>{t('footer.address1')}<br/>
+                        {t('footer.address2')}
                     </div>
                 </div>
             </Container>

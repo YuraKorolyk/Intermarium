@@ -1,6 +1,6 @@
 @import "src/styles/base/vars";
 
-.button {
+.button, .buttonWhite {
   text-align: center;
   background: $accent;
   display: inline-flex;
@@ -19,6 +19,11 @@
 //}
 @media (hover: hover) {
   .button:hover {
+    background: $dark;
+  }
+}
+@media (hover: hover) {
+  .buttonWhite:hover {
     background: $light;
     color: $dark;
   }

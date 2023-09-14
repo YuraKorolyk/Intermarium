@@ -7,6 +7,7 @@ import Partner from "@/components/Partner/Partner";
 import {useTranslation} from "react-i18next";
 import CustomLi from "@/components/CustomLi/CustomLi";
 import {trans} from "@/services";
+import Form from "@/components/Form/Form";
 
 const Page = () => {
     const {t} = useTranslation();
@@ -90,6 +91,14 @@ const Page = () => {
               />
             </div>
           </Container>
+        </div>
+        <div className={classes.application}>
+          <div className={classes.formBig}>
+            <Form/>
+          </div>
+        </div>
+        <div className={classes.formSmall}>
+          <Form/>
         </div>
       </>
     );

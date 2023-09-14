@@ -2,13 +2,14 @@ import React, {FC} from 'react';
 import classes from "./Button.module.scss";
 
 interface IProps {
-    text: string,
-    onClick?: ()=>void,
+    text: string;
+    onClick?: ()=>void;
+    hoverColor?: 'white';
 }
 
-const Button:FC<IProps> = ({text, onClick}) => {
+const Button:FC<IProps> = ({text, onClick, hoverColor}) => {
     return (
-        <div className={classes.button}  onClick={onClick && onClick}>
+        <div className={hoverColor ? classes.buttonWhite : classes.button}  onClick={onClick && onClick}>
             {text}
         </div>
     );
