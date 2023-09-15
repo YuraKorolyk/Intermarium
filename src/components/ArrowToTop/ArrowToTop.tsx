@@ -3,15 +3,15 @@ import React, {useEffect, useState} from 'react';
 import classes from './ArrowToTop.module.scss';
 import Arrow from "../../../public/assets/icons/Arrow";
 const ArrowToTop = () => {
-  const isBrowser = () => typeof window !== 'undefined';
   const scrollToTop = ()=> {
-    if (!isBrowser()) return;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const element = document.documentElement || document.body;
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   }
-  const height = window.innerHeight;
-  useEffect(() => {
-    console.log(height)
-  }, [height]);
 
   return (
     <div className={classes.arrowContainer} onClick={scrollToTop}>
