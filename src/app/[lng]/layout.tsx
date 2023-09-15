@@ -7,6 +7,7 @@ import {languages} from "@/app/i18n/settings";
 import {dir} from "i18next";
 import React from "react";
 import Script from "next/script";
+import ArrowToTop from "@/components/ArrowToTop/ArrowToTop";
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({lng}))
@@ -25,6 +26,7 @@ export default async function RootLayout({
     </Head>
     <body>
     <main>
+      <ArrowToTop/>
       <Header lng={lng}/>
       {children}
       <Footer lng={lng}/>

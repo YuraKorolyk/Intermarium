@@ -206,11 +206,12 @@ export default function Home({params: {lng}}: HomeProps) {
       </div>
       <div className={classes.application}>
           <div className={classes.formBig}>
-            <Form/>
+            {/*<Form/>*/}
+            <div className="leeloo-hash-83fp7e"></div>
           </div>
       </div>
       <div className={classes.formSmall}>
-        <Form/>
+        <div className="leeloo-hash-83fp7e"></div>
       </div>
     </>
   )

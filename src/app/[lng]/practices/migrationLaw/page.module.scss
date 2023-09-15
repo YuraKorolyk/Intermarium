@@ -74,7 +74,6 @@
       row-gap: 30px;
       //column-gap: 10px;
       justify-content: space-between;
-
       div {
         padding: 20px 10px;
         text-align: center;
@@ -85,11 +84,16 @@
         font-weight: 400;
         line-height: 100%; /* 16px */
         transition: .2s;
+        cursor: pointer;
         @media (hover: hover) {
           &:hover {
             background: $dark;
           }
         }
+      }
+      .empty {
+        background: none;
+        visibility: hidden;
       }
     }
   }
@@ -105,6 +109,9 @@
       .list {
         div {
           flex: 0 1 49%;
+        }
+        .empty {
+          display: none;
         }
       }
     }

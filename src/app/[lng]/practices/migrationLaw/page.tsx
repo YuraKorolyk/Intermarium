@@ -105,6 +105,8 @@ const Page = () => {
                         onClick={()=> router.push(`migrationLaw/${item.link}`)}
                       >{item.label}</div>
                     ))}
+
+                    <div className={classes.empty}></div>
                   </div>
                 </Container>
             </div>

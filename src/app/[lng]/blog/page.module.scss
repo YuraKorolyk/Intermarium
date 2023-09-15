@@ -32,6 +32,22 @@
   }
 }
 
+@media (max-width: $tablet) {
+  .intro {
+    padding: 40px 0 60px;
+    .wrapper {
+      .title {
+        .bottomText {
+          font-size: 53px;
+        }
+      }
+      .nav {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
 @media (max-width: $mobile) {
   .intro {
     padding: 40px 0 60px;
