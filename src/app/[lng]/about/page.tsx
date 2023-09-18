@@ -17,7 +17,7 @@ const Page = () => {
           <Container className={classes.wrapper}>
             <div className={classes.gridBox}>
               <div className={classes.imageBox}>
-                <img src="/assets/images/bothVertical.jpg" alt=""/>
+                <img src="/assets/images/bothVertical.webp" alt=""/>
               </div>
               <div className={classes.title}>
                 <TextWithLine topText={t('about.about.title.topText')} topColor="dark">

@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, {useState} from 'react';
 import classes from './page.module.scss'
 import Container from "@/components/Layouts/Container/Container";
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
@@ -8,11 +8,12 @@ import Button from "@/components/Button/Button";
 import CustomLi from "@/components/CustomLi/CustomLi";
 import {useTranslation} from "react-i18next";
 import {trans} from "@/services";
+import FormModal from "@/components/FormModal/FormModal";
 
 
 const Page = () => {
   const {t} = useTranslation()
-
+  const [isOpened, setIsOpened] = useState(false)
   return (
     <>
       <HeaderBackground background="1"/>
@@ -85,7 +86,9 @@ const Page = () => {
             <div className={classes.text}>{trans('practices.acquisitionOfUkrainianCitizenship.application.text', 'dark')}</div>
           </div>
           <div className={classes.button}>
-            <Button text={t('practices.acquisitionOfUkrainianCitizenship.application.button')}/>
+            <Button text={t('practices.acquisitionOfUkrainianCitizenship.application.button')} onClick={()=>setIsOpened(prevState => !prevState)} />
+            {isOpened && <FormModal/>}
+            {/*<FormModal/>*/}
           </div>
         </Container>
       </div>

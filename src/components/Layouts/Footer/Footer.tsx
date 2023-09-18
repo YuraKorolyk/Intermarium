@@ -34,8 +34,8 @@ const Footer:FC<IProps> = ({lng}) => {
                         <a target="_blank" href="https://www.facebook.com/profile.php?id=100088427992864" rel="noopener noreferrer">
                             <Facebook/>
                         </a>
-                        <a target="_blank" href="office@intermarium.legal" rel="noopener noreferrer">
-                            <Mail/>
+                        <a href="mailto:office@intermarium.legal" target="_blank" rel="noopener noreferrer" title="Email Us">
+                            <Mail />
                         </a>
                     </div>
                     <span onClick={()=> router.push(`/${lng}/privacy`)}>

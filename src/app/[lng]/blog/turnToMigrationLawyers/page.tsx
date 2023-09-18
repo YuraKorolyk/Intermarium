@@ -10,6 +10,7 @@ import One from "../../../../../public/assets/icons/Numbers/One";
 import Two from "../../../../../public/assets/icons/Numbers/Two";
 import Four from "../../../../../public/assets/icons/Numbers/Four";
 import {useTranslation} from "react-i18next";
+import FourFilled from "../../../../../public/assets/icons/Numbers/FourFilled";
 
 const Page = () => {
   const {t} = useTranslation();
@@ -20,7 +21,7 @@ const Page = () => {
           <ArticleAuthor author='Taras'/>
           <div className={classes.date}>
             <Calendar fill={"#013043"}/>
-            <span>{'14/06/2023'}</span>
+            <span>{'15/07/2023'}</span>
           </div>
         </Container>
       </div>
@@ -86,7 +87,7 @@ const Page = () => {
               </>
             }
           >
-            <Four fill="#286E8D"/>
+            <FourFilled/>
           </LinkWithDropdown>
         </Container>
       </div>

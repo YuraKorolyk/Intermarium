@@ -53,7 +53,7 @@ const Page = () => {
       id: 4,
       title: t('blog.articles.a4'),
       author: "Taras",
-      date: "02/06/2023",
+      date: "15/09/2023",
       type: "legislative changes",
       linkTo: "law3180"
     },

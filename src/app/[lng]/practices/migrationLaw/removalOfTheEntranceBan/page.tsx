@@ -13,6 +13,8 @@ import Two from "../../../../../../public/assets/icons/Numbers/Two";
 import Button from "@/components/Button/Button";
 import {useTranslation} from "react-i18next";
 import {trans} from "@/services";
+import FiveFilled from "../../../../../../public/assets/icons/Numbers/FiveFilled";
+import FourFilled from "../../../../../../public/assets/icons/Numbers/FourFilled";
 
 const Page = () => {
   const {t} = useTranslation();
@@ -95,7 +97,7 @@ const Page = () => {
                 </>
               }
             >
-              <Four fill="#286E8D"/>
+              <FourFilled/>
             </LinkWithDropdown>
             <LinkWithDropdown
               dark={true}
@@ -113,7 +115,7 @@ const Page = () => {
                 </>
               }
             >
-              <Five fill="#286E8D"/>
+              <FiveFilled/>
             </LinkWithDropdown>
           </div>
         </Container>

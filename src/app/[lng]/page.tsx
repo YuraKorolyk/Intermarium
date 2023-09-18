@@ -9,7 +9,7 @@ import Two from "../../../public/assets/icons/Numbers/Two";
 import Practice from "@/components/Practice/Practice";
 import Article from "@/components/Article/Article";
 import Button from "@/components/Button/Button";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {useRouter} from "next/navigation";
 import {Trans, useTranslation} from "react-i18next";
 import Form from "@/components/Form/Form";
@@ -25,12 +25,14 @@ interface HomeProps {
 export default function Home({params: {lng}}: HomeProps) {
   const router = useRouter();
   // const { t } = useTranslation(lng, "client-page")
-  const {t} = useTranslation();
-  // const {t} = useTranslation('homePage');
+  const {t, i18n} = useTranslation();
   const practiceClickHandler = (linkTo: string): void => {
     router.push(`/practices/${linkTo}`)
   }
-
+  const [test, setTest] = useState(false)
+  useEffect(() => {
+    setTest(prevState => !prevState)
+  }, [i18n.language]);
   return (
     <>
       <div className={classes.intro}>
@@ -46,7 +48,7 @@ export default function Home({params: {lng}}: HomeProps) {
       <div className={classes.mission}>
         <Container className={classes.wrapper}>
           <div className={classes.imageBox}>
-            <img src="/assets/images/bothVertical.jpg" alt=""/>
+            <img src="/assets/images/bothVertical.webp" alt=""/>
             {/*<Image src="/assets/images/bothVertical.jpg" alt="bg"/>*/}
           </div>
           <div className={classes.title}>
@@ -207,11 +209,14 @@ export default function Home({params: {lng}}: HomeProps) {
       <div className={classes.application}>
           <div className={classes.formBig}>
             {/*<Form/>*/}
-            <div className="leeloo-hash-83fp7e"></div>
+            {/*{!test ? <div className="leeloo-hash-83fp7e"></div> : <div/>}*/}
+            {i18n.language === 'ua' ? <div className="leeloo-hash-83fp7e"></div> : <div className="leeloo-hash-xly3l4"></div>}
           </div>
       </div>
       <div className={classes.formSmall}>
-        <div className="leeloo-hash-83fp7e"></div>
+        {i18n.language === 'ua' ? <div className="leeloo-hash-83fp7e"></div> : <div className="leeloo-hash-xly3l4"></div>}
+
+        {/*<Form/>*/}
       </div>
     </>
   )
