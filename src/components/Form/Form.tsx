@@ -4,7 +4,7 @@ import classes from './Form.module.scss';
 import { useTranslation } from 'react-i18next';
 
 const Form = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<any>({
     name: '',
     email: '',
     country: '',
@@ -23,14 +23,22 @@ const Form = () => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
+    const data = new FormData();
+
+// Loop through the properties of formData and append them to data
+    for (const key in formData) {
+      if (formData.hasOwnProperty(key)) {
+        data.append(key, formData[key]);
+      }
+    }
+
+
+
     // Send a POST request to the server
     try {
       const response = await fetch('https://intermarium-backend.vercel.app', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json', // Set the content type to JSON
-        },
-        body: JSON.stringify(formData), // Convert formData to JSON string
+        body: data
       });
 
       // Handle the response as needed (e.g., check for success or errors)
