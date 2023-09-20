@@ -25,7 +25,7 @@ const Form = () => {
 
     // Send a POST request to the server
     try {
-      const response = await fetch('server.php', {
+      const response = await fetch('https://intermarium-backend.vercel.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json', // Set the content type to JSON
