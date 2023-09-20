@@ -40,14 +40,8 @@ export default async function RootLayout({
         js.async = true;
         document.getElementsByTagName('head')[0].appendChild(js);
       }; LEELOO();
-        console.log('script works fine!')
       `}
-    </Script>
-    <Script id="form-code">
-      {`
-        window.LEELOO_LEADGENTOOLS = (window.LEELOO_LEADGENTOOLS || []).concat('83fp7e');
-      `}
-    </Script>
+    </Script >
     </body>
     </html>
   )

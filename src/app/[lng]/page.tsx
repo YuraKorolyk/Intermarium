@@ -13,6 +13,7 @@ import React, {useEffect, useState} from "react";
 import {useRouter} from "next/navigation";
 import {Trans, useTranslation} from "react-i18next";
 import Form from "@/components/Form/Form";
+import Script from "next/script";
 
 // import {useTranslation} from "@/app/i18n/client";
 interface HomeProps {
@@ -208,16 +209,17 @@ export default function Home({params: {lng}}: HomeProps) {
       </div>
       <div className={classes.application}>
           <div className={classes.formBig}>
-            {/*<Form/>*/}
+            <Form/>
             {/*{!test ? <div className="leeloo-hash-83fp7e"></div> : <div/>}*/}
-            {i18n.language === 'ua' ? <div className="leeloo-hash-83fp7e"></div> : <div className="leeloo-hash-xly3l4"></div>}
+            {/*{i18n.language === 'ua' ? <div className="leeloo-hash-83fp7e"></div> : <div className="leeloo-hash-xly3l4"></div>}*/}
           </div>
       </div>
       <div className={classes.formSmall}>
-        {i18n.language === 'ua' ? <div className="leeloo-hash-83fp7e"></div> : <div className="leeloo-hash-xly3l4"></div>}
+        {/*{i18n.language === 'ua' ? <div className="leeloo-hash-83fp7e"></div> : <div className="leeloo-hash-xly3l4"></div>}*/}
 
-        {/*<Form/>*/}
+        <Form/>
       </div>
+  {/*<Script id="modal-code">{`window.LEELOO_LEADGENTOOLS = (window.LEELOO_LEADGENTOOLS || []).concat('qtl49u');`}</Script>*/}
     </>
   )
 }
