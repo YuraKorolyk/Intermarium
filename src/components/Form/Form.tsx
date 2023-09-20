@@ -36,16 +36,21 @@ const Form = () => {
 
     // Send a POST request to the server
     try {
-      const response = await fetch('https://intermarium-backend.vercel.app', {
-        method: 'POST',
-        body: data
+      // const response = await fetch('https://intermarium-backend.vercel.app', {
+      //   method: 'POST',
+      //   body: data
+      // });
+    // fetch('https://api.telegram.org/bot5858070417:AAHLfzyLGigxReIQl3ehhdZ38kp7NI-225c/sendMessage?chat_id=-815777950&text=some', {
+    //   method: 'GET'
+    // });
+      const response = await fetch('/api', {
+        method: 'GET',
       });
-
       // Handle the response as needed (e.g., check for success or errors)
       if (response.ok) {
         console.log('Form data sent successfully');
-        // Optionally, you can reset the form here if the server request was successful
-        // form.reset();
+      //   // Optionally, you can reset the form here if the server request was successful
+      //   // form.reset();
       } else {
         console.error('Failed to send form data');
       }
