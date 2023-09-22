@@ -1,7 +1,11 @@
-import React, {useEffect} from 'react';
+import React, {FC, useEffect} from 'react';
 import classes from './FormModal.module.scss';
 import Form from "@/components/Form/Form";
-const FormModal = ({setIsOpened, isOpened}) => {
+interface IProps {
+  setIsOpened: any;
+  isOpened: any;
+}
+const FormModal:FC<IProps> = ({setIsOpened, isOpened}) => {
   useEffect(() => {
     if (isOpened) {
       document.body.classList.add('lock');
