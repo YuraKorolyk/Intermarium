@@ -18,6 +18,9 @@
       justify-content: center;
       column-gap: 50px;
       margin-bottom: 50px;
+      div {
+        cursor: pointer;
+      }
       .activeFilter {
         color: $accent;
         text-decoration-line: underline;

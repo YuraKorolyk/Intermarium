@@ -14,6 +14,8 @@ import Button from "@/components/Button/Button";
 import {useTranslation} from "react-i18next";
 import {trans} from "@/services";
 import FormModal from "@/components/FormModal/FormModal";
+import FourFilled from "../../../../../../public/assets/icons/Numbers/FourFilled";
+import FiveFilled from "../../../../../../public/assets/icons/Numbers/FiveFilled";
 
 const Page = () => {
   const {t} = useTranslation();
@@ -101,7 +103,7 @@ const Page = () => {
                 </>
               }
             >
-              <Four fill="#286E8D"/>
+              <FourFilled/>
             </LinkWithDropdown>
             <LinkWithDropdown
               dark={true}
@@ -118,7 +120,7 @@ const Page = () => {
                 </>
               }
             >
-              <Five fill="#286E8D"/>
+              <FiveFilled/>
             </LinkWithDropdown>
           </div>
         </Container>

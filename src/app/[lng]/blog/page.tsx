@@ -15,14 +15,10 @@ interface IArticle {
   linkTo: string;
 }
 
-
-
-
 const Page = () => {
   const {t} = useTranslation();
 
   const [filter, setFilter] = useState("all")
-
 
   const articles: IArticle[] = [
     {

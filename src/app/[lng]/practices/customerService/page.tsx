@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, {useState} from 'react';
 import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 import classes from './page.module.scss';
 import Container from "@/components/Layouts/Container/Container";
@@ -18,9 +18,11 @@ import Button from "@/components/Button/Button";
 import CustomLi from "@/components/CustomLi/CustomLi";
 import {useTranslation} from "react-i18next";
 import {trans} from "@/services";
+import FormModal from "@/components/FormModal/FormModal";
 
 const Page = () => {
   const {t} = useTranslation();
+  const [isOpened, setIsOpened] = useState(false);
   return (
     <>
       <HeaderBackground background='5'/>
@@ -121,7 +123,8 @@ const Page = () => {
             <p>{trans('practices.legalBusinessSupport.preferences.text.p2', 'dark')}</p>
           </div>
           <div className={classes.button}>
-            <Button text={t('practices.legalBusinessSupport.preferences.button')}/>
+            <Button text={t('practices.legalBusinessSupport.preferences.button')} onClick={()=>setIsOpened(prevState => !prevState)} />
+            {isOpened && <FormModal isOpened={isOpened} setIsOpened={setIsOpened}/>}
           </div>
         </Container>
       </div>
