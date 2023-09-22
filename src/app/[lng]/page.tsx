@@ -210,16 +210,11 @@ export default function Home({params: {lng}}: HomeProps) {
       <div className={classes.application}>
           <div className={classes.formBig}>
             <Form/>
-            {/*{!test ? <div className="leeloo-hash-83fp7e"></div> : <div/>}*/}
-            {/*{i18n.language === 'ua' ? <div className="leeloo-hash-83fp7e"></div> : <div className="leeloo-hash-xly3l4"></div>}*/}
           </div>
       </div>
       <div className={classes.formSmall}>
-        {/*{i18n.language === 'ua' ? <div className="leeloo-hash-83fp7e"></div> : <div className="leeloo-hash-xly3l4"></div>}*/}
-
         <Form/>
       </div>
-  {/*<Script id="modal-code">{`window.LEELOO_LEADGENTOOLS = (window.LEELOO_LEADGENTOOLS || []).concat('qtl49u');`}</Script>*/}
     </>
   )
 }

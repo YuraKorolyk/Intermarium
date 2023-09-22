@@ -88,7 +88,6 @@ const Page = () => {
           <div className={classes.button}>
             <Button text={t('practices.acquisitionOfUkrainianCitizenship.application.button')} onClick={()=>setIsOpened(prevState => !prevState)} />
             {isOpened && <FormModal isOpened={isOpened} setIsOpened={setIsOpened}/>}
-            {/*<FormModal/>*/}
           </div>
         </Container>
       </div>
