@@ -23,7 +23,7 @@
   },
   "partner": {
     "taras": "Taras Horbatiuk",
-    "yurii": "Yurii Belokony",
+    "yurii": "Yurii Bielokon",
     "text": "Co-managing partner of intermarium law firm"
   },
   "homePage": {
@@ -96,7 +96,7 @@
         "topText": "ABOUT",
         "bottomText": "us"
       },
-      "description": "<span>Intermarium Law Firm</span> is a Ukrainian law firm with international ambitions, formed in 2023 as a result of the joint efforts of one of the best specialists in the field of international and migration law — <span>Taras Horbatiuk</span> and <span>Yurii Belokony.</span>",
+      "description": "<span>Intermarium Law Firm</span> is a Ukrainian law firm with international ambitions, formed in 2023 as a result of the joint efforts of one of the best specialists in the field of international and migration law — <span>Taras Horbatiuk</span> and <span>Yurii Bielokon.</span>",
       "text": {
         "becauseOf": "Thanks to the synergy of expert capabilities of the founders of the company, it became possible to combine joint efforts to <span>provide high-quality legal services in the fields of migration, and international and corporate law for foreigners</span> living in Ukraine, planning to migrate or start their own business in Ukraine.",
         "support": {
@@ -1431,8 +1431,9 @@
     "email": "Email:",
     "country": "Country of citizenship:",
     "request": "Describe your request:",
-    "familiar": "I am familiar with the Terms and Privacy Notice",
-    "button": "Send request"
+    "familiar": "I am familiar with the <span>Rules and Privacy Notices</span>",
+    "button": "Send request",
+    "success": "Your message has been sent and will be reviewed by our specialists soon!"
   }
 }
 

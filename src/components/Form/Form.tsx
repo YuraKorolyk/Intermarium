@@ -1,9 +1,16 @@
 'use client';
-import React, { useState } from 'react';
+import React, {FC, useEffect, useRef, useState} from 'react';
 import classes from './Form.module.scss';
-import { useTranslation } from 'react-i18next';
+import {Trans, useTranslation} from 'react-i18next';
+import {useRouter} from "next/navigation";
+import Close from "../../../public/assets/icons/Close";
 
-const Form = () => {
+interface IProps {
+  type?: 'modal';
+  onClick?: any
+}
+const Form:FC<IProps> = ({type, onClick}) => {
+  const router = useRouter();
   const [formData, setFormData] = useState<any>({
     name: '',
     email: '',
@@ -11,58 +18,72 @@ const Form = () => {
     request: '',
     familiar: false, // Assuming familiar is a boolean field.
   });
-
+  const [isFamiliar, setIsFamiliar] = useState(true)
+  const [success, setSuccess] = useState(false)
   const handleChange = (e: any) => {
-    const { name, value } = e.target;
+    const {name, value} = e.target;
     setFormData({
       ...formData,
       [name]: value,
     });
   };
-
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    const data = new FormData();
+    console.log(formData.familiar)
+    if (!formData.familiar) {
+      setIsFamiliar(false);
+      return
+    } else {
+      setIsFamiliar(true);
 
-// Loop through the properties of formData and append them to data
-    for (const key in formData) {
-      if (formData.hasOwnProperty(key)) {
-        data.append(key, formData[key]);
+      const formattedData = `
+Name: ${formData.name}
+Email: ${formData.email}
+Country: ${formData.country}
+Request: ${formData.request}
+Language: ${i18n.language}
+`;
+
+      const encodedData = encodeURIComponent(formattedData);
+
+      try {
+        const response = await fetch(`https://api.telegram.org/bot6551955592:AAHGN7iMwEknSa3XGgyRJQ8CWxgQrg6cD-A/sendMessage?chat_id=-4050369133&text=${encodedData}`, {
+        // const response = await fetch(`https://api.telegram.org/bot5858070417:AAHLfzyLGigxReIQl3ehhdZ38kp7NI-225c/sendMessage?chat_id=-815777950&text=${encodedData}`, {
+          method: 'GET',
+        });
+        if (response.ok) {
+          console.log('Form data sent successfully');
+          setFormData({
+            name: '',
+            email: '',
+            country: '',
+            request: '',
+            familiar: false,
+          })
+
+          setSuccess(true)
+        } else {
+          console.error('Failed to send form data');
+        }
+      } catch (error) {
+        console.error('Error while sending form data:', error);
       }
-    }
-
-
-
-    // Send a POST request to the server
-    try {
-      // const response = await fetch('https://intermarium-backend.vercel.app', {
-      //   method: 'POST',
-      //   body: data
-      // });
-    // fetch('https://api.telegram.org/bot5858070417:AAHLfzyLGigxReIQl3ehhdZ38kp7NI-225c/sendMessage?chat_id=-815777950&text=some', {
-    //   method: 'GET'
-    // });
-      const response = await fetch('/api', {
-        method: 'GET',
-      });
-      // Handle the response as needed (e.g., check for success or errors)
-      if (response.ok) {
-        console.log('Form data sent successfully');
-      //   // Optionally, you can reset the form here if the server request was successful
-      //   // form.reset();
-      } else {
-        console.error('Failed to send form data');
-      }
-    } catch (error) {
-      console.error('Error while sending form data:', error);
     }
   };
 
-  const { t } = useTranslation();
+  const {i18n, t} = useTranslation();
 
+  useEffect(() => {
+    if (success) {
+      setTimeout(()=> {
+        setSuccess(false)
+      },4000)
+    }
+  }, [success]);
   return (
-    <div className={classes.formContainer}>
+    <div className={type ? `${classes.formContainer} ${classes.modal}` : classes.formContainer}>
+      {type && <div className={classes.closeIcon} onClick={onClick}><Close/></div>}
       <form onSubmit={handleSubmit}>
         <div>
           <input
@@ -124,13 +145,24 @@ const Form = () => {
               })
             }
           />
-          <label htmlFor="familiar">{t('form.familiar')}</label>
+          <span className={classes.familiarText} style={!formData.familiar && !isFamiliar ? {color: 'red'} : {}}>
+            <Trans
+              i18nKey={t('form.familiar')}
+              tOptions={{interpolation: {escapeValue: true}}}
+              components={{
+                span: <span className={classes.familiarLink} onClick={() => router.push(`/${i18n.language}/privacy`)}/>
+              }}
+            />
+          </span>
         </div>
+
 
         <div className={classes.button}>
           <button type="submit">{t('form.button')}</button>
         </div>
       </form>
+      {success && <div className={classes.overlay}></div>}
+      {success && <div className={classes.success}>{t('form.success')}</div>}
     </div>
   );
 };

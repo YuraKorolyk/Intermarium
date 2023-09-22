@@ -18,7 +18,7 @@ const Page = () => {
     <>
       <div className={classes.topBar}>
         <Container className={classes.wrapper}>
-          <ArticleAuthor author='Taras'/>
+          <ArticleAuthor author='Yurii'/>
           <div className={classes.date}>
             <Calendar fill={"#013043"}/>
             <span>{'15/07/2023'}</span>
