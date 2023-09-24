@@ -11,6 +11,7 @@
   z-index: 1;
   visibility: hidden;
   opacity: 0;
+  overflow-y: auto;
   .wrapper {
     margin-top: 70px;
     display: flex;

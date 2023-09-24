@@ -19,10 +19,14 @@ export default async function RootLayout({
   children: React.ReactNode
   params: { lng: string }
 }) {
+  const desc = lng === 'en' ? "Intermarium Law Firm - Ukrainian law firm, specialising in immigration law, corporate law and due diligence. Legal support of investors and businessmen in Ukraine." : "Юридична Компанія Інтермаріум -  спеціалізується на імміграції іноземців в Україну, корпоративному праві та перевірці нерухомості та об’єктів інвестування."
   return (
     <html lang={lng} dir={dir(lng)}>
     <Head>
-      <title>Intermarium Law Firm</title>
+      <title>Intermarium Law Firm / Юридична Компанія Інтермаріум</title>
+      <meta name="description">
+        {desc}
+      </meta>
     </Head>
 
     <body>
@@ -32,17 +36,6 @@ export default async function RootLayout({
       {children}
       <Footer lng={lng}/>
     </main>
-    {/*<Script id="init-code">*/}
-    {/*  {`*/}
-    {/*    window.LEELOO = function(){*/}
-    {/*    window.LEELOO_INIT = { id: '64f75ae9fcef99d45d48a795' };*/}
-    {/*    var js = document.createElement('script');*/}
-    {/*    js.src = 'https://app.leeloo.ai/init.js';*/}
-    {/*    js.async = true;*/}
-    {/*    document.getElementsByTagName('head')[0].appendChild(js);*/}
-    {/*  }; LEELOO();*/}
-    {/*  `}*/}
-    {/*</Script >*/}
     </body>
     </html>
   )
