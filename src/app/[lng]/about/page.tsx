@@ -8,11 +8,15 @@ import {useTranslation} from "react-i18next";
 import CustomLi from "@/components/CustomLi/CustomLi";
 import {trans} from "@/services";
 import Form from "@/components/Form/Form";
+import Head from "next/head";
 
 const Page = () => {
     const {t} = useTranslation();
     return (
       <>
+        <Head>
+          <title>{t('about.pageTitle')}</title>
+        </Head>
         <div className={classes.about}>
           <Container className={classes.wrapper}>
             <div className={classes.gridBox}>

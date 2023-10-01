@@ -27,6 +27,7 @@
     "text": "Co-managing partner of intermarium law firm"
   },
   "homePage": {
+    "pageTitle": "Main",
     "mission": {
       "title": {
         "topText": "Our",
@@ -91,6 +92,7 @@
     }
   },
   "about": {
+    "pageTitle": "About Intermarium Law Firm",
     "about": {
       "title": {
         "topText": "ABOUT",
@@ -136,6 +138,7 @@
     }
   },
   "privacy": {
+    "pageTitle": "Privacy Policy and Notice",
     "intro": {
       "title": "Privacy Policy and Notice",
       "lastUpdate": "Last update 09/01/2023"
@@ -234,6 +237,7 @@
   },
   "practices": {
     "migrationLaw": {
+      "pageTitle": "Services for foreigners in Ukraine",
       "intro": {
         "title": {
           "topText": "Migration",
@@ -268,6 +272,7 @@
       }
     },
     "acquisitionOfUkrainianCitizenship": {
+      "pageTitle": "Acquisition of ukrainian citizenship",
       "intro": {
         "title": {
           "topText": "Acquisition of Ukrainian",
@@ -322,6 +327,7 @@
       }
     },
     "appealOfMigrationServiceDecisions": {
+      "pageTitle": "Appeal of migration service decisions",
       "intro": {
         "title": {
           "topText": "Appeal of migration service",
@@ -346,6 +352,7 @@
       }
     },
     "extensionOfStayInUkraine": {
+      "pageTitle": "The extension of stay in Ukraine",
       "intro": {
         "title": {
           "topText": "The extension of stay",
@@ -397,6 +404,7 @@
       }
     },
     "foreignUkrainian": {
+      "pageTitle": "Obtaining the status of a foreign ukrainian",
       "intro": {
         "title": {
           "topText": "The procedure for obtaining the status of a foreign",
@@ -445,6 +453,7 @@
       }
     },
     "immigrationPermit": {
+      "pageTitle": "Immigration permit",
       "intro": {
         "title": {
           "topText": "Immigration",
@@ -492,6 +501,7 @@
       }
     },
     "marriageRegistration": {
+      "pageTitle": "Legal support of marriage in Ukraine",
       "intro": {
         "title": {
           "topText": "Legal support of marriage",
@@ -531,6 +541,7 @@
       }
     },
     "permanentResidence": {
+      "pageTitle": "Permanents residence permit",
       "intro": {
         "title": {
           "topText": "Permanent residence",
@@ -567,6 +578,7 @@
       }
     },
     "policeClearance": {
+      "pageTitle": "Obtaining a certificate of no criminal record in Ukraine",
       "intro": {
         "title": {
           "topText": "Obtaining a certificate of no criminal record in Ukraine",
@@ -616,6 +628,7 @@
       }
     },
     "registrationAsCitizenOfUkraine": {
+      "pageTitle": "Issuing a certificate of registration of a person as a citizen of Ukraine",
       "intro": {
         "title": {
           "topText": "Issuing a certificate of registration of a person ",
@@ -655,6 +668,7 @@
       }
     },
     "removalOfTheEntranceBan": {
+      "pageTitle": "Removal of the entry ban into Ukraine",
       "intro": {
         "title": {
           "topText": "Removal of the entry ban",
@@ -709,6 +723,7 @@
       }
     },
     "renewalOfResidencePermitInCaseOfLossOrTheft": {
+      "pageTitle": "Renewal of a lost/theft residence permit",
       "intro": {
         "title": {
           "topText": "Renewal of residence permit in case of",
@@ -739,6 +754,7 @@
       }
     },
     "taxId": {
+      "pageTitle": "Obtaining a tax number for foreigners",
       "intro": {
         "title": {
           "topText": "Tax number",
@@ -788,6 +804,7 @@
       }
     },
     "temporaryResidence": {
+      "pageTitle": "Temporary residence permit",
       "intro": {
         "title": {
           "topText": "Temporary residence",
@@ -850,6 +867,7 @@
       }
     },
     "workPermitInUkraine": {
+      "pageTitle": "Work permit in Ukraine",
       "intro": {
         "title": {
           "topText": "Work permit",
@@ -915,6 +933,7 @@
       }
     },
     "corporateLaw": {
+      "pageTitle": "Services Corporate Law",
       "intro": {
         "title": {
           "topText": "Corporate",
@@ -966,6 +985,7 @@
       }
     },
     "dueDiligence": {
+      "pageTitle": "Legal due-diligence",
       "intro": {
         "title": {
           "topText": "Legal",
@@ -1027,6 +1047,7 @@
       }
     },
     "legalBusinessSupport": {
+      "pageTitle": "Legal Business Support Intermarium",
       "intro": {
         "title": {
           "topText": "LEGAL BUSINESS",
@@ -1071,6 +1092,7 @@
       }
     },
     "visaSupport": {
+      "pageTitle": "Visa support for foreigners in Ukraine",
       "intro": {
         "title": {
           "topText": "Visa",
@@ -1103,6 +1125,7 @@
       }
     },
     "moldova": {
+      "pageTitle": "Assistance in obtaining a transit and business visa to Moldova",
       "intro": {
         "title": {
           "topText": "Assistance in obtaining a transit and business visa",
@@ -1155,6 +1178,7 @@
       }
     },
     "poland": {
+      "pageTitle": "Assistance in obtaining a transit or tourist visa to Poland, Romania, Hungary",
       "intro": {
         "title": {
           "topText": "Assistance in obtaining a transit or tourist visa to",
@@ -1170,6 +1194,7 @@
       }
     },
     "workInvitationsFromPolishCompanies": {
+      "pageTitle": "Work invitations from polish companies",
       "intro": {
         "title": {
           "topText": "Work invitations from",
@@ -1183,6 +1208,7 @@
       }
     },
     "EResidency": {
+      "pageTitle": "E-residency and opening of a company in Estonia",
       "intro": {
         "title": {
           "topText": "E-residency and opening of a company",
@@ -1203,6 +1229,7 @@
     }
   },
   "blog": {
+    "pageTitle": "Legal Blog Intermarium",
     "intro": {
       "title": {
         "topText": "Our",
@@ -1224,6 +1251,7 @@
     }
   },
   "lawForPoles": {
+    "pageTitle": "Law of Ukraine on the establishment of additional legal and social guarantees for citizens of the Republic of Poland who are in the territory of Ukraine",
     "intro": {
       "title": "Law of Ukraine",
       "subtitle": "On the establishment of additional legal and social guarantees for citizens of the Republic of Poland who are in the territory of Ukraine",
@@ -1256,6 +1284,7 @@
     }
   },
   "draftLaw5796": {
+    "pageTitle": "Draft law 5795 on changes to the employment of foreigners",
     "intro": {
       "title": "Draft law 5795",
       "september": {
@@ -1291,6 +1320,7 @@
     }
   },
   "e-residency": {
+    "pageTitle": "E-residence in Ukraine for foreigners",
     "intro": {
       "titleMain": "E-RESIDENCE FOR FOREIGNERS",
       "subtitle": "Recently the President of Ukraine Zelensky Law No. 2654-IX was signed.",
@@ -1344,6 +1374,7 @@
     }
   },
   "investingIntoUkraine": {
+    "pageTitle": "Opportunities and benefits of investing into Ukraine",
     "intro": {
       "title": "Opportunities and benefits of investing into Ukraine",
       "text": {
@@ -1366,6 +1397,7 @@
     }
   },
   "turnToMigrationLawyers": {
+    "pageTitle": "Why should you turn to migration lawyers?",
     "intro": {
       "titleMain": "Why should you turn to migration lawyers when solving migration issues?",
       "subtitle": "Foreigners coming to Ukraine or planning to move are rarely familiar with the specifics of Ukrainian migration legislation. In an effort to figure out how to move, how to open a visa, how to get a residence permit, foreigners often turn to dubious sources of information and knowledge:"
@@ -1406,8 +1438,9 @@
     }
   },
   "law3180": {
+    "pageTitle": "Law №3180 IX new grounds for obtaining an immigration permit",
     "intro": {
-      "titleMain": "LAW №3180 IX NEW GROUNDS FOR OBTAINING AN IMMIGRATION PERMIT"
+      "titleMain": "Law №3180 IX new grounds for obtaining an immigration permit"
     },
     "textBlock": {
       "p1": "Very often foreigners who contacted Intermarium law firm asked about the possibility of obtaining a permanent residence permit on the basis of continuous residence in the territory of Ukraine for 5 years, but unfortunately, such a basis was not provided for by the legislation of Ukraine, having lived in the territory of Ukraine for 5 years or more, foreigners had the right only to submit documents for the adoption of Ukrainian citizenship, which was not very pleasing to foreigners, since the principle of single citizenship of Ukraine applies in Ukraine and it would be necessary to renounce one's primary citizenship.",

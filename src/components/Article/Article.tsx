@@ -28,7 +28,7 @@ const Article: FC<IProps> = ({title, date, author, color, linkTo}) => {
       </div>
       <div className={classes.description}>
         <div className={classes.details}>
-          <ArticleAuthor author={author} color='#013043'/>
+          <ArticleAuthor author={author} color={currColor}/>
           <div className={classes.date}>
             <Calendar fill={currColor}/>
             <span style={{color: currColor}}>{date}</span>

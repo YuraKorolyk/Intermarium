@@ -6,12 +6,16 @@ import Calendar from "../../../../../public/assets/icons/Calendar";
 import React from "react";
 import CustomLi from "@/components/CustomLi/CustomLi";
 import {useTranslation} from "react-i18next";
+import Head from "next/head";
 
 const Page = () => {
   const {t} = useTranslation();
 
   return (
       <>
+        <Head>
+          <title>{t('law3180.pageTitle')}</title>
+        </Head>
         <div className={classes.topBar}>
           <Container className={classes.wrapper}>
             <ArticleAuthor author='Taras'/>

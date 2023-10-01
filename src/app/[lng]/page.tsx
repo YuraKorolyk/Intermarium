@@ -14,6 +14,7 @@ import {useRouter} from "next/navigation";
 import {Trans, useTranslation} from "react-i18next";
 import Form from "@/components/Form/Form";
 import Script from "next/script";
+import Head from "next/head";
 
 // import {useTranslation} from "@/app/i18n/client";
 interface HomeProps {
@@ -35,7 +36,11 @@ export default function Home({params: {lng}}: HomeProps) {
     setTest(prevState => !prevState)
   }, [i18n.language]);
   return (
+
     <>
+      <Head>
+        <title>{t('homePage.pageTitle')}</title>
+      </Head>
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.block}>

@@ -25,7 +25,7 @@ export default async function RootLayout({
     <Head>
       <link rel="icon" href="../../../public/assets/icons/favicon/favicon.ico" type="image/x-icon"/>
       <link rel="shortcut icon" href="../../../public/assets/icons/favicon/favicon.ico" type="image/x-icon"/>
-      <title>Intermarium Law Firm / Юридична Компанія Інтермаріум</title>
+      {/*<title>Intermarium Law Firm / Юридична Компанія Інтермаріум</title>*/}
       <meta name="description">
         {desc}
       </meta>

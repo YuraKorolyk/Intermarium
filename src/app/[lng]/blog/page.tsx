@@ -5,6 +5,7 @@ import classes from './page.module.scss';
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import Article from "@/components/Article/Article";
 import {useTranslation} from "react-i18next";
+import Head from "next/head";
 
 interface IArticle {
   id: number;
@@ -80,6 +81,9 @@ const Page = () => {
   });
   return (
     <>
+      <Head>
+        <title>{t('blog.pageTitle')}</title>
+      </Head>
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>

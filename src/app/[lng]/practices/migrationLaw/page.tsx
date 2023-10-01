@@ -7,6 +7,7 @@ import HeaderBackground from "@/components/HeaderBackground/HeaderBackground";
 import {useRouter} from "next/navigation";
 import {useTranslation} from "react-i18next";
 import {trans} from "@/services";
+import Head from "next/head";
 
 const Page = () => {
   const router = useRouter();
@@ -73,6 +74,9 @@ const Page = () => {
 
     return (
         <>
+          <Head>
+            <title>{t('practices.migrationLaw.pageTitle')}</title>
+          </Head>
             <HeaderBackground background="1"/>
             <div className={classes.intro}>
                 <Container className={classes.wrapper}>

@@ -6,10 +6,14 @@ import ArticleAuthor from "@/components/ArticleAuthor/ArticleAuthor";
 import Calendar from "../../../../../public/assets/icons/Calendar";
 import CustomLi from "@/components/CustomLi/CustomLi";
 import {useTranslation} from "react-i18next";
+import Head from "next/head";
 const Page = () => {
   const {t} = useTranslation();
   return (
     <>
+      <Head>
+        <title>{t('investingIntoUkraine.pageTitle')}</title>
+      </Head>
       <div className={classes.topBar}>
         <Container className={classes.wrapper}>
           <ArticleAuthor author='Yurii' />

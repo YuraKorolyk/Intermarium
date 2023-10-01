@@ -7,6 +7,7 @@ import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import CustomAnchorLi from "@/components/CustomAnchorLi/CustomAnchorLi";
 import {Trans, useTranslation} from "react-i18next";
 import {t} from "i18next";
+import Head from "next/head";
 
 const Page = () => {
   const {t} = useTranslation();
@@ -22,9 +23,11 @@ const Page = () => {
     )
   }
 
-
   return (
     <>
+      <Head>
+        <title>{t('privacy.pageTitle')}</title>
+      </Head>
       <div className={classes.intro}>
         <Container className={classes.wrapper}>
           <div className={classes.title}>

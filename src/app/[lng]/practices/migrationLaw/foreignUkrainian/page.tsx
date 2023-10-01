@@ -16,12 +16,16 @@ import {trans} from "@/services";
 import FormModal from "@/components/FormModal/FormModal";
 import FourFilled from "../../../../../../public/assets/icons/Numbers/FourFilled";
 import FiveFilled from "../../../../../../public/assets/icons/Numbers/FiveFilled";
+import Head from "next/head";
 
 const Page = () => {
   const {t} = useTranslation();
   const [isOpened, setIsOpened] = useState(false)
   return (
     <>
+      <Head>
+        <title>{t('practices.foreignUkrainian.pageTitle')}</title>
+      </Head>
       <HeaderBackground background="1"/>
       <div className={classes.intro}>
         <Container className={classes.wrapper}>

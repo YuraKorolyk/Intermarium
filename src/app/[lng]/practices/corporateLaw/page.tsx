@@ -15,12 +15,16 @@ import CustomLi from "@/components/CustomLi/CustomLi";
 import {useTranslation} from "react-i18next";
 import {trans} from "@/services";
 import FormModal from "@/components/FormModal/FormModal";
+import Head from "next/head";
 
 const Page = () => {
   const {t} = useTranslation();
   const [isOpened, setIsOpened] = useState(false)
   return (
     <>
+      <Head>
+        <title>{t('practices.corporateLaw.pageTitle')}</title>
+      </Head>
       <HeaderBackground background="2"/>
       <div className={classes.intro}>
         <Container className={classes.wrapper}>

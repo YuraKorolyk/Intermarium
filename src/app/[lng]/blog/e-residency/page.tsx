@@ -7,11 +7,15 @@ import Calendar from "../../../../../public/assets/icons/Calendar";
 import CustomLi from "@/components/CustomLi/CustomLi";
 import TextWithLine from "@/components/TextWithLine/TextWithLine";
 import {useTranslation} from "react-i18next";
+import Head from "next/head";
 
 const Page = () => {
   const {t} = useTranslation();
   return (
     <>
+      <Head>
+        <title>{t('e-residency.pageTitle')}</title>
+      </Head>
       <div className={classes.topBar}>
         <Container className={classes.wrapper}>
           <ArticleAuthor author='Taras'/>
