@@ -1462,6 +1462,7 @@
     "title": "leave us a request",
     "name": "Name:",
     "email": "Email:",
+    "phone": "Phone number",
     "country": "Country of citizenship:",
     "request": "Describe your request:",
     "familiar": "I am familiar with the <span>Rules and Privacy Notices</span>",

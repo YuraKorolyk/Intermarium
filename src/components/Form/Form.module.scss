@@ -21,7 +21,7 @@
     text-transform: uppercase;
     margin-bottom: 15px;
   }
-  .name, .email, .country, textarea {
+  .name, .email, .phone, .country, textarea {
     border: 1.5px solid #286E8D;
     margin-bottom: 15px;
     padding: 10px 0 5px 10px;
@@ -133,7 +133,7 @@
     .title {
       font-size: 20px;
     }
-    .name, .email, .country, textarea {
+    .name, .email, .phone, .country, textarea {
       margin-bottom: 15px;
       padding: 7px 0 3px 7px;
     }

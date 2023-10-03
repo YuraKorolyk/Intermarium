@@ -15,6 +15,7 @@ const Form:FC<IProps> = ({type, onClick}) => {
     name: '',
     email: '',
     country: '',
+    phone: '',
     request: '',
     familiar: false, // Assuming familiar is a boolean field.
   });
@@ -40,6 +41,7 @@ const Form:FC<IProps> = ({type, onClick}) => {
       const formattedData = `
 Name: ${formData.name}
 Email: ${formData.email}
+Number: ${formData.phone}
 Country: ${formData.country}
 Request: ${formData.request}
 Language: ${i18n.language}
@@ -57,6 +59,7 @@ Language: ${i18n.language}
           setFormData({
             name: '',
             email: '',
+            phone: '',
             country: '',
             request: '',
             familiar: false,
@@ -105,6 +108,19 @@ Language: ${i18n.language}
             name="email"
             placeholder={t('form.email')}
             value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="tel"
+            id="phone"
+            className={classes.phone}
+            name="phone"
+            minLength={4}
+            placeholder={t('form.phone')}
+            value={formData.phone}
             onChange={handleChange}
             required
           />
