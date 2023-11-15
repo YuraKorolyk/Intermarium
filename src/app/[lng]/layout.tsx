@@ -13,6 +13,9 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({lng}))
 }
 
+export const metadata = {
+  title: 'Intermarium Law Firm / Юридична Компанія Інтермаріум'
+}
 export default async function RootLayout({
                                            children, params: {lng}
                                          }: {
@@ -23,10 +26,11 @@ export default async function RootLayout({
   return (
     <html lang={lng} dir={dir(lng)}>
     <Head>
-      <link rel="icon" href="../../../public/assets/icons/favicon/favicon.ico" type="image/x-icon"/>
-      <link rel="shortcut icon" href="../../../public/assets/icons/favicon/favicon.ico" type="image/x-icon"/>
+      {/*<link rel="icon" href="../../../public/assets/icons/favicon/favicon.ico" type="image/x-icon"/>*/}
+      {/*<link rel="shortcut icon" href="../../../public/assets/icons/favicon/favicon.ico" type="image/x-icon"/>*/}
+      <link rel="shortcut icon" href="/favicon/favicon.ico" />
       {/*<title>Intermarium Law Firm / Юридична Компанія Інтермаріум</title>*/}
-      <meta name="description">
+      <meta name="description">x
         {desc}
       </meta>
     </Head>
